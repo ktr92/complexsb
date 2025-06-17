@@ -416,15 +416,16 @@
   </div>
   <!-- /.mobilemenu__wrapper -->
 </div>
-<!-- /.mobilepanel -->
 <header id="header" class="header">
   <div class="header__topline">
     <div class="headercontainer" id='headercontainer'>
-      <div class="mobilepanel">
-        <div class="mobilepanel__left">
-          <div class="mobilepanel__logo"><a aria-label="link" href="#" class='logo'><img loading="lazy"
-                src="img/logo.png" alt="логотип" title="логотип" width="194" height="42"></a></div>
-          <!-- <div class="mobilepanel__leftitems">
+      <div class="container">
+
+        <div class="mobilepanel">
+          <div class="mobilepanel__left">
+            <div class="mobilepanel__logo"><a aria-label="link" href="#" class='logo'><img loading="lazy"
+                  src="img/logo.png" alt="логотип" title="логотип" width="194" height="42"></a></div>
+            <!-- <div class="mobilepanel__leftitems">
               <a aria-label="link" href="#popup_delivery" data-toggle='modal' class="deliverylink">
               <span class="deliverylink__icon">
               <img loading="lazy" src="img/LocationPin.svg" alt="" title="" width="" height="">
@@ -433,18 +434,61 @@
               </a>
               
             </div> -->
+          </div>
+          <div class="mobilepanel__right flex items-center">
+            <div class="iconlinks">
+              <div class="iconlinks__item iconlinks__item_stat">
+                <a aria-label="link" href="#" class="iconlinks__link imghover active">
+                  <span class="iconlinks__badge">5</span>
+
+                  <span class="iconlinks__icon">
+                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="28" height="28"
+                      class="onUnhover">
+                    <img loading="lazy" src="img/StatFill.svg" alt="Сравнение" title="Сравнение" width="28" height="28"
+                      class="onHover">
+                  </span>
+                </a>
+              </div>
+              <div class="iconlinks__item iconlinks__item_fav">
+                <a aria-label="link" href="#" class="iconlinks__link imghover">
+                  <span class="iconlinks__badge">9+</span>
+
+                  <span class="iconlinks__icon">
+                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="28" height="28"
+                      class="onUnhover">
+                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное" width="28" height="28"
+                      class="onHover">
+                  </span>
+                </a>
+              </div>
+              <div class="iconlinks__item iconlinks__item_cart">
+                <a aria-label="link" href="#" class="iconlinks__link">
+                  <span class="iconlinks__badge">5</span>
+                  <span class="iconlinks__icon">
+                    <img loading="lazy" src="img/ShoppingCart.svg" alt="Корзина" title="Корзина" width="28" height="28">
+                  </span>
+                </a>
+                <div class="cartinfo onlyDesktop">
+                  <div class="cartinfo__title">На сумму</div>
+                  <div class="cartinfo__value">14 580 <span class="rouble">₽</span></div>
+                </div>
+              </div>
+              <!-- /.iconlinks -->
+            </div>
+            <div class="mobilepanel__menubutton">
+                <a href="#" data-menutoggle="mainmenu" class="menuicon menubutton" aria-label="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+            </div>
+            <!-- /.mobilepanel__menubutton -->
+          </div><!-- /.mobilepanel__right -->
+          <!-- /.mobilepanel__left -->
+
         </div>
-        <!-- /.mobilepanel__left -->
-        <div class="mobilepanel__menubutton">
-          <button aria-label="button" class="menubutton">
-            <img loading="lazy" src="img/mobilebutton.svg" alt="меню" title="меню" width="30" height="16"
-              class='menubutton__open'>
-            <img loading="lazy" src="img/menubutton__close.svg" alt="закрыть" title="закрыть" width="16" height="16"
-              class='menubutton__close'>
-          </button>
-        </div>
-        <!-- /.mobilepanel__menubutton -->
-      </div>
+      </div><!-- /.container -->
+
       <!-- /.mobilepanel -->
       <div class="headertop">
         <div class="container">
@@ -495,7 +539,7 @@
 
       </div>
       <!-- /.headertop -->
-      <div class="container">
+      <div class="container mobileflex">
 
         <div id='headermain'>
           <div class="headermain">
@@ -512,7 +556,7 @@
                   Безопасное&nbsp;настоящее&nbsp;- <br>спокойствие&nbsp;в&nbsp;будущем!
                 </div><!-- /.headermain__descr -->
               </div><!-- /.headermain__logoblock -->
-              <div class="headermain__location">
+              <div class="headermain__location onlyDesktop">
                 <div class="inputlabel inputlabel_city inputlabel_dropdown inputselect" data-toggleitem="sendtype">
                   <div class="inputselect__wrapper" data-toggleclick="sendtype">
                     <div class="inputselect__icon">
@@ -541,7 +585,7 @@
                 <!-- /.inputlabel -->
               </div><!-- /.headermain__location -->
 
-              <div class="headermain__contact">
+              <div class="headermain__contact onlyDesktop">
                 <div class="contacts">
                   <div class="contacts__phone">
                     <a href="tel:+74953242425">+7 (495) 324-24-25</a>
@@ -555,13 +599,15 @@
 
               <div class="headermain__menu onlyMobile">
                 <button aria-label="button" class='mainmenubtn' data-action="opencatalogmenu">
-                  <img class="burgericon icon--white" src="img/burger.svg" alt="burger" title="burger" width="36"
-                    height="36">
+                  <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="0.5" width="14" height="2.5" rx="1.25" fill="#232325" />
+                    <rect width="3.5" height="3.5" rx="1.75" fill="#232325" />
+                    <rect x="6" y="6" width="14" height="2.5" rx="1.25" fill="#232325" />
+                    <rect y="5.5" width="3.5" height="3.5" rx="1.75" fill="#232325" />
+                    <rect x="6" y="11.5" width="9" height="2.5" rx="1.25" fill="#232325" />
+                    <rect y="11" width="3.5" height="3.5" rx="1.75" fill="#232325" />
+                  </svg>
 
-                  <img class="burgericon icon--blue" src="img/burger_blue.svg" alt="burger_blue" title="burger_blue"
-                    width="20" height="15">
-                  <img class="closeicon" src="img/closemenu.svg" alt="closeicon" title="closeicon" width="16"
-                    height="16">
                   <span>Каталог </span>
                 </button>
               </div>
@@ -569,7 +615,7 @@
 
             </div>
             <!-- /.headermain__left-->
-            <div class="headermain__right">
+            <div class="headermain__right onlyDesktop">
 
               <div class="headermain__callback">
                 <a aria-label="link" href="#popup_callback" class='btn_border btnicon' data-toggle="modal">
@@ -616,7 +662,8 @@
                   <rect y="11" width="3.5" height="3.5" rx="1.75" fill="#232325" />
                 </svg>
 
-                <span>Каталог товаров </span>
+                <span class="onlyDesktop">Каталог товаров</span>
+                <span class="onlyMobile">Каталог</span>
               </button>
             </div>
 
@@ -687,13 +734,13 @@
                                 <span>Мониторы <span class="count">2666</span> </span>
                               </a>
                             </li>
-                          
+
                             <li class='mainmenuLevelTwo__item'>
-                              <a class='mainmenuLevelTwo__link ' href="" >
+                              <a class='mainmenuLevelTwo__link ' href="">
                                 <span>Тепловизоры <span class="count">2666</span> </span>
                               </a>
                             </li>
-                              <li class='mainmenuLevelTwo__item'>
+                            <li class='mainmenuLevelTwo__item'>
                               <a class='mainmenuLevelTwo__link' href="">
                                 <span>Видеорегистраторы <span class="count">2666</span> </span>
                               </a>
@@ -705,7 +752,8 @@
                             </li>
                             <li class='mainmenuLevelTwo__item'>
                               <a class='mainmenuLevelTwo__link' href="">
-                                <span>Пульты для управления в\к и видеорегистраторами <span class="count">2666</span> </span>
+                                <span>Пульты для управления в\к и видеорегистраторами <span class="count">2666</span>
+                                </span>
                               </a>
                             </li>
                             <li class='mainmenuLevelTwo__item'>
@@ -715,7 +763,8 @@
                             </li>
                             <li class='mainmenuLevelTwo__item'>
                               <a class='mainmenuLevelTwo__link' href="">
-                                <span>Система передачи видеосигнала по ВОЛС (по оптоволокну) <span class="count">2666</span> </span>
+                                <span>Система передачи видеосигнала по ВОЛС (по оптоволокну) <span
+                                    class="count">2666</span> </span>
                               </a>
                             </li>
                             <li class='mainmenuLevelTwo__item'>
@@ -724,10 +773,10 @@
                               </a>
                             </li>
                           </ul>
-                        
+
                         </div>
                       </li>
-                       <li class='mainmenuLevelOne__item mainmenuLevelOne__parent'>
+                      <li class='mainmenuLevelOne__item mainmenuLevelOne__parent'>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
@@ -765,213 +814,213 @@
                                 <span>Мониторы <span class="count">2666</span> </span>
                               </a>
                             </li>
-                          
+
                           </ul>
-                        
+
                         </div>
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                       <li class='mainmenuLevelOne__item '>
+                      <li class='mainmenuLevelOne__item '>
                         <a aria-label="link" href="" class='mainmenuLevelOne__link '>
                           <span class='mainmenu__icon'><img loading="lazy" src="img/menu_2.png" alt="" title=""
                               width="36" height="36"></span>
                           <span class='mainmenu__name'>Видеонаблюдение</span>
                         </a>
-                       
+
                       </li>
-                  
-                      
+
+
                     </ul>
                   </div>
                   <!-- /.mainmenu__level_1 -->
@@ -988,14 +1037,13 @@
                 <div class="searchinput">
                   <button aria-label="button" type="submit" class="searchbtn"><img loading="lazy" src="img/Search.svg"
                       alt="Search" title="Search" width="22" height="22"></button>
-                  <input type="text" placeholder="Видеокамера мультиформатная" id='title-search-input_fixed'
-                    autocomplete="off">
+                  <input type="text" placeholder="Поиск" autocomplete="off">
                   <button aria-label="button" type="submit" class="btn_main">Искать</button>
                 </div>
               </form>
             </div>
           </div><!-- /.headerpanel__search -->
-          <div class="headerpanel__buttons">
+          <div class="headerpanel__buttons onlyDesktop">
             <div class="headermain__iconlinks">
               <div class="iconlinks">
                 <div class="iconlinks__item iconlinks__item_stat">
@@ -1030,7 +1078,7 @@
                         height="28">
                     </span>
                   </a>
-                  <div class="cartinfo">
+                  <div class="cartinfo onlyDesktop">
                     <div class="cartinfo__title">На сумму</div>
                     <div class="cartinfo__value">14 580 <span class="rouble">₽</span></div>
                   </div>

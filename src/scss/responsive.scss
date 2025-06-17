@@ -296,7 +296,8 @@
     width: 120px;
   }
   .mainmenubtn span {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
   }
   .mainmenubtn img {
     width: 24px;
@@ -460,9 +461,13 @@
     border: none;
     padding: 0;
   }
+  .searchinput button.searchbtn {
+    margin-right: 4px;
+  }
   .searchinput {
     padding: 0 9px 0 9px;
-    height: 36px;
+    height: 38px;
+    border-radius: 10px;
   }
   .headermain__search {
     margin-left: 0;
@@ -1037,12 +1042,14 @@
   }
   .searchinput input {
     height: inherit;
+    margin-right: 0;
+    border-radius: 10px;
   }
   .breadcrumbs {
     margin-bottom: 6px;
   }
   header#header {
-    margin-bottom: 4px;
+    padding-bottom: 24px;
   }
   .catalogheader {
     -ms-flex-wrap: wrap;
@@ -2828,5 +2835,82 @@
   }
   form .stars span {
     font-size: 58px;
+  }
+.mainmenubtn {
+  margin-right: 0;
+  width: 135px;
+  padding: 11px 13px;
+  border-radius: 10px;
+}
+.iconlinks__link {
+  border: none;
+  width: 26px;
+  height: 26px;
+}
+.iconlinks__item {
+  margin-right: 12px;
+}
+.iconlinks__badge {
+  padding: 0 3px;
+  font-size: 10px;
+  min-width: 13px;height: 13px;
+  line-height: 13px;
+      transform: translateX(25%) translateY(-25%);
+}
+.mobilepanel__right {
+  gap: 30px;
+}
+.headerpanel {
+  gap: 0;
+}
+.mobilepanel .logo {
+  width: 124px;
+}
+.headerpanel {
+  margin-bottom: 0;
+}
+  .mobileflex {
+    display: flex;
+    gap: 11px;
+    width: 100%;
+  }
+  .searchinput button.btn_main {
+    display: none;
+  }
+  .headermain__search {
+    padding-left: 0;
+  }
+
+  [data-menutoggle].menuicon {
+    display: block;
+  }
+  [data-menutoggle].menuicon span {
+    width: 32px;
+    height: 3px;
+    margin-bottom: 7px;
+    display: block;
+    background: #231f20;
+    transform-origin: 4px 0px;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease;
+  }
+  [data-menutoggle].menuicon span:last-child {
+    margin-bottom: 0;
+  }
+  [data-menutoggle].menuicon span:first-child {
+    transform-origin: 0% 0%;
+  }
+  [data-menutoggle].menuicon span:last-child {
+    transform-origin: 0% 100%;
+  }
+  [data-menutoggle].menuicon.active span:first-child {
+    opacity: 1;
+    transform: translate(0, 22px) rotate(-45deg);
+  }
+  [data-menutoggle].menuicon.active span:last-child {
+    transform: translate(0, -21px) rotate(45deg);
+  }
+  [data-menutoggle].menuicon.active span:nth-child(2) {
+    opacity: 0;
   }
 }

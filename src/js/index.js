@@ -8,13 +8,7 @@ function initFE() {
   productSliderInit()
   /*  mobileAccordeon() */
   closeByOutsideSelect()
-  closeByClickOutside(".mainmenu", '[data-action="mainmenu"]', () => {
-    if ($('.mainmenu').hasClass('active')) {
-      $(".jsbackdrop").addClass("active")
-    } else {
-      $(".jsbackdrop").removeClass("active")
-    }
-  })
+  closeByClickOutside(".mainmenu", '[data-action="mainmenu"]', checkMenuExpand('mainmenu'))
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
   fixElement(false, 750, "mobpriceFixed", "fixed")
   fixElement(300, false, "headermain", "fixed")
@@ -27,6 +21,14 @@ function initFE() {
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
+
+const checkMenuExpand = (menu) => {
+    if ($(menu).hasClass('active')) {
+      $(".jsbackdrop").addClass("active")
+    } else {
+      $(".jsbackdrop").removeClass("active")
+    }
+  }
 
 function lazyLoadSrc(selector) {
   const callback = (entries, observer) => {
@@ -229,11 +231,7 @@ $(document).ready(function () {
   $('[data-action="mainmenu"]').on("click", function (e) {
     $(this).toggleClass("active")
     $(".mainmenu").toggleClass("active")
-    if ($('.mainmenu').hasClass('active')) {
-      $(".jsbackdrop").addClass("active")
-    } else {
-      $(".jsbackdrop").removeClass("active")
-    }
+ checkMenuExpand('mainmenu')
     
   })
 
@@ -248,7 +246,7 @@ $(document).ready(function () {
   $(".menubutton").on("click", function (e) {
     $(this).toggleClass("active")
     $(".mobilemenu").toggleClass("active")
-    $(".jsbackdrop").toggleClass("active")
+     checkMenuExpand('.mobilemenu')
     $(".mobilemenu__level2").removeClass("active")
     $(".mobilemenu__content").removeClass("active")
   })
