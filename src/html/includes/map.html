@@ -1,0 +1,1020 @@
+
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script type="text/javascript">
+  ymaps.ready(init);
+
+  function init() {
+
+    var myMap = new ymaps.Map("map", {
+      center: [55.73, 37.63],
+      zoom: 9,
+      controls: ['zoomControl', 'fullscreenControl']
+    });
+
+   /*  myMap.behaviors.disable('scrollZoom'); */
+    myGeoObject = new ymaps.GeoObject();
+
+    myMap.geoObjects
+      .add(myGeoObject)
+
+      .add(new ymaps.Placemark([55.644765, 37.365757], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Боровское шоссе</div>г. Москва, ш Боровское, д 27<br><br><a href="#" data-id="144330277396" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.5461097, 37.5491044], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Бульвар Ушакова</div>г. Москва, б-р Адмирала Ушакова, д 11<br><br><a href="#" data-id="243378246401" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.545838, 37.585998], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Бутово Парк</div>Московская область, г.о. Ленинский, рп. Бутово, м-н Бутово парк, Расторгуевское шоссе 8/22<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.817997, 37.50125], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Войковская</div>г Москва, ш Ленинградское, д 8 к 3<br><br><a href="#" data-id="55220541269" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.549502, 37.066806], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Апрелевка</div>Московская обл, г Апрелевка, ул Августовская, влд 8<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.794376, 37.970253], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Балашиха</div>Московская обл, г. Балашиха, ул. Некрасова, д. 3, с. 3<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8239077, 37.9698385], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Балашиха - 2</div>Московская обл, г. Балашиха, ул Свердлова, д 23<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.776097, 37.900978], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Балашиха - 3</div>Московская обл, г. Балашиха, мкр Никольско-Архангельский, ш Вишняковское, д 97<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.455953, 38.4454114], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Белоозерский</div>Московская обл, г. Белоозёрский, ул Коммунальная, зд 12<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.551982, 37.703434], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Видное - 2</div>Московская обл, Ленинский р-н, Солнечный мкр, участок №179ю<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.615199, 36.987720], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Голицыно</div>Московская обл, г Голицыно, пр-кт Железнодорожный, 1А.пав 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8653892, 37.1249598], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Дедовск</div>Московская обл, г. Дедовск, ул Космонавта Комарова, д 10..<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6320739, 37.8503958], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Дзержинский</div>Московская обл, г. Дзержинский, пл Дмитрия Донского, д 1А<br><br><a href="#" data-id="1750227099" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.939212, 37.5175837], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Долгопрудный</div>Московская обл, г. Долгопрудный, ул Первомайская, д 56<br><br><a href="#" data-id="73030797169" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.4395841, 37.7719965], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Домодедово</div>Московская обл, г. Домодедово, мкр Центральный, пл Привокзальная, стр 3<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.4166035, 37.835348], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Домодедово - 2</div>Московская обл, г. Домодедово, мкр Авиационный, пр-кт академика Туполева, д 2<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.7464197, 38.0015435], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Железнодорожный</div>Московская обл, г. Балашиха, мкр Железнодорожный, ул Маяковского, д 14<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.7513141, 38.0279373], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Железнодорожный - 3</div>Московская обл, г. Балашиха, мкр Железнодорожный, ул Советская, стр 1Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.598141, 38.124303], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Жуковский</div>Московская обл, г. Жуковский, ул Чкалова, д 28А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.598294, 38.089080], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Жуковский - 2</div>Московская обл, г Жуковский, ул Гудкова, стр 13<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.740710, 36.859655], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Звенигород</div>Московская обл, г Одинцово, г Звенигород, мкр Пронина, д 2<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9789256, 37.171561], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Зеленоград - 2</div>г. Москва, г. Зеленоград, пл Привокзальная, д 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9711822, 37.9634417], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Ивантеевка</div>Московская обл, г. Ивантеевка, ул Победы, д 4<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.913586, 36.863491], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Истра</div>Московская обл, г Истра, ул 9-й Гвардейской Дивизии, уч.9Г<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([54.857181, 38.188685], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Кашира</div>142901, Московская обл, г.о. г.о. Кашира, г Кашира, ул Ильича, д. 68А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.332002, 36.715224], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Клин</div>Московская обл, Клин г, Карла Маркса ул, дом № 35, пом.1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.083973, 38.802645], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Коломна</div>Московская обл, г Коломна, ул Октябрьской революции, д 362 стр 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.924906, 37.858107], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Королев</div>Московская обл, г. Королёв, ул Исаева, д 1Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9248769, 37.820541], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Королев - 2</div>Московская обл, г. Королёв, ул Карла Маркса, д 1А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.672966, 37.860576], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Котельники</div>Московская обл, г.Котельники, мкр Опытное поле, д 9Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8269147, 37.332902], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Красногорск</div>Московская обл, г. Красногорск, ул Октябрьская, д 13<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.818727, 37.364116], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Красногорск - 2</div>Московская обл, г. Красногорск, б-р Подмосковный, д 2А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.578869, 36.691733], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Кубинка</div>Московская обл, г Одинцово, г Кубинка, пл Привокзальная, д 12<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.574681, 38.922510], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Куровское</div>Московская обл, г Орехово-Зуево, г Куровское, ул Вокзальная, д 14/96<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.014010, 37.483510], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Лобня</div>Московская обл, г. Лобня, ул Маяковского, д. 4а<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.013347, 37.483569], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Лобня - 2</div>Московская область, г. Лобная, ул. Ленина, д. 2А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.865465, 38.197480], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Лосино-Петровский</div>Московская обл, г Лосино-Петровский, ул Кирова, д 6А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.587491, 37.902198], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Лыткарино</div>Российская Федерация, Московская область, городской округ Лыткарино, город Лыткарино, микрорайон 5 квартал 2, вблизи дома 16<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6796729, 37.8950522], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Люберцы</div>Московская обл, г. Люберцы, ул Смирновская, д 16<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.494900, 36.032181], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Можайск</div>Московская обл, г Можайск, ул 1-я Железнодорожная, д 28 стр 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6024784, 37.3541498], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Московский</div>г. Москва, г. Московский, мкр 1-й, влд 41Б стр 9<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.590490, 37.374201], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Московский - 2</div>г Москва, Московский п, г Московский, ул Радужная, д 13 к 3<br><br><a href="#" data-id="148046185099" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9239797, 37.7557656], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Мытищи - 3</div>Московская обл, г Мытищи, пр-кт Олимпийский, д 21 к 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.914448, 37.762300], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Мытищи - 5</div>Московская обл, г Мытищи, ул. Колонцова, 1 стр.1 (пешеходный мост с.т. Мытищи функционального назначения &quot;Конкорс&quot;)<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.3836225, 36.7513569], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Наро-Фоминск</div>Московская обл, г. Наро-Фоминск, ул Полубоярова, д 24<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8414605, 37.1829844], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Нахабино</div>Московская обл, г. Красногорск, рп Нахабино, ул Институтская, д 27<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.850839, 38.443052], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Ногинск</div>Московская обл, г. Ногинск, ул Комсомольская, д 41<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.684731, 37.297377], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Одинцово</div>Московская обл, г. Одинцово, ш Можайское, д 139А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.671935, 37.279375], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Одинцово - 2</div>Московская обл, г Одинцово, ул Советская, д. 1Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6800173, 37.2662407], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Одинцово - 3</div>Московская обл, г. Одинцово, ул Маршала Жукова, д 32А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6703856, 37.281593], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Одинцово - 4</div>Московская обл, г. Одинцово, ул Союзная, д 2А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6953928, 37.3333165], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Одинцово - 5</div>Московская обл, г. Одинцово, ул Чистяковой, д 1<br><br><a href="#" data-id="171274973414" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.796020, 38.975403], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Орехово-Зуево</div>Московская обл, г Орехово-Зуево, ул Вокзальная, д 8<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.814325, 37.088474], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Павловская Слобода</div>Московская обл, г. Истра, с Павловская Слобода, ул Ленина, зд 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.776735, 38.675132], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Павловский Посад</div>Московская обл, г Павловский Посад, ул Привокзальная, д 19/5 стр 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.818159, 37.340514], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Павшино</div>Московская обл, г. Красногорск, ул Знаменская, д 12<br><br><a href="#" data-id="222141767012" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.4255773, 37.4928071], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Подольск</div>Московская обл, г. Подольск, ул Ленинградская, д 20, помещ 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.431350, 37.564117], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Подольск - 2</div>Московская обл, г. Подольск, ул Вокзальная, д 2А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.4309382, 37.5505374], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Подольск - 3</div>Московская обл, г. Подольск, ул Советская, д 22/49<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([54.874149, 37.220373], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Протвино</div>Московская обл, г Протвино, ул Ленина, д 22А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.0114588, 37.8432733], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Пушкино</div>Московская обл, г. Пушкино, пр-кт Московский, д 3<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.585538, 38.2022844], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Раменское</div>Московская обл, г Раменское, ул Космонавтов, д 1В/1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.565882, 38.2265674], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Раменское - 2</div>Московская обл, г Раменское, ул Вокзальная, д 4Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.752594, 37.8583519], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Реутов</div>Московская обл, г. Реутов, ул Дзержинского, д 11В<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.3221185, 38.1436833], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Сергиев Посад</div>Московская обл, г. Сергиев Посад, пр-кт Красной Армии, д 203А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([54.9233193, 37.4422887], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Серпухов</div>Московская обл, г. Серпухов, ул Ворошилова, д 136/166<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.1866459, 36.984295], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Солнечногорск</div>Московская обл, г. Солнечногорск, ул Дзержинского, д 15А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.184315, 36.974441], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Солнечногорск - 2</div>Московская обл, г Солнечногорск, ул Советская, д 4 стр 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([54.898235, 38.078749], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Ступино</div>Московская обл, г Ступино, пр-кт Победы, д 63А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.4680155, 37.2964383], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Троицк</div>г. Москва, г. Троицк, б-р Сиреневый, д 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9526597, 38.0538099], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Фрязино</div>Московская обл, г. Фрязино, пр-кт Мира, д 8<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9002421, 37.4530658], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Химки</div>Московская обл, г. Химки, пр-кт Мира, д 13/7<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9011742, 37.4074546], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Химки - 2</div>Московская обл, г. Химки, пр-кт Мельникова, д 2Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8795106, 37.4219496], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Химки - 4</div>Московская обл, г. Химки, ул Молодежная, д 4<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.887149, 37.4214176], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Химки - 5</div>Московская обл, г. Химки, пр-кт Юбилейный, д 36<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8938667, 37.4517362], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Химки - 6</div>Московская обл, г Химки, ул Железнодорожная, д 21<br><br><a href="#" data-id="12326386316" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([56.0106829, 38.3757464], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Черноголовка</div>Московская обл, г. Черноголовка, б-р Школьный, д 10<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.9256276, 37.9967063], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Щелково</div>Московская обл, г. Щёлково, ул Талсинская, д 2<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.4988952, 37.567817], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">г. Щербинка - 2</div>г. Москва, г. Щербинка, ул Железнодорожная, д 44<br><br><a href="#" data-id="67254292921" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.873950, 37.399946], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">д. Путилково</div>Московская обл, г Красногорск, д Путилково, б-р Спасо-Тушинский, д 2, помещ 1В<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.711250, 37.880491], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Дмитриевского</div>г Москва, ул Дмитриевского, д 1, помещ 16/1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6096455, 37.7201808], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Домодедовская - 2</div>г. Москва, б-р Ореховый, д 14 к 3<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.684072, 37.853191], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Жулебино</div>г. Москва, ул Генерала Кузнецова, д 26<br><br><a href="#" data-id="158252407413" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.5690464, 37.4891669], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Коммунарка</div>г Москва, Сосенское п, п Коммунарка, ул Липовый парк, д 8 к 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.750861, 37.954126], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Кучино</div>143981, Московская обл, г.о. г.о. Балашиха, г Балашиха, мкр. Кучино, ул Центральная, д. 39Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.7024004, 37.8483434], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Лермонтовский проспект</div>г. Москва, пр-кт Лермонтовский, д 6<br><br><a href="#" data-id="115065257353" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.714919, 37.519676], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Ломоносовский проспект</div>г Москва, пр-кт Университетский, д 23 к 1<br><br><a href="#" data-id="41569827053" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.648931, 37.743471], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Марьино (Люблинская)</div>г. Москва, ул Люблинская, д 112А стр 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8442955, 37.3582489], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Митино - 2</div>г. Москва, ул Дубравная, д 35<br><br><a href="#" data-id="176525735244" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.679997, 37.6419342], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Нагатинская</div>г. Москва, ул Нагатинская, д 15 к 1<br><br><a href="#" data-id="114210821616" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6567117, 37.6062111], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Нахимовский - 2</div>г. Москва, ул Болотниковская, д 12<br><br><a href="#" data-id="226994867852" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6096455, 37.7201808], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Ореховый бульвар</div>г. Москва, б-р Ореховый, д 14 стр 3А<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.977455, 37.147502], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">п.Андреевка</div>Московская обл, г. Солнечногорск, рп Андреевка, 25Е<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.5979605, 36.4685717], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">п.Тучково</div>Московская обл, г. Руза, рп Тучково, ул Привокзальная площадь, д 9<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6419038, 37.3453797], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Переделкино</div>г. Москва, ул Шолохова, д 15А<br><br><a href="#" data-id="40808191925" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.862131, 37.43658], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Планерная</div>г. Москва, ул Планерная, д 12 к 1<br><br><a href="#" data-id="101654904252" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.609924, 37.603415], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Пражская</div>г Москва, ул Кировоградская, влд 15А<br><br><a href="#" data-id="85162171340" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.7974867, 37.7205099], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Преображенская - 2</div>г. Москва, ул Черкизовская Б., д 5 к 1<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8524403, 37.3519823], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Пятницкое шоссе</div>г. Москва, ул Митинская, д 51<br><br><a href="#" data-id="27316130858" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.7146001, 37.7908673], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Рязанский проспект - 3</div>г. Москва, ул 1-я Новокузьминская, д 19<br><br><a href="#" data-id="170571187516" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.794682, 37.588587], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Савеловский вокзал - 2</div>г. Москва, пл Савёловского Вокзала, д 2<br><span class="red-bg">Наш магазин находится на территории вокзала, вход в магазин строго по билетам на поезда и электрички.</span><br><br><a href="#" data-id="141752168953" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin-out.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.5702013, 37.5756142], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Северное Бутово</div>г. Москва, б-р Дмитрия Донского, д 2 к 1<br><br><a href="#" data-id="111861556998" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.8051653, 37.5168689], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Сокол</div>г. Москва, пр-кт Ленинградский, д 74 к 1<br><br><a href="#" data-id="1787347651" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.6502918, 37.4013688], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Солнцево</div>г. Москва, пр-кт Солнцевский, д 9<br><br><a href="#" data-id="23641289030" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.649779, 37.407214], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Солнцево - 2</div>г Москва, пр-кт Солнцевский, д 24<br><br><a href="#" data-id="71458534370" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.835282, 37.280344], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">ст. Опалиха</div>Московская обл, г Красногорск, б-р Космонавтов, д. 9Б<br><br><a href="#" data-id="" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.7436951, 37.8634931], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Суздальская</div>г. Москва, ул Суздальская, д 30/2<br><br><a href="#" data-id="1366340949" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.61994, 37.507205], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Теплый стан - 2</div>г Москва, пр-кт Новоясеневский, д 1 к 2<br><br><a href="#" data-id="2340493563" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+      .add(new ymaps.Placemark([55.818124, 37.573205], {
+        iconContent: "",
+        balloonContent: '<div class="ym-cnt-a">Тимирязевская - 3</div>г. Москва, ш Дмитровское, д 13 к 1<br><br><a href="#" data-id="195590077745" onclick="getreviews($(this));" class="rev_b">посмотреть отзывы</a>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageHref: 'https://borisik.ru/images/map-pin.png',
+        iconImageSize: [64, 50],
+        iconImageOffset: [-45, -36]
+      }))
+
+  }
+
+  function getreviews(e) {
+    var id = e.data('id');
+    jQuery.ajax({
+      type: 'POST',
+      url: '/reviews/get_reviews_yandex.php?id=' + id,
+      dataType: 'html',
+      success: function (result) {
+        //	$('.reviews_maps .block-1').html(result);
+      }
+    });
+
+    $('.reviews_maps .block-1').html('<iframe style="background:#fff;width:100%;height:1200px;border:0px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="/reviews/get_reviews_yandex.php?id=' + id + '"></iframe>');
+
+    return false;
+  }
+</script>

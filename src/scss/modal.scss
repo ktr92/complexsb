@@ -1,0 +1,365 @@
+@import './partials/params.scss';
+@import './partials/mixins.scss';
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+.modal {
+  z-index: 9999999999;
+}
+.modal-dialog {
+  width: 662px;
+  max-width: 100%;
+  min-height: 762px;
+}
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+.modal-backdrop {
+  background: rgba(37, 52, 79, 1);
+}
+.modal-backdrop.in {
+  opacity: .3;
+}
+.modal-content {
+  box-shadow: none;
+  border: none;
+  height: 100%;
+}
+.modalwrapper {
+  height: 100%;
+}
+button.close {
+  top: 15px;
+  right: 15px;
+  opacity: 1 !important;
+  z-index: 999;
+  position: absolute;
+  font-size: 35px;
+
+}
+
+.modal-title {
+  font-size: 24px;
+  text-transform: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-content {
+  border: none;
+  box-shadow: none;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 39px 62px 30px 62px;
+}
+
+.modal-body {
+}
+.deliverytabs {
+}
+.deliverytabs__header {
+ 
+  
+ 
+
+  margin-bottom: 24px;
+
+  background: #F3F5F8;
+  border-radius: 5555px;
+  overflow: hidden;
+  padding: 5px;
+  ul {
+    @include clear;
+    display: flex;
+    align-items: center;
+  }
+  li {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: rgba(37, 52, 79, 0.4);
+    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    &.active {
+      background: #fff;
+      border-radius: 5555px;
+      color: #df000f;
+    }
+  }
+}
+.active {
+}
+.deliverytabs__main {
+}
+.deliverytabs__item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+.deliverytabs__form {
+}
+.deliverytabs__inputrow {
+  display: flex;
+  margin: 0 -7px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.deliverytabs__inputcol {
+  padding: 0 7px;
+  width: 33.3333%;
+  margin-bottom: 14px;
+}
+.deliverytabs__input {
+}
+.selectbox {
+}
+label {
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+display: block;
+margin-bottom: 7px;
+color: #3B435A;
+}
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="password"] {
+  display: block;
+  width: 100%;
+  align-items: center;
+    background-color: #f3f3f7;
+    border-radius: 8px;
+    display: flex;
+    height: 56px;
+    padding: 0 20px;
+    width: 100%;
+    border: none;
+    
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+border: 2px solid #f3f3f7;
+/* identical to box height */
+
+color: #3B435A;
+
+&.input-error {
+  border: 2px solid #FF585F;
+}
+
+&:focus {
+  border: 2px solid #df000f;
+}
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  align-items: center;
+    background-color: #f3f3f7;
+    border-radius: 8px;
+    display: flex;
+    padding: 16px 20px;
+    width: 100%;
+    border: none;
+    
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+border: 2px solid #f3f3f7;
+/* identical to box height */
+
+color: #3B435A;
+
+&.input-error {
+  border: 2px solid #FF585F;
+}
+
+&:focus {
+  border: 2px solid #df000f;
+}
+}
+.input-errortext{
+  font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 100%;
+/* or 12px */
+
+
+color: #FF585F;
+}
+.modal-title {
+  
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 100%;
+/* identical to box height, or 22px */
+
+margin-bottom: 24px;
+color: #25344F;
+}
+.modal-body {
+  padding: 0;
+  overflow: visible;
+}
+
+.deliverytabs__map {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+button.close {
+  background: none;
+  border: none;
+  height: initial;
+  padding: 0;
+  font-size: 10px;
+  top: 21px;
+  right: 21px;
+}
+.map-delivery {
+  height: 252px;
+  width: 100%;
+}
+
+.modal-dialog_product {
+  width: 1174px;
+}
+
+
+
+@include medium-screen {
+  .pickuplist__addr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .dtime__item {
+    font-size: 10px;
+    padding: 4px 9px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    b {
+      display: block;
+    }
+  }
+  .pickuplist__addr {
+    margin-bottom: 0;
+  }
+  .pickuptabs__search {
+    margin-bottom: 21px;
+  }
+  .pickuplist__item {
+    padding-bottom: 11px;
+    margin-bottom: 13px;
+  }
+  .pickuplist__address {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 11px;
+    }
+    span {
+      padding-left: 4px;
+      font-size: 12px;
+line-height: 100%;
+    }
+  }
+
+  .input-errortext {
+    line-height: 1;
+    font-size: 11px;
+  }
+  .pickuplist__header {
+    font-size: 12px;
+line-height: 100%;
+margin-bottom: 10px;
+  }
+  .modal-content {
+    padding: 24px 16px 21px 16px;
+  }
+  .modal-dialog {
+    margin: 18px auto;
+    width: calc(100% - 36px);
+  }
+  button.close {
+    width: 7px;
+    height: 7px;
+    opacity: 0.7 !important;
+    right: 17px;
+    top: 17px;
+  }
+  .modal-title {
+    margin-bottom: 13px;
+    font-size: 16px;
+line-height: 100%;
+  }
+  .deliverytabs__header li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+  }
+  .deliverytabs__header {
+    margin-bottom: 16px;
+  }
+  .deliverytabs__inputcol {
+    width: 50%;
+  }
+ 
+  input {
+    height: 36px;
+    padding: 0 10px;
+  }
+
+  label {
+    font-size: 12px;
+line-height: 18px;
+margin-bottom: 4px;
+  }
+  .deliverytabs__inputcol {
+    padding: 0 3px;
+    margin-bottom: 9px;
+  }
+  .deliverytabs__inputrow {
+    margin-bottom: 10px;
+  }
+  .deliverytabs__map {
+    margin-bottom: 19px;
+  }
+
+}

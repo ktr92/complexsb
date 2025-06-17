@@ -1,0 +1,522 @@
+<% var data = { title: "MAIN", author: "" }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %>
+<main>
+  <div class="page">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="Главная" width="16" height="16" title="Главная" />
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="container">
+      <div class="recipedetail">
+        <div class="recipedetail__wrapper">
+          <div class="recipedetail__left">
+            <div class="recipedetail__images">
+              <div class="recipedetail__img">
+                <!-- <div class='zoom-box'> -->
+                <div class="">
+                  <img src="img/recipedetail.webp" alt="" title="" width="478" height="698" />
+                </div>
+              </div>
+              <!-- /.recipedetail__img -->
+            </div>
+            <!-- /.recipedetail__iamges -->
+          </div>
+          <!-- /.recipedetail__left -->
+          <div class="recipedetail__right">
+            <div class="recipedetail__info">
+              <div class="recipedetail__title">
+                <h1>Альпийское фондю</h1>
+              </div>
+              <!-- /.recipedetail__title -->
+              <div class="recipedetail__table recipetable">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="recipetable_tdname">
+                        <span class="recipetable__name"> Копчёно-варёный карбонад “Российский” </span>
+                      </td>
+                      <td class="recipetable_tdcount">
+                        <span class="recipetable__count"> 1 300г </span>
+                      </td>
+                      <td class="recipetable_tdbuy">
+                        <span class="recipetable__buyblock">
+                          <div class="recipetable__prices">
+                            <div class="recipetable__price">118 ₽</div>
+                            <span class="recipetable__amount"> 59 х 1 кг </span>
+                          </div>
+                          <div class="recipetable__buy">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item="" data-toggleclass="active" data-action="showmodal_cart">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+                          <!-- /.recipetable__buy -->
+                        </span>
+                        <!-- /.recipetable__buyblock -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="recipetable_tdname">
+                        <span class="recipetable__name"> Копчёно-варёная свинина “Ароматная” </span>
+                      </td>
+                      <td class="recipetable_tdcount">
+                        <span class="recipetable__count"> 200г </span>
+                      </td>
+                      <td class="recipetable_tdbuy">
+                        <span class="recipetable__buyblock">
+                          <div class="recipetable__prices">
+                            <div class="recipetable__price">118 ₽</div>
+                            <span class="recipetable__amount"> 59 х 1 кг </span>
+                          </div>
+                          <div class="recipetable__buy">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item="" data-toggleclass="active" data-action="showmodal_cart">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+                          <!-- /.recipetable__buy -->
+                        </span>
+                        <!-- /.recipetable__buyblock -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="recipetable_tdname">
+                        <span class="recipetable__name"> Сыр “Эмменталь” </span>
+                      </td>
+                      <td class="recipetable_tdcount">
+                        <span class="recipetable__count"> 300г </span>
+                      </td>
+                      <td class="recipetable_tdbuy"></td>
+                    </tr>
+                    <tr>
+                      <td class="recipetable_tdname">
+                        <span class="recipetable__name"> Сыр “Грюйер” </span>
+                      </td>
+                      <td class="recipetable_tdcount">
+                        <span class="recipetable__count"> 159г </span>
+                      </td>
+                      <td class="recipetable_tdbuy"></td>
+                    </tr>
+                    <tr>
+                      <td class="recipetable_tdname">
+                        <span class="recipetable__name"> Белое сухое вино </span>
+                      </td>
+                      <td class="recipetable_tdcount">
+                        <span class="recipetable__count"> 100г </span>
+                      </td>
+                      <td class="recipetable_tdbuy"></td>
+                    </tr>
+                    <tr>
+                      <td class="recipetable_tdname">
+                        <span class="recipetable__name"> Вишневая водка или бренди </span>
+                      </td>
+                      <td class="recipetable_tdcount">
+                        <span class="recipetable__count"> 50г </span>
+                      </td>
+                      <td class="recipetable_tdbuy"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.recipedetail__table -->
+              <div class="recipedetail__params">
+                <div class="recipeparams">
+                  <div class="recipeparams__items">
+                    <div class="recipeparams__item">
+                      <div class="recipeparams__content">
+                        <div class="recipeparams__img">
+                          <img src="img/DiningRoom.svg" alt="Кол-во порций" title="Кол-во порций" width="30" height="30" />
+                        </div>
+                        <div class="recipeparams__text">
+                          <div class="recipeparams__caption">Кол-во порций</div>
+                          <div class="recipeparams__value">4</div>
+                        </div>
+                        <!-- /.recipeparams__text -->
+                      </div>
+                      <!-- /.recipeparams__content -->
+                    </div>
+                    <!-- /.recipeparams__item -->
+                    <div class="recipeparams__item">
+                      <div class="recipeparams__content">
+                        <div class="recipeparams__img">
+                          <img src="img/Lamb.svg" alt="Тип блюда" title="Тип блюда" width="30" height="30" />
+                        </div>
+                        <div class="recipeparams__text">
+                          <div class="recipeparams__caption">Тип блюда</div>
+                          <div class="recipeparams__value">Тип блюда</div>
+                        </div>
+                        <!-- /.recipeparams__text -->
+                      </div>
+                      <!-- /.recipeparams__content -->
+                    </div>
+                    <!-- /.recipeparams__item -->
+                    <div class="recipeparams__item">
+                      <div class="recipeparams__content">
+                        <div class="recipeparams__img">
+                          <img src="img/Clockr.svg" alt="Время приготовления" title="Время приготовления" width="30" height="30" />
+                        </div>
+                        <div class="recipeparams__text">
+                          <div class="recipeparams__caption">Время приготовления</div>
+                          <div class="recipeparams__value">40 мин</div>
+                        </div>
+                        <!-- /.recipeparams__text -->
+                      </div>
+                      <!-- /.recipeparams__content -->
+                    </div>
+                    <!-- /.recipeparams__item -->
+                  </div>
+                  <!-- /.recipeparams__items -->
+                </div>
+                <!-- /.recipeparams -->
+              </div>
+              <!-- /.recipedetail__params -->
+            </div>
+            <!-- /.recipedetail__info -->
+          </div>
+          <!-- /.recipedetail__right -->
+        </div>
+        <!-- /.recipedetail__wrapper -->
+        <div class="recipedetail__description">
+          <h2>Пошаговый рецепт приготовления</h2>
+          <div class="recipedetail__steps">
+            <div class="itemslist__items">
+              <div class="itemslist__item itemslist__item_col3">
+                <div class="itemslistcard itemslistcard_step">
+                  <div class="itemslistcard__wrapper">
+                    <div class="itemslist__title red">Шаг 1</div>
+                    <div class="itemslistcard__img">
+                      <img src="img/step1.webp" alt="Шаг 1" title="Шаг 1" width="870" height="480" />
+                    </div>
+                    <div class="itemslistcard__caption">Достаньте мясо из холодильника за 30 мин. до приготовления. Зачистите косточку от пленок. Обсушите антрекот бумажным поло­тенцем.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.itemslist__item -->
+              <div class="itemslist__item itemslist__item_col3">
+                <div class="itemslistcard itemslistcard_step">
+                  <div class="itemslistcard__wrapper">
+                    <div class="itemslist__title red">Шаг 2</div>
+                    <div class="itemslistcard__img">
+                      <img src="img/step2.webp" alt="Шаг 2" title="Шаг 2" width="870" height="480" />
+                    </div>
+                    <div class="itemslistcard__caption">Непосредственно перед приготовлением немного посолите и поперчите мясо и слегка смажьте оливковым маслом с обеих сторон при помощи кисточки.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="itemslist__item itemslist__item_col3">
+                <div class="itemslistcard itemslistcard_step">
+                  <div class="itemslistcard__wrapper">
+                    <div class="itemslist__title red">Шаг 3</div>
+                    <div class="itemslistcard__img">
+                      <img src="img/step3.webp" alt="Шаг 3" title="Шаг 3" width="870" height="480" />
+                    </div>
+                    <div class="itemslistcard__caption">
+                      Разогрейте на сильном огне сковороду с толстым дном. Положите антрекоты так, чтобы они не соприкасались друг с другом. Жарьте 2 мин. на одной стороне, затем переверните и готовьте еще 2 мин.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="itemslist__item itemslist__item_col3">
+                <div class="itemslistcard itemslistcard_step">
+                  <div class="itemslistcard__wrapper">
+                    <div class="itemslist__title red">Шаг 4</div>
+                    <div class="itemslistcard__img">
+                      <img src="img/step4.webp" alt="Шаг 4" title="Шаг4" width="870" height="480" />
+                    </div>
+                    <div class="itemslistcard__caption">
+                      Убавьте огонь до среднего и снова переверните мясо, жарьте еще по 2 мин. с каждой стороны. Чтобы получить мясо средней прожарки, повторите жарку с каждой стороны, еще по 1 мин. Для хорошо прожаренного мяса вам
+                      потребуется подержать мясо по 2 мин. с каждой стороны.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="itemslist__item itemslist__item_col3">
+                <div class="itemslistcard itemslistcard_step">
+                  <div class="itemslistcard__wrapper">
+                    <div class="itemslist__title red">Шаг 5</div>
+                    <div class="itemslistcard__img">
+                      <img src="img/step5.webp" alt="Шаг 5" title="Шаг5" width="870" height="480" />
+                    </div>
+                    <div class="itemslistcard__caption">Переложите антрекоты на подогретое керамическое блюдо. Выложите на каждый кусок по кусочку сливочного масла, прикройте фольгой и оставьте в теплом месте на 4–5 мин.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="itemslist__item itemslist__item_col3">
+                <div class="itemslistcard itemslistcard_step">
+                  <div class="itemslistcard__wrapper">
+                    <div class="itemslist__title red">Шаг 6</div>
+                    <div class="itemslistcard__img">
+                      <img src="img/step6.webp" alt="Шаг 6" title="Шаг 6" width="870" height="480" />
+                    </div>
+                    <div class="itemslistcard__caption">
+                      Добавьте в сковороду, где жарились антрекоты, сливочное масло, немного посолите, поперчите и сбрызните лимонным соком. Верните сковороду на огонь и прогрейте, соскребая лопаточкой мясные соки, прижарившиеся ко дну.
+                      Положите антрекоты на тарелки, полейте соусом и сразу же подавайте.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.recipedetail__steps -->
+        </div>
+        <!-- /.recipedetail__description -->
+      </div>
+      <!-- /.recipedetail -->
+    </div>
+    <div class="pageblocksl recipeslider news">
+      <div class="container">
+        <div class="blockheader flex items-center content-between">
+          <div class="blockheader__left">
+            <h2>Другие статьи</h2>
+            <a href="#" class="onlyMobile">Смотреть все</a>
+
+          </div>
+          <!-- /.blockheader__left -->
+          <div class='blockheader__right'>
+            <a aria-label="link" href="#" class='extlink onlyDesktop'>Смотреть все</a>
+
+            <div class="sliderarrows flex">
+              <div class="sliderarrows__left">
+                <img loading="lazy" src="img/left.svg" width="26" height="26" alt="left" title="left">
+              </div>
+              <!-- /.sliderarrows__left -->
+              <div class="sliderarrows__right">
+                <img loading="lazy" src="img/right.svg" width="26" height="26" alt="right" title="right">
+              </div>
+              <!-- /.sliderarrows__right -->
+            </div>
+            <!-- /.sliderarrows -->
+          </div>
+        </div>
+        <!-- /.blockheader -->
+        <div class="itemslistslider__wrapper">
+          <div class="itemslistslider__container">
+            <div class="itemslist__slider recipeslider__slider">
+              <div class="itemslistslider__slide">
+                <div class="itemslistslider__item">
+                  <div class="itemslistcard">
+                    <div class="itemslistcard__wrapper">
+                      <a href="#" class="itemslistcard__image">
+                        <div class="itemslistcard__img">
+                          <img src="img/recipe1.webp" alt="" title="" width="470" height="343" />
+                        </div>
+                      </a>
+                      <!-- /.itemslistcard__image -->
+                      <div class="itemslistcard__title">
+                        <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                      </div>
+                      <div class="itemslistcard__info">
+                        <div class="itemslistcard__params">
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__text">23 февраля</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__icon">
+                              <img src="img/Clock.svg" alt="Время" title="Время" width="22" height="22"/>
+                            </span>
+                            <span class="itemslistcard__text">30 мин</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                        </div>
+                        <!-- /.itemslistcard__params -->
+                      </div>
+                      <!-- /.itemslistcard__info -->
+                    </div>
+                    <!-- /.itemslistcard__wrapper -->
+                  </div>
+                  <!-- /.itemslistcard -->
+                </div>
+                <!-- /.itemslistslider__item -->
+              </div>
+              <!-- /.itemslistslider__slide -->
+              <div class="itemslistslider__slide">
+                <div class="itemslistslider__item">
+                  <div class="itemslistcard">
+                    <div class="itemslistcard__wrapper">
+                      <a href="#" class="itemslistcard__image">
+                        <div class="itemslistcard__img">
+                          <img src="img/recipe2.webp" alt="" width="470" height="343" title=""/>
+                        </div>
+                      </a>
+                      <!-- /.itemslistcard__image -->
+                      <div class="itemslistcard__title">
+                        <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                      </div>
+                      <div class="itemslistcard__info">
+                        <div class="itemslistcard__params">
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__text">23 февраля</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__icon">
+                              <img src="img/Clock.svg" alt="Время" title="Время" width="22" height="22"/>
+                            </span>
+                            <span class="itemslistcard__text">30 мин</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                        </div>
+                        <!-- /.itemslistcard__params -->
+                      </div>
+                      <!-- /.itemslistcard__info -->
+                    </div>
+                    <!-- /.itemslistcard__wrapper -->
+                  </div>
+                  <!-- /.itemslistcard -->
+                </div>
+                <!-- /.itemslistslider__item -->
+              </div>
+              <!-- /.itemslistslider__slide -->
+              <div class="itemslistslider__slide">
+                <div class="itemslistslider__item">
+                  <div class="itemslistcard">
+                    <div class="itemslistcard__wrapper">
+                      <a href="#" class="itemslistcard__image">
+                        <div class="itemslistcard__img">
+                          <img src="img/recipe1.webp" alt="" title="" width="470" height="343" />
+                        </div>
+                      </a>
+                      <!-- /.itemslistcard__image -->
+                      <div class="itemslistcard__title">
+                        <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                      </div>
+                      <div class="itemslistcard__info">
+                        <div class="itemslistcard__params">
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__text">23 февраля</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__icon">
+                              <img src="img/Clock.svg" alt="Время" title="Время" width="22" height="22"/>
+                            </span>
+                            <span class="itemslistcard__text">30 мин</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                        </div>
+                        <!-- /.itemslistcard__params -->
+                      </div>
+                      <!-- /.itemslistcard__info -->
+                    </div>
+                    <!-- /.itemslistcard__wrapper -->
+                  </div>
+                  <!-- /.itemslistcard -->
+                </div>
+                <!-- /.itemslistslider__item -->
+              </div>
+              <!-- /.itemslistslider__slide -->
+              <div class="itemslistslider__slide">
+                <div class="itemslistslider__item">
+                  <div class="itemslistcard">
+                    <div class="itemslistcard__wrapper">
+                      <a href="#" class="itemslistcard__image">
+                        <div class="itemslistcard__img">
+                          <img src="img/recipe1.webp" alt="" title="" width="470" height="343" />
+                        </div>
+                      </a>
+                      <!-- /.itemslistcard__image -->
+                      <div class="itemslistcard__title">
+                        <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                      </div>
+                      <div class="itemslistcard__info">
+                        <div class="itemslistcard__params">
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__text">23 февраля</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__icon">
+                              <img src="img/Clock.svg" alt="Время" title="Время" width="22" height="22"/>
+                            </span>
+                            <span class="itemslistcard__text">30 мин</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                        </div>
+                        <!-- /.itemslistcard__params -->
+                      </div>
+                      <!-- /.itemslistcard__info -->
+                    </div>
+                    <!-- /.itemslistcard__wrapper -->
+                  </div>
+                  <!-- /.itemslistcard -->
+                </div>
+                <!-- /.itemslistslider__item -->
+              </div>
+              <!-- /.itemslistslider__slide -->
+              <div class="itemslistslider__slide">
+                <div class="itemslistslider__item">
+                  <div class="itemslistcard">
+                    <div class="itemslistcard__wrapper">
+                      <a href="#" class="itemslistcard__image">
+                        <div class="itemslistcard__img">
+                          <img src="img/recipe1.webp" alt="" title="" width="470" height="343" />
+                        </div>
+                      </a>
+                      <!-- /.itemslistcard__image -->
+                      <div class="itemslistcard__title">
+                        <a href="">Лучший рецепт шашлыка из свинины, по мнению подписчиков</a>
+                      </div>
+                      <div class="itemslistcard__info">
+                        <div class="itemslistcard__params">
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__text">23 февраля</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                          <div class="itemslistcard__param">
+                            <span class="itemslistcard__icon">
+                              <img src="img/Clock.svg" alt="Время" title="Время" width="22" height="22"/>
+                            </span>
+                            <span class="itemslistcard__text">30 мин</span>
+                          </div>
+                          <!-- /.itemslistcard__param -->
+                        </div>
+                        <!-- /.itemslistcard__params -->
+                      </div>
+                      <!-- /.itemslistcard__info -->
+                    </div>
+                    <!-- /.itemslistcard__wrapper -->
+                  </div>
+                  <!-- /.itemslistcard -->
+                </div>
+                <!-- /.itemslistslider__item -->
+              </div>
+              <!-- /.itemslistslider__slide -->
+            </div>
+          </div>
+          <!-- /.itemslistslider__container -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<%= _.template(require('../includes/footer.html').default)(data) %>

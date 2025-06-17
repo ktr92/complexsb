@@ -1,0 +1,65 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+  <div class="page">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="container">
+      <div class="errorpage">
+        <div class="errorpage__code"> 
+          <img src="img/errorpage__code.png" alt="" title="" width="605" height="530"> </div>
+        <div class="errorpage__main">
+          <div class="errorpage__content">
+            <div class="errorpage__title">К сожалению мы не смогли <br> найти эту страницу </div>
+            <div class="errorpage__text">Но мы подобрали несколько полезных ссылок котрые возможно вам понадобятся</div>
+            <div class="errorpage__links">
+              <ul>
+                <li>
+                  <a href="">Рецепты</a>
+                </li>
+                <li>
+                  <a href="">Оплата и доставка</a>
+                </li>
+                <li>
+                  <a href="">Полезно знать</a>
+                </li>
+                <li>
+                  <a href="">Новости</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.errorpage__links -->
+          </div>
+          <!-- /.errorpage__content -->
+        </div>
+        <!-- /.errorpage__main -->
+      </div>
+      <!-- /.errorpage -->
+    </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

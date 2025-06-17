@@ -1,0 +1,708 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <style>
+        li {
+          margin-bottom: 15px;
+          list-style: none;
+          display: inline-block;
+        }
+      </style>
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li>
+                    <a href="/">
+                      <span>
+                        <img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Мясо, птица</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="container">
+            <div class="pageheader">
+              <h1>Избранные товары</h1>
+              <a href="" class="linkgray linkicon">
+                <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                <span>Очистить все</span>
+              </a>
+              <!-- /.linkgray -->
+            </div>
+            <!-- /.pageheader -->
+            <div class="cartblock">
+              <div class="cartblock__main">
+                <div class="cartblock__items">
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product1.jpg" alt="" title="" width="177" height="176">
+                          </a>
+                          <div class="minicard__info onlyMobile">
+                            <a href='#' class="minicard__title ">Кета в масле 280 гр.</a>
+                            <div class="minicard__right ">
+                              <div class="minicard__price">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">762.92</div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">674.94</div>
+                                      <div class="productcard__priceunit">₽/кг</div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                              </div>
+                              <!-- /.minicard__price -->
+                            </div>
+                          </div>
+                          <!-- /.minicard__info -->
+                          <div class="minicard__main">
+                            <a href='#' class="minicard__title onlyDesktop">Кета в масле 280 гр.</a>
+                            <!-- /.minicard__title -->
+                            <div class="minicard__buyblock">
+
+                              <div class="minicard__count">
+                                <div class="buyblock__quantity">
+                                  <div class="quantity">
+                                    <span class="quantity-minus" data-field="quantity">
+                                      <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                    </span>
+                                    <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                      min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                      data-entity="quantity" data-item="">
+                                    <span class="quantity-plus" data-field="quantity">
+                                      <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="minicard__amount">
+                                  <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                </div>
+                              </div>
+                              <!-- /.minicard__count -->
+                              <!-- /.minicard__amount -->
+                            </div>
+                            <!-- /.minicard__buyblock -->
+                            <div class="minicard__buttons">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                                  <span>Удалить из списка</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button onlyMobile">
+                                <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                                  data-toggleclass="active">
+                                  <div class="tocart__content tocart__before">
+                                    <span>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                              <div class="shopbutton">
+                                <a href="#" class="btn btn_main btn_round">Где купить?</a>
+                              </div>
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right onlyDesktop">
+                          <div class="minicard__price">
+                            <div class="productcard__prices">
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">674.94</div>
+                                  <div class="productcard__priceunit">₽/кг</div>
+                                </div>
+                              </div>
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <!-- <div class="productcard__badge">12%</div> -->
+                              </div>
+
+                            </div>
+                          </div>
+                          <!-- /.minicard__price -->
+                          <div class="productcard__cart">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                              data-toggleclass="active">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+
+                          <div class="shopbutton">
+                            <a href="#" class="btn btn_main btn_round">Где купить?</a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product1.jpg" alt="" title="" width="177" height="176">
+                          </a>
+                          <div class="minicard__info onlyMobile">
+                            <a href='#' class="minicard__title ">Кета в масле 280 гр.</a>
+                            <div class="minicard__right ">
+                              <div class="minicard__price">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">762.92</div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">674.94</div>
+                                      <div class="productcard__priceunit">₽/кг</div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                              </div>
+                              <!-- /.minicard__price -->
+                            </div>
+                          </div>
+                          <!-- /.minicard__info -->
+                          <div class="minicard__main">
+                            <a href='#' class="minicard__title onlyDesktop">Кета в масле 280 гр.</a>
+                            <!-- /.minicard__title -->
+                            <div class="minicard__buyblock">
+
+                              <div class="minicard__count">
+                                <div class="buyblock__quantity">
+                                  <div class="quantity">
+                                    <span class="quantity-minus" data-field="quantity">
+                                      <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                    </span>
+                                    <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                      min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                      data-entity="quantity" data-item="">
+                                    <span class="quantity-plus" data-field="quantity">
+                                      <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="minicard__amount">
+                                  <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                </div>
+                              </div>
+                              <!-- /.minicard__count -->
+                              <!-- /.minicard__amount -->
+                            </div>
+                            <!-- /.minicard__buyblock -->
+                            <div class="minicard__buttons">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                                  <span>Удалить из списка</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button onlyMobile">
+                                <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                                  data-toggleclass="active">
+                                  <div class="tocart__content tocart__before">
+                                    <span>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right onlyDesktop">
+                          <div class="minicard__price">
+                            <div class="productcard__prices">
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">674.94</div>
+                                  <div class="productcard__priceunit">₽/кг</div>
+                                </div>
+                              </div>
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <!-- <div class="productcard__badge">12%</div> -->
+                              </div>
+
+                            </div>
+                          </div>
+                          <!-- /.minicard__price -->
+                          <div class="productcard__cart">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                              data-toggleclass="active">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product1.jpg" alt="" title="" width="177" height="176">
+                          </a>
+                          <div class="minicard__info onlyMobile">
+                            <a href='#' class="minicard__title ">Кета в масле 280 гр.</a>
+                            <div class="minicard__right ">
+                              <div class="minicard__price">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">762.92</div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">674.94</div>
+                                      <div class="productcard__priceunit">₽/кг</div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                              </div>
+                              <!-- /.minicard__price -->
+                            </div>
+                          </div>
+                          <!-- /.minicard__info -->
+                          <div class="minicard__main">
+                            <a href='#' class="minicard__title onlyDesktop">Кета в масле 280 гр.</a>
+                            <!-- /.minicard__title -->
+                            <div class="minicard__buyblock">
+
+                              <div class="minicard__count">
+                                <div class="buyblock__quantity">
+                                  <div class="quantity">
+                                    <span class="quantity-minus" data-field="quantity">
+                                      <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                    </span>
+                                    <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                      min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                      data-entity="quantity" data-item="">
+                                    <span class="quantity-plus" data-field="quantity">
+                                      <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="minicard__amount">
+                                  <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                </div>
+                              </div>
+                              <!-- /.minicard__count -->
+                              <!-- /.minicard__amount -->
+                            </div>
+                            <!-- /.minicard__buyblock -->
+                            <div class="minicard__buttons">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                                  <span>Удалить из списка</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button onlyMobile">
+                                <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                                  data-toggleclass="active">
+                                  <div class="tocart__content tocart__before">
+                                    <span>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right onlyDesktop">
+                          <div class="minicard__price">
+                            <div class="productcard__prices">
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">674.94</div>
+                                  <div class="productcard__priceunit">₽/кг</div>
+                                </div>
+                              </div>
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <!-- <div class="productcard__badge">12%</div> -->
+                              </div>
+
+                            </div>
+                          </div>
+                          <!-- /.minicard__price -->
+                          <div class="productcard__cart">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                              data-toggleclass="active">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product1.jpg" alt="" title="" width="177" height="176">
+                          </a>
+                          <div class="minicard__info onlyMobile">
+                            <a href='#' class="minicard__title ">Кета в масле 280 гр.</a>
+                            <div class="minicard__right ">
+                              <div class="minicard__price">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">762.92</div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">674.94</div>
+                                      <div class="productcard__priceunit">₽/кг</div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                              </div>
+                              <!-- /.minicard__price -->
+                            </div>
+                          </div>
+                          <!-- /.minicard__info -->
+                          <div class="minicard__main">
+                            <a href='#' class="minicard__title onlyDesktop">Кета в масле 280 гр.</a>
+                            <!-- /.minicard__title -->
+                            <div class="minicard__buyblock">
+
+                              <div class="minicard__count">
+                                <div class="buyblock__quantity">
+                                  <div class="quantity">
+                                    <span class="quantity-minus" data-field="quantity">
+                                      <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                    </span>
+                                    <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                      min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                      data-entity="quantity" data-item="">
+                                    <span class="quantity-plus" data-field="quantity">
+                                      <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="minicard__amount">
+                                  <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                </div>
+                              </div>
+                              <!-- /.minicard__count -->
+                              <!-- /.minicard__amount -->
+                            </div>
+                            <!-- /.minicard__buyblock -->
+                            <div class="minicard__buttons">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                                  <span>Удалить из списка</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button onlyMobile">
+                                <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                                  data-toggleclass="active">
+                                  <div class="tocart__content tocart__before">
+                                    <span>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right onlyDesktop">
+                          <div class="minicard__price">
+                            <div class="productcard__prices">
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">674.94</div>
+                                  <div class="productcard__priceunit">₽/кг</div>
+                                </div>
+                              </div>
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <!-- <div class="productcard__badge">12%</div> -->
+                              </div>
+
+                            </div>
+                          </div>
+                          <!-- /.minicard__price -->
+                          <div class="productcard__cart">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                              data-toggleclass="active">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product1.jpg" alt="" title="" width="177" height="176">
+                          </a>
+                          <div class="minicard__info onlyMobile">
+                            <a href='#' class="minicard__title ">Кета в масле 280 гр.</a>
+                            <div class="minicard__right ">
+                              <div class="minicard__price">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">762.92</div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">674.94</div>
+                                      <div class="productcard__priceunit">₽/кг</div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                              </div>
+                              <!-- /.minicard__price -->
+                            </div>
+                          </div>
+                          <!-- /.minicard__info -->
+                          <div class="minicard__main">
+                            <a href='#' class="minicard__title onlyDesktop">Кета в масле 280 гр.</a>
+                            <!-- /.minicard__title -->
+                            <div class="minicard__buyblock">
+
+                              <div class="minicard__count">
+                                <div class="buyblock__quantity">
+                                  <div class="quantity">
+                                    <span class="quantity-minus" data-field="quantity">
+                                      <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                    </span>
+                                    <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                      min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                      data-entity="quantity" data-item="">
+                                    <span class="quantity-plus" data-field="quantity">
+                                      <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="minicard__amount">
+                                  <div class="minicard__pricecount">674.94 ₽/кг.</div>
+                                </div>
+                              </div>
+                              <!-- /.minicard__count -->
+                              <!-- /.minicard__amount -->
+                            </div>
+                            <!-- /.minicard__buyblock -->
+                            <div class="minicard__buttons">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                                  <span>Удалить из списка</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button onlyMobile">
+                                <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                                  data-toggleclass="active">
+                                  <div class="tocart__content tocart__before">
+                                    <span>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right onlyDesktop">
+                          <div class="minicard__price">
+                            <div class="productcard__prices">
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">674.94</div>
+                                  <div class="productcard__priceunit">₽/кг</div>
+                                </div>
+                              </div>
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <!-- <div class="productcard__badge">12%</div> -->
+                              </div>
+
+                            </div>
+                          </div>
+                          <!-- /.minicard__price -->
+                          <div class="productcard__cart">
+                            <button aria-label="button" class="btn btn_cart" data-entity="add2basket" data-item=""
+                              data-toggleclass="active">
+                              <div class="tocart__content tocart__before">
+                                <span>Купить</span>
+                              </div>
+                              <div class="tocart__content tocart__after">
+                                <span>В корзине</span>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+
+                </div>
+                <!-- /.cartblock__items -->
+              </div>
+              <div class="cartblock__aside">
+                <aside>
+                  <div class="infocard carttotal" id="asidetotal">
+                    <div class="carttotal__title">Ваш список <span class="carttotal__count">5</span>
+                    </div>
+                    <div class="carttotal__params">
+                      <div class="carttotal__param">
+                        <div class="carttotal__paramtitle">Вес заказа:</div>
+                        <div class="carttotal__paramvalue">10,4 кг</div>
+                      </div>
+                      <!-- /.carttotal__param -->
+                      <div class="carttotal__param">
+                        <div class="carttotal__paramtitle">Всего товаров</div>
+                        <div class="carttotal__paramvalue">3 шт.</div>
+                      </div>
+                      <!-- /.carttotal__param -->
+                      <div class="carttotal__param">
+                        <div class="carttotal__paramtitle">Стоимость доставки</div>
+                        <div class="carttotal__paramvalue">99 ₽</div>
+                      </div>
+                      <!-- /.carttotal__param -->
+                      <div class="carttotal__param">
+                        <div class="carttotal__paramtitle">Общая скидка:</div>
+                        <div class="carttotal__paramvalue carttotal__paramvalue_red">-4 028 ₽</div>
+                      </div>
+                      <!-- /.carttotal__param -->
+                    </div>
+                    <!-- /.carttotal__params -->
+                    <div class="carttotal__summary flex justify-between">
+                      <span>Итого:</span>
+                      <span>21 580 ₽</span>
+                    </div>
+                    <div class="carttotal__button">
+                      <button class="tocart btn btn_main tocart_lightning">
+
+                        <span>Купить все</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="infocard">
+                    <div class="deliveryblock">
+                      <div class="icontitle">
+                        <img src="img/deliveryblock.svg" alt="Условия" title="Условия" width="26" height="26" >
+                        <span>Условия</span>
+                      </div>
+                      <div class="listicon">
+                        <ul>
+                          <li>Минимальная сумма заказа 500 рублей!</li>
+                          <li>Стоимость доставки – 249 рублей.</li>
+                          <li>При заказе от 2000 рублей БЕСПЛАТНО.</li>
+                          <li>При заказе от 500 рублей с доставкой по Одинцовскому г. о. БЕСПЛАТНО.</li>
+                        </ul>
+                      </div>
+                      <!-- /.listicon -->
+                    </div>
+                    <!-- /.deliveryblock -->
+                  </div>
+                  <!-- /.infocard -->
+                </aside>
+              </div>
+              <!-- /.cartblock__aside -->
+            </div>
+            <!-- /.cartblock -->
+          </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

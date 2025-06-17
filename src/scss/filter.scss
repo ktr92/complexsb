@@ -1,0 +1,284 @@
+.ui-slider {
+  position: relative;
+}
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow:
+  inset 0 0 0 2px #df000f,
+}
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  font-size: 0.7em;
+  display: block;
+  border: 0;
+  overflow: hidden;
+}
+.ui-slider-horizontal {
+  height: 7px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -8px;
+  margin-left: -11px;
+}
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+.ui-widget-content {
+  height: 5px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 222px;
+}
+.ui-widget-header {
+  border: none;
+}
+
+.ui-widget-content {
+  background: #E2E2EA!important;
+}
+
+.ui-slider-range.ui-corner-all.ui-widget-header:last-child {
+  background: #df000f!important;
+
+}
+
+.ui-corner-all {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.filter__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter__form {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.filter__header img {
+  opacity: 0.5;
+  
+}
+.filter__item_open .filter__header img {
+  transform: rotate(-180deg);
+}
+
+.filter__item_close .filter__form {
+  display: none;
+}
+.formCost input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  
+  color: #25344F;
+}
+.formCost input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  
+  color: #25344F;
+}
+.formCost input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  
+  color: #25344F;
+}
+.formCost input:-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+
+  
+  color: #25344F;
+}
+.sliderCont {
+  width: 92%;
+  margin: auto;
+  height: 20px;
+}
+.formCost {
+  margin: 7px 0;
+}
+.formCost__inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#slider {
+  width: 100%;
+}
+.filter__price {
+  width: 100%;
+}
+.dcheckbox {
+  margin-bottom: 5px;
+}
+
+.formCost__delimeter {
+  width: 10px;
+height: 2px;
+margin-top: 3px;
+
+background: #E2E2EA;
+border-radius: 55px;
+}
+span.dcheckbox__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+ 
+  color: #25344F;
+  transition: all 0.5s;
+}
+.dcheckbox input[type="checkbox"] {
+  display: none;
+}
+.dcheckbox input[type="radio"] {
+  display: none;
+}
+span.dcheckbox__text:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(37, 52, 79, 0.4);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.dcheckbox label {
+  padding-left: 0;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: all 0.5s;
+  position: relative;
+  padding-left: 26px;
+  display: block;
+  width: 100%;
+}
+.dcheckbox label:last-child {
+  margin-bottom: 0;
+}
+.dcheckbox label:hover .dcheckbox__text:before {
+  border-color: $yellow;
+  background-image: url(../img/checkhover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+}
+.dcheckbox input[type="checkbox"]:checked + .dcheckbox__text:before {
+  border-color: #df000f;
+  background-color: #df000f;
+  background-image: url(../img/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dcheckbox input[type="checkbox"]:checked + .dcheckbox__text {
+  opacity: 1;
+}
+.dcheckbox input[type="radio"]:checked + .dcheckbox__text:before {
+  border-color: #df000f;
+  background-color: #df000f;
+  background-image: url(../img/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.dcheckbox input[type="radio"]:checked + .dcheckbox__text {
+  opacity: 1;
+}
+
+.filter__item {
+  margin-bottom: 32px;
+}
+
+.formCost input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 21px;
+  height: 42px;
+  text-align: center;
+  color: #25344F;
+  width: 120px;
+}
+.formCost input.notchanged {
+  color: rgba(37, 52, 79, 0.5);
+}
+.formCost input:focus {
+  color: #25344F;
+}
+.formCost__price_left {
+  position: relative;
+}
+.formCost__price_right {
+  position: relative;
+}
+
+.filter__header {
+  text-transform: uppercase;
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #25344F;
+  margin-bottom: 12px;
+}
+.filter__price {
+  max-width: 100%;
+}
+.filter__form {
+  max-height: 309px;
+  overflow-y: auto;
+}
+.filter__header-js {
+  cursor: pointer;
+}
+.btn_main_reset {
+  background-image: url(../img/reset.svg);
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-position: center left 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "Futura PT Book";
+  min-width: initial;
+  color: #fff;
+  text-transform: none;
+  height: 52px;
+  line-height: 52px;
+}
+
+.dcheckbox__count {
+  color: $gray;
+}

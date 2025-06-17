@@ -1,0 +1,161 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="page pb-0">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li>
+                    <a href="/">
+                      <span>
+                        <img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Мясо, птица</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="container">
+            <div class="pageheader pageheader__type2">
+              <h1>Наши магазины</h1>
+            </div>
+            <div class="pageheader pageheader__type2 flex items-center content-between pageheader_toggler">
+              <div class="togglelink">
+                <div class="togglelink__items">
+                  <a href="#" class="togglelink__link active">Москва</a>
+                  <a href="#" class="togglelink__link">Санкт-Петербург</a>
+                </div><!-- /.togglelink__items -->
+              </div><!-- /.togglelink -->
+              <div class="toggletab">
+                <div class="toggletab__button">
+                  <a href="#" data-action="changeShops_list" class="changeShops changeShops_list active">
+                    <img src="img/changeShops_list.svg" alt="" class="changeShops_list">
+                    <span class="changeShops_list">Показать на карте</span>
+
+                  </a>
+                  <a href="#" data-action="changeShops_map" class="changeShops changeShops_map">
+                    <img src="img/changeShops_map.svg" alt="" class="changeShops_map">
+                    <span class="changeShops_map">Показать списком</span>
+                  </a>
+                </div><!-- /.toggletab__button -->
+              </div><!-- /.toggletab -->
+            </div>
+          </div>
+
+          <div class="togglecontent">
+            <div class="container">
+              <div class="togglecontent__shops changeShops_list active">
+                <div class="shopslist">
+                  <div class="shopslist__items">
+                    <div class="shopslist__item">
+                      <div class="shopslist__main">
+                        <div class="shopslist__image">
+                          <img src="img/shopslist__image.svg" alt="магазины" title="магазины" width="50" height="66">
+                        </div>
+                        <div class="shopslist__content">
+                          <a href="#" class="shopslist__title">800-летия Москвы <img src="img/Vector3Stroke.svg" alt="" title="" class="onlyMobile"></a>
+                          <div class="shopslist__address">г. Москва, ул 800 летия Москвы, д 22, к 2...</div>
+                        </div><!-- /.shopslist__content -->
+                      </div><!-- /.shopslist__main -->
+                      <div class="shopslist__info">
+                        <div class="shopslist__param">Пн-Вс: с 9:00 до 21:00</div>
+                        <div class="shopslist__link onlyDesktop"><a href="#"><img src="img/Vector3Stroke.svg" alt="ссылка" title="ссылка" width="7" height="11"></a>
+                        </div>
+                      </div><!-- /.shopslist__info -->
+                    </div><!-- /.shopslist__item -->
+                    <div class="shopslist__item">
+                      <div class="shopslist__main">
+                        <div class="shopslist__image">
+                          <img src="img/shopslist__image.svg" alt="магазины" title="магазины" width="50" height="66">
+                        </div>
+                        <div class="shopslist__content">
+                          <div class="shopslist__title">800-летия Москвы</div>
+                          <div class="shopslist__address">г. Москва, ул 800 летия Москвы, д 22, к 2...</div>
+                        </div><!-- /.shopslist__content -->
+                      </div><!-- /.shopslist__main -->
+                      <div class="shopslist__info">
+                        <div class="shopslist__param">Пн-Вс: с 9:00 до 21:00</div>
+                        <div class="shopslist__link onlyDesktop"><a href="#"><img src="img/Vector3Stroke.svg" alt="ссылка" title="ссылка" width="7" height="11"></a>
+                        </div>
+                      </div><!-- /.shopslist__info -->
+                    </div><!-- /.shopslist__item -->
+                    <div class="shopslist__item">
+                      <div class="shopslist__main">
+                        <div class="shopslist__image">
+                          <img src="img/shopslist__image.svg" alt="магазины" title="магазины" width="50" height="66">
+                        </div>
+                        <div class="shopslist__content">
+                          <div class="shopslist__title">800-летия Москвы</div>
+                          <div class="shopslist__address">г. Москва, ул 800 летия Москвы, д 22, к 2...</div>
+                        </div><!-- /.shopslist__content -->
+                      </div><!-- /.shopslist__main -->
+                      <div class="shopslist__info">
+                        <div class="shopslist__param">Пн-Вс: с 9:00 до 21:00</div>
+                        <div class="shopslist__link onlyDesktop"><a href="#"><img src="img/Vector3Stroke.svg" alt="ссылка" title="ссылка" width="7" height="11"></a>
+                        </div>
+                      </div><!-- /.shopslist__info -->
+                    </div><!-- /.shopslist__item -->
+                    <div class="shopslist__item">
+                      <div class="shopslist__main">
+                        <div class="shopslist__image">
+                          <img src="img/shopslist__image.svg" alt="магазины" title="магазины" width="50" height="66">
+                        </div>
+                        <div class="shopslist__content">
+                          <div class="shopslist__title">800-летия Москвы</div>
+                          <div class="shopslist__address">г. Москва, ул 800 летия Москвы, д 22, к 2...</div>
+                        </div><!-- /.shopslist__content -->
+                      </div><!-- /.shopslist__main -->
+                      <div class="shopslist__info">
+                        <div class="shopslist__param">Пн-Вс: с 9:00 до 21:00</div>
+                        <div class="shopslist__link onlyDesktop"><a href="#"><img src="img/Vector3Stroke.svg" alt="ссылка" title="ссылка" width="7" height="11"></a>
+                        </div>
+                      </div><!-- /.shopslist__info -->
+                    </div><!-- /.shopslist__item -->
+                    <div class="shopslist__item">
+                      <div class="shopslist__main">
+                        <div class="shopslist__image">
+                          <img src="img/shopslist__image.svg" alt="магазины" title="магазины" width="50" height="66">
+                        </div>
+                        <div class="shopslist__content">
+                          <div class="shopslist__title">800-летия Москвы</div>
+                          <div class="shopslist__address">г. Москва, ул 800 летия Москвы, д 22, к 2...</div>
+                        </div><!-- /.shopslist__content -->
+                      </div><!-- /.shopslist__main -->
+                      <div class="shopslist__info">
+                        <div class="shopslist__param">Пн-Вс: с 9:00 до 21:00</div>
+                        <div class="shopslist__link onlyDesktop"><a href="#"><img src="img/Vector3Stroke.svg" alt="ссылка" title="ссылка" width="7" height="11"></a>
+                        </div>
+                      </div><!-- /.shopslist__info -->
+                    </div><!-- /.shopslist__item -->
+                  </div><!-- /.shopslist__items -->
+                </div><!-- /.shopslist -->
+              </div><!-- /.container -->
+            </div><!-- /.togglecontent__shops -->
+            <div class="togglecontent__shops changeShops_map">
+              <div class="shopsmap">
+                <div class="shopsmap__map">
+                  <div id="map"></div><!-- /#map -->
+                </div>
+              </div><!-- /.shopsmap -->
+            </div><!-- /.togglecontent__shops -->
+          </div><!-- /.togglecontent -->
+
+        </div>
+        </div>
+      </main>
+      <%= _.template(require('../includes/map.html').default)(data) %>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

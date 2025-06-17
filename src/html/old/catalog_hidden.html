@@ -1,0 +1,2438 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head_hidden.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li><a href="/"><span><img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16"></span></a></li>
+                  <li><a href=""><span>Каталог</span></a></li>
+                  <li><span>Рыба</span></li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="catalogpage">
+            <div class="container">
+              <div class="catalogpage__wrapper">
+                <div class="catalogpage__aside catalogaside">
+                  <aside>
+                    <div class="catalogaside__back">
+                      <a href="#">Рыба</a>
+                    </div>
+                    <div class="catalogaside__links catalogcats">
+                      <div class="catalogcats__item active">
+                        <a href="#">
+                          <span class="catalogcats__title">Все товары категории</span>
+                          <span class="catalogcats__count">2 433</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Куриные недели с выгодой 10%</span>
+                          <span class="catalogcats__count">58</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                      <div class="catalogcats__item">
+                        <a href="#">
+                          <span class="catalogcats__title">Курица </span>
+                          <span class="catalogcats__count">414</span>
+                        </a>
+                      </div>
+                      <!-- /.catalogcats__item -->
+                    </div>
+                    <!-- /.catalogaside__links catalogcats -->
+                    <div class="catalogaside__filter">
+                      <div class="filter">
+                        <form action="">
+                          <div class="filter__items">
+                            <div class="filter__item filter__item_open">
+                              <div class="filter__header filter__header-js">
+                                <span>Цена, ₽</span>
+                                <img src="img/filterArrow.svg" width="12" height="8" alt="" title="">
+                              </div>
+                              <div class="filter__form">
+                                <!-- тут начальная и конечная цена исходя из цен в каталоге -->
+                                <input type="hidden" value="0" id="limitMin1" wfd-invisible="true" />
+                                <input type="hidden" value="750" id="limitMax1" wfd-invisible="true" />
+                                <div class="filter__price">
+                                  <div class="sliderCont">
+                                    <div id="sliderprice1"
+                                      class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                      <div class="ui-slider-range ui-corner-all ui-widget-header"
+                                        style="left: 0%; width: 100%;"></div>
+                                      <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+                                        style="left: 0%;"></span>
+                                      <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
+                                        style="left: 100%;"></span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="formCost">
+                                  <div class="formCost__inputs">
+                                    <div class="formCost__price_left">
+                                      <label for="minCost1"></label>
+                                      <input type="text" id="minCost1" value="" placeholder="" class="notchanged">
+                                    </div>
+                                    <span class='formCost__delimeter'></span>
+                                    <div class="formCost__price_right">
+                                      <label for="maxCost1"></label>
+                                      <input type="text" id="maxCost1" value="" placeholder="" class="notchanged">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="filter__item filter__item_open">
+                              <div class="filter__header filter__header-js">
+                                <span>Предложения</span>
+                                <img src="img/filterArrow.svg" width="12" height="8" alt="" title="">
+                              </div>
+                              <div class="filter__form">
+                                <div class="filter__checkbox">
+                                  <div class="dcheckbox">
+                                    <label for="filter1-1" class="dcheckbox__label"><span>
+                                        <input type="checkbox" id="filter1-1">
+                                        <span class="dcheckbox__text">В наличии <span class='dcheckbox__count'>
+                                            241</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter1-2" class="dcheckbox__label"><span>
+                                        <input type="checkbox" checked="checked" id="filter1-2">
+                                        <span class="dcheckbox__text">Участвует в акции <span
+                                            class='dcheckbox__count'>43</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter1-3" class="dcheckbox__label"><span>
+                                        <input type="checkbox" id="filter1-3">
+                                        <span class="dcheckbox__text">Хиты продаж <span
+                                            class='dcheckbox__count'>21</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter1-4" class="dcheckbox__label"><span>
+                                        <input type="checkbox" checked="checked" id="filter1-4">
+                                        <span class="dcheckbox__text">Новинки <span
+                                            class='dcheckbox__count'>8</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="filter__item filter__item_open">
+                              <div class="filter__header filter__header-js">
+                                <span>Вид мяса</span>
+                                <img src="img/filterArrow.svg" width="12" height="8" alt="" title="">
+                              </div>
+                              <div class="filter__form">
+                                <div class="filter__checkbox">
+                                  <div class="dcheckbox">
+                                    <label for="filter2-1" class="dcheckbox__label"><span>
+                                        <input type="checkbox" id="filter2-1">
+                                        <span class="dcheckbox__text">Говядина <span class='dcheckbox__count'>
+                                            8</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter2-2" class="dcheckbox__label"><span>
+                                        <input type="checkbox" checked="checked" id="filter2-2">
+                                        <span class="dcheckbox__text">Курица <span
+                                            class='dcheckbox__count'>43</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter2-3" class="dcheckbox__label"><span>
+                                        <input type="checkbox" id="filter2-3">
+                                        <span class="dcheckbox__text">Свинина <span
+                                            class='dcheckbox__count'>21</span></span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="filter__item filter__item_open">
+                              <div class="filter__header filter__header-js">
+                                <span>Нарезка</span>
+                                <img src="img/filterArrow.svg" width="12" height="8" alt="" title="">
+                              </div>
+                              <div class="filter__form">
+                                <div class="filter__checkbox">
+                                  <div class="dcheckbox">
+                                    <label for="filter3-1" class="dcheckbox__label"><span>
+                                        <input type="checkbox" id="filter3-1">
+                                        <span class="dcheckbox__text">Кусок / в упаковке</span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter3-2" class="dcheckbox__label"><span>
+                                        <input type="checkbox" checked="checked" id="filter3-2">
+                                        <span class="dcheckbox__text">Нарезка</span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                  <div class="dcheckbox">
+                                    <label for="filter3-3" class="dcheckbox__label"><span>
+                                        <input type="checkbox" id="filter3-3">
+                                        <span class="dcheckbox__text">Батон</span>
+                                      </span>
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- /.catalogaside__filter -->
+                    <div class="catalogaside__banners">
+                      <div class="catalogaside__banner">
+                        <a href="">
+                        <img src="img/banner.webp" alt="" title="" width="268" height="472">
+                        </a>
+                      </div>
+                      <!-- /.catalogaside__banner -->
+                    </div>
+                  </aside>
+                </div>
+                <!-- /.catalogpage__aside -->
+                <div class="catalogpage__main">
+                  <div class="catalogheader">
+                    <div class="catalogheader__left">
+                      <div class="catalogheader__title">
+                        <h1>Рыба</h1>
+                      </div>
+                      <!-- /.catalogheader__title -->
+                    </div>
+                    <!-- /.catalogheader__left -->
+                    <div class="catalogheader__right">
+                      <div class="catalogheader__panel">
+                        <div class="dropdownpanel">
+                          <div class="dropdownselect">
+                            <div class="dropdown-select dropdown-select--type1">
+                              <div class="dropdown-select__title">
+                                <img src="img/Sorting.svg" alt="" title="" width="26" height="26">
+                                <span>
+                                  По умолчанию
+                                </span>
+                              </div>
+                              <div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
+                                <div class="dropdown-menu-inner rounded3">
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>По популярности (убывание)</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item">
+                                    <span class="dropdown-select__list-link dropdown-select__list-link--current">
+                                      <span>По популярности (возрастание)</span>
+                                    </span>
+                                  </div>
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>По алфавиту (убывание)</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>По алфавиту (возрастание)</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item font_xs">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>По цене (убывание)</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item font_xs">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>По цене (возрастание)</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.dropdownselect -->
+                        </div>
+                        <!-- /.dropdownpanel -->
+                        <div class="mobilefilter onlyMobile">
+                          <a href="#" class='btn_main btn_icon js-mobilefilter'>
+                            <img src="img/mobilefilter.svg" alt="" title="" width="20" height="20">
+                          </a>
+                        </div>
+                        <!-- /.mobilefilter -->
+                      </div>
+                      <!-- /.catalogheader__panel -->
+                    </div>
+                    <!-- /.catalogheader__right -->
+                  </div>
+                  <!-- /.catalogheader -->
+                  <div class="catalogbanner">
+                    <div class="catalogbanner__wrapper">
+                      <a href="#"><img src="img/catalogbanner.jpg" alt="" title="" width="1157" height="203"></a>
+                    </div>
+                    <!-- /.catalogbanner__wrapper -->
+                  </div>
+
+                  <div class="filternav">
+                    <div class="filternav__items">
+                      <div class="filternav__item">
+                        <div class="filternav__title">Выбрано 29 товаров:</div>
+                      </div>
+                      <!-- /.filternav__item -->
+                      <div class="filternav__item filternav__item--value">
+                        <div class="filternav__selected">
+                          <div class="filternav__button">
+                            <span class='filternav__name'>от 0 до 750 ₽</span>
+                            <span class='filternav__remove'>
+                              <a href="#"><img src="img/filterclose.svg" alt="" title="" width="8" height="8"></a>
+                            </span>
+                          </div>
+                          <!-- /.filternav__button -->
+                        </div>
+                        <!-- /.filternav__selected -->
+                      </div>
+                      <!-- /.filternav__item -->
+                      <div class="filternav__item filternav__item--value">
+                        <div class="filternav__selected">
+                          <div class="filternav__button">
+                            <span class='filternav__name'>Только со скидкой</span>
+                            <span class='filternav__remove'>
+                              <a href="#"><img src="img/filterclose.svg" alt="" title="" width="8" height="8"></a>
+                            </span>
+                          </div>
+                          <!-- /.filternav__button -->
+                        </div>
+                        <!-- /.filternav__selected -->
+                      </div>
+                      <!-- /.filternav__item -->
+                      <div class="filternav__item filternav__item--value">
+                        <div class="filternav__selected">
+                          <div class="filternav__button">
+                            <span class='filternav__name'>Останкино, самсон, мясннийкицй ряд</span>
+                            <span class='filternav__remove'>
+                              <a href="#"><img src="img/filterclose.svg" alt="" title="" width="8" height="8"></a>
+                            </span>
+                          </div>
+                          <!-- /.filternav__button -->
+                        </div>
+                        <!-- /.filternav__selected -->
+                      </div>
+                      <!-- /.filternav__item -->
+                      <div class="filternav__item">
+                        <div class="filternav__selected">
+                          <div class="filternav__button filternav__button_clear">
+                            <a href="#">
+                              <span class='filternav__name'>Очистить все</span>
+                              <span class='filternav__remove'>
+                                <img src="img/filterclose.svg" alt="" title="" width="8" height="8"></a>
+                            </span>
+                            </a>
+                          </div>
+                          <!-- /.filternav__button -->
+                        </div>
+                        <!-- /.filternav__selected -->
+                      </div>
+                      <!-- /.filternav__item -->
+                    </div>
+                    <!-- /.filternav__items -->
+                  </div>
+                  <!-- /.filternav -->
+                  <div class="cataloglist">
+                    <div class="cataloglist__items">
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="3">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">ХИТ</span>
+                                </div>
+                              </div>
+                            </div>
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp" alt="" title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">674.94</div>
+                                    <div class="productcard__priceunit">₽/кг</div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">762.92</div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <a aria-label="link" href="#" tabindex="0" class="catalog-fav" data-item="3114"
+                                  data-step="1" data-entity="add-wish-list"> <!-- <div class="catalog-fav active"> -->
+                                  <div>
+                                    <span class="fav-default">
+                                      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#2e2f31"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                                        </path>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">Кета в масле 280 гр.</a>
+                            </div>
+                            <div class="productcard__param">
+                              Без консервантов!
+                            </div>
+                            <div class="productcard__rating">
+                              <!--  сюда выводится округленный до целого рейтинг  -->
+                              <div class="cardrating" data-rating="4">
+                                <div class="cardrating__item">
+                                  <div class="cardrating__form">
+                                    <div class="cardrating__value">
+                                      <span>4</span>
+                                    </div>
+                                    <span class="score">
+                                      <div class="score-wrap">
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                          <i class="fa fa-star" aria-hidden="true"></i>
+                                        
+                                      </div>
+                                    </span>
+                                  </div>
+                                  <div class="productcard__count">453</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__form">
+                              <form action="">
+                                <div class="productcard__fromwrapper">
+                                  <div class="productcard__quantity">
+                                    <div class="quantity">
+                                      <span class="quantity-minus" data-field="quantity">
+                                        <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
+                                      </span>
+                                      <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
+                                        min='0.3' value="0.3" name="quantity" class="quantity-field"
+                                        data-entity="quantity" data-item="">
+                                      <span class="quantity-plus" data-field="quantity">
+                                        <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
+                                      </span>
+                                    </div>
+                                  </div><!-- /.productcard__quantity -->
+                                  <div class="productcard__addcart">
+                                    <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                      data-item="" data-toggleclass="active">
+                                      <div class="tocart__content tocart__before">
+                                        <span>В корзину</span>
+                                      </div>
+                                      <div class="tocart__content tocart__after">
+                                        <span>В корзине</span>
+                                      </div>
+                                    </button>
+                                  </div><!-- /.productcard__addcart -->
+                                </div><!-- /.productcard__fromwrapper -->
+
+                              </form>
+                            </div>
+
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                        <!-- /.productcard -->
+                      </div>
+                      <!-- /.cataloglist__item -->
+                    </div>
+                    <!-- /.cataloglist__items -->
+                    <div class="catalognav">
+                      <div class="catalognav__showmore">
+                        <a href="#" class='showmorelink'>
+                          <img src="img/Synchronize.svg" alt="Обновить" title="Обновить" width="28" height="28">
+                          <span>Показать еще 24 товаров</span>
+                        </a>
+                      </div>
+                      <div class="catalognav__pagination">
+                        <div class="paginationblock">
+                          <div class="pagination">
+                            <a href="#" class='pagination__arrLeft disabled'>
+                              <img src="img/pagiRight.svg" alt="" title="" width="20" height="18">
+                            </a>
+                            <ul>
+                              <li class="active"><a href="">1</a></li>
+                              <li><a href="">2</a></li>
+                              <li><a href="">3</a></li>
+                              <li><a href="">4</a></li>
+                              <li><a href="">5</a></li>
+                              <li><span>...</span></li>
+                              <li><a href="">112</a></li>
+                            </ul>
+                            <a href="#" class='pagination__arrRight'>
+                              <img src="img/pagiRight.svg" alt="" title="" width="20" height="18">
+                            </a>
+                          </div>
+                        </div>
+                        <div class="showcountblock">
+                          <div class="dropdownselect">
+                            <div class="dropdown-select dropdown-select--border">
+                              <div class="dropdown-select__title">
+                                <span class='dropdown-caption'>
+                                  Показывать по:
+                                </span>
+                                <span class='dropdown-value'>
+                                  40
+                                </span>
+                              </div>
+                              <div class="dropdown-select__list dropdown-menu-wrapper" role="menu">
+                                <div class="dropdown-menu-inner rounded3">
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link current" rel="nofollow">
+                                      <span>40</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>60</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>90</span>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-select__list-item">
+                                    <a href="#" class="dropdown-select__list-link" rel="nofollow">
+                                      <span>150</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.dropdownselect -->
+                        </div>
+                        <!-- /.showcountblock -->
+                      </div>
+                    </div>
+                    <!-- /.catalognav -->
+                  </div>
+                  <!-- /.cataloglist -->
+                </div>
+                <!-- /.catalogpage__main -->
+              </div>
+              <!-- /.catalogpage__wrapper -->
+            </div>
+            <!-- /.container -->
+
+          </div>
+          <!-- /.catalogpage -->
+        </div>
+        <!-- /.page -->
+        <div class="seoblock">
+          <div class="container">
+            <div class="seoblock__wrapper">
+              <div class="seoblock__title">
+                <h2>Высокотехнологичное предприятие, оснащенное современным оборудованием от ведущих мировых
+                  производителей</h2>
+              </div>
+              <div class="seoblock__text">
+                <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности
+                  позволяет оценить значение форм развития. Не следует, однако забывать, что постоянное
+                  информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный
+                  эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Значимость этих
+                  проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и реализации
+                  систем массового участия. Задача организации, в особенности же консультация с широким активом влечет
+                  за собой процесс внедрения и модернизации систем массового участия. Не следует, однако забывать, что
+                  сложившаяся структура организации позволяет выполнять важные задания по разработке систем массового
+                  участия.</p>
+                <p> С другой стороны консультация с широким активом обеспечивает широкому кругу (специалистов) участие в
+                  формировании новых предложений. Товарищи! новая модель организационной деятельности требуют от нас
+                  анализа соответствующий условий активизации. Задача организации, в особенности же новая модель
+                  организационной деятельности требуют определения и уточнения направлений прогрессивного развития. Не
+                  следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает
+                  создание новых предложений.</p>
+              </div>
+              <!-- /.seoblock__text -->
+            </div>
+            <!-- /.seoblock__wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.seoblock -->
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

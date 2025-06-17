@@ -1,0 +1,175 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+  <div class="page pb-0">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="" width="16" height="16">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="container">
+    
+      <div class=" customblock_flex contactspage">
+        <div class="customblock__left customblock__left_contacts">
+          <div class="pageheader pageheader__type2">
+            <h1>Контакты</h1>
+          </div>
+          <div class="customblock__content">
+            <div class="footer__informblock ">
+              <div class="footer__contacts">
+                <div class="contacts">
+                  <div class="contacts__phone">
+                    <a href="tel:+74995860595">+7 (499) 586-05-95</a>
+                  </div>
+                  <div class="contacts__info">
+                    <div class="contacts__text">Горячая линия</div>
+                  </div><!-- /.contacts__info -->
+                  <div class="contacts__phone contacts__phone_mail">
+                    <a href="mailto:otzyv@krasikra.com">otzyv@krasikra.com</a>
+                  </div>
+                  
+                 
+                </div>
+                <div class="contacts">
+                  <div class="contacts__phone">
+                    <a href="tel:+78005500772">+7 (800) 550-07-72</a>
+                  </div>
+                 
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел кадров <br> (Звонки по всей России бесплатно)</div>
+                  </div><!-- /.contacts__info -->
+              
+               
+                  <div class="contacts__phone">
+                    <a href="tel:+74995860595">+7 (499) 586-05-95</a>
+                  </div>                 
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел кадров <br> (Круглосуточный автоответчик)</div>
+                  </div><!-- /.contacts__info -->
+
+                  <div class="contacts__phone contacts__phone_mail">
+                    <a href="mailto:ok@krasikra.com">ok@krasikra.com</a>
+                  </div>
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел кадров</div>
+                  </div><!-- /.contacts__info -->
+                </div>
+                <div class="contacts">
+                  <div class="contacts__phone contacts__phone_mail">
+                    <a href="mailto:realtor@krasikra.com">realtor@krasikra.com</a>
+                  </div>
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел аренды</div>
+                  </div><!-- /.contacts__info -->
+                </div>
+                
+                <div class="contacts">
+                  <div class="contacts__phone contacts__phone_mail">
+                    <a href="mailto:arenda@krasikra.com">arenda@krasikra.com</a>
+                  </div>
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел субаренды</div>
+                  </div><!-- /.contacts__info -->
+                </div>
+                <div class="contacts">
+                  <div class="contacts__phone">
+                    <a href="tel:+74995860001">+7 (499) 586-00-01</a>
+                  </div>   
+                  <div class="contacts__info">
+                    <div class="contacts__text">Горячая линия для продавцов</div>
+                  </div><!-- /.contacts__info -->
+                </div>
+                <div class="contacts">
+                  <div class="contacts__phone">
+                    <a href="tel:+79255526555">+7 (925) 552-65-55 1</a>
+                  </div>  
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел закупки</div>
+                  </div><!-- /.contacts__info --> 
+                  <div class="contacts__phone">
+                    <a href="tel:+79150128908">+7 (915) 012-89-08</a>
+                  </div>  
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел закупки</div>
+                  </div><!-- /.contacts__info -->
+                  <div class="contacts__phone contacts__phone_mail">
+                    <a href="mailto:zakupka@krasikra.com">zakupka@krasikra.com</a>
+                  </div> 
+                  <div class="contacts__info">
+                    <div class="contacts__text">Отдел закупки</div>
+                  </div><!-- /.contacts__info --> 
+                </div>
+                <div class="contacts">
+               
+                  <div class="contacts__phone contacts__phone_mail">
+                    <a href="mailto:pressa@krasikra.com">pressa@krasikra.com</a>
+                  </div> 
+                  <div class="contacts__info">
+                    <div class="contacts__text">Для СМИ</div>
+                  </div><!-- /.contacts__info -->
+                </div>
+
+              </div><!-- /.footer__phone -->
+              <div class="footer__call">
+                <a href="#popup_callback" data-toggle="modal" class="callback btn_main btn_full btn_round">Заказать звонок</a>
+              </div><!-- /.footer__call -->
+              <!-- <div class="footer__address">
+               адрес
+              </div> -->
+              <div class="footer__socials">
+                <div class="socials">
+                  <div class="socials__items">
+                    <div class="socials__item"><a aria-label="link" href=""><svg alt="" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.91 6.097A9.648 9.648 0 0013.04 3.25c-5.35 0-9.708 4.354-9.708 9.706a9.654 9.654 0 001.294 4.852l-1.377 5.03 5.148-1.351a9.716 9.716 0 004.64 1.184h.003c5.351 0 9.706-4.355 9.709-9.71 0-2.592-1.01-5.03-2.84-6.864zM13.04 21.03h-.003c-1.447 0-2.87-.39-4.107-1.124l-.295-.174-3.056.8.815-2.978-.19-.304a8.047 8.047 0 01-1.235-4.294c0-4.447 3.622-8.065 8.074-8.065 2.155 0 4.18.84 5.704 2.364a8.024 8.024 0 012.361 5.707c0 4.45-3.621 8.068-8.068 8.068zm4.425-6.043c-.242-.12-1.435-.708-1.657-.787-.222-.083-.384-.12-.546.12-.162.245-.625.79-.768.953-.14.158-.283.18-.524.06-.244-.12-1.025-.378-1.952-1.206-.72-.641-1.209-1.438-1.349-1.68-.142-.244-.015-.374.105-.494.111-.108.245-.283.365-.426.12-.14.162-.24.244-.403.08-.162.039-.304-.022-.425-.06-.12-.546-1.317-.749-1.803-.197-.473-.396-.406-.546-.416-.14-.006-.301-.006-.463-.006a.888.888 0 00-.647.305c-.223.241-.848.828-.848 2.021 0 1.194.87 2.35.99 2.511.121.159 1.711 2.609 4.145 3.66.578.25 1.029.4 1.381.51.58.184 1.11.16 1.53.099.466-.07 1.434-.587 1.637-1.155.2-.565.2-1.051.14-1.152-.06-.102-.222-.162-.466-.286z" fill="#df000f"></path>
+                        </svg></a></div><!-- /.socials__item -->
+                    <div class="socials__item"><a aria-label="link" href=""><svg alt="" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M22.287 3.263a2.427 2.427 0 00-1.145.173c-.488.192-8.126 3.405-15.247 6.403l-2.353.99c-.911.37-1.371.97-1.371 1.78 0 .566.24 1.335 1.384 1.788l3.971 1.59c.344 1.03 1.141 3.423 1.342 4.059.119.377.42 1.327 1.18 1.549a1.5 1.5 0 00.485.08c.48 0 .825-.223.994-.353l2.525-2.135 3.066 2.835c.118.12.743.728 1.582.728 1.048 0 1.842-.872 2.008-1.716.09-.462 3.047-15.306 3.047-15.304.265-1.19-.212-1.808-.518-2.072a1.723 1.723 0 00-.95-.395zm-.718 2.34c-.408 2.047-2.634 13.223-2.973 14.834l-4.48-4.145-3.041 2.575.842-3.294s5.81-5.88 6.159-6.223c.282-.274.34-.37.34-.465 0-.127-.065-.218-.215-.218-.136 0-.32.13-.417.19-1.239.772-6.513 3.777-9.109 5.254L4.91 12.606l1.828-.768c4.657-1.96 12.952-5.453 14.832-6.235z" fill="#df000f"></path>
+                        </svg></a></div><!-- /.socials__item -->
+                    <div class="socials__item"><a aria-label="link" href=""><svg alt="" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M24.788 19.068c-.973-1.752-3.48-3.857-4.516-4.773a.673.673 0 01-.055-.962c1.975-2.123 3.555-4.562 4.099-6.036.24-.65-.257-1.339-.957-1.339h-2.033c-.67 0-1.062.24-1.249.624-1.642 3.364-3.05 4.82-4.036 5.671-.552.477-1.412.082-1.412-.643V7.124A1.13 1.13 0 0013.494 6L9.78 5.958a.562.562 0 00-.454.9l.613.88c.231.306.356.677.356 1.057l-.004 3.964c0 .69-.835 1.027-1.331.544C7.28 11.668 5.824 8.33 5.3 6.733a1.13 1.13 0 00-1.075-.775l-2.003-.005c-.751 0-1.3.713-1.096 1.43 1.83 6.422 5.584 12.532 12.275 13.195a1.127 1.127 0 001.228-1.123v-2.083c0-.598.468-1.111 1.07-1.126l.064-.001c1.77 0 3.752 2.576 4.445 3.78.2.347.572.558.975.558h2.694c.786 0 1.29-.833.911-1.515z" fill="#df000f"></path>
+                        </svg></a></div><!-- /.socials__item -->
+                    <div class="socials__item"><a aria-label="link" href=""><svg alt="" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.937 2.708c-3.43 0-6.229 2.799-6.229 6.23v8.124c0 3.43 2.798 6.23 6.23 6.23h8.124c3.43 0 6.23-2.8 6.23-6.23V8.937c0-3.43-2.8-6.229-6.23-6.229H8.937zm0 1.625h8.125a4.592 4.592 0 014.604 4.604v8.125a4.593 4.593 0 01-4.604 4.605H8.937a4.592 4.592 0 01-4.604-4.605V8.937a4.592 4.592 0 014.604-4.604zm9.48 2.167a1.083 1.083 0 10-.001 2.166 1.083 1.083 0 000-2.166zM13 7.583A5.43 5.43 0 007.583 13 5.43 5.43 0 0013 18.417 5.43 5.43 0 0018.416 13 5.43 5.43 0 0013 7.583zm0 1.625A3.78 3.78 0 0116.79 13 3.78 3.78 0 0113 16.792 3.78 3.78 0 019.208 13 3.78 3.78 0 0113 9.208z" fill="#df000f"></path>
+                        </svg></a></div><!-- /.socials__item -->
+                  </div><!-- /.socials__items -->
+                </div>
+              </div><!-- /.footer__socials -->
+            </div>
+          </div>
+
+        </div>
+        <!-- /.customblock__left -->
+        <div class="customblock__right customblock__right_contacts">
+          <div id="map"></div><!-- /#map -->
+
+        </div>
+        <!-- /.customblock__right -->
+      </div>
+      <!-- /.customblock -->
+     
+    </div>
+  </div>
+  <%= _.template(require('../includes/map.html').default)(data) %>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>
