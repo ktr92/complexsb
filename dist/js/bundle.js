@@ -74,6 +74,12 @@ function lazyLoadSrc(selector) {
 }
 
 $(document).ready(function () {
+  $('.searchinput input').on("focus",  (e) => { 
+     $('.searchinput').addClass('active')
+  });
+  $('.searchinput input').on("blur",  (e) => { 
+     $('.searchinput').removeClass('active')
+  });
 
   $("[data-toggleclick]").on("click", function (e) {
     $(this).toggleClass("active")
@@ -142,6 +148,7 @@ $(document).ready(function () {
     $(".changeShops_list").removeClass("active")
     $(".changeShops_map").addClass("active")
   })
+
 
   $(document).on("click", "[data-action='changeShops_map']", (e) => {
     $(".changeShops_map").removeClass("active")
