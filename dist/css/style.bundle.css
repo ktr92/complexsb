@@ -7370,6 +7370,80 @@ textarea {
   justify-content: center;
   background: #fff; }
 
+.blockabout__wrapper {
+  display: flex;
+  gap: 10px; }
+  .blockabout__wrapper .blockabout__cardlink {
+    display: block; }
+  .blockabout__wrapper .blockabout__cardwrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    border-radius: 12px;
+    background: #f6f6f6;
+    padding: 22px 32px 22px 40px;
+    min-height: 138px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease; }
+    .blockabout__wrapper .blockabout__cardwrapper:hover {
+      border-color: #febd18; }
+  .blockabout__wrapper .blockabout__cardicon {
+    min-width: 60px;
+    max-width: 60px;
+    text-align: center; }
+  .blockabout__wrapper .blockabout__cardtext {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 141%;
+    color: #232325; }
+
+.blockabout__nav, .blockabout__main {
+  width: 50%; }
+
+.blockabout__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; }
+
+.blockabout__card {
+  width: calc(50% - 5px); }
+
+.blockabout__banner {
+  border-radius: 20px;
+  background: #fff5dd;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.blockaboutbanner__wrapper {
+  display: flex;
+  align-items: center; }
+
+.blockaboutbanner__main {
+  padding: 41px 0 40px 46px; }
+
+.blockaboutbanner__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  color: #232325;
+  margin-bottom: 28px; }
+
+.blockaboutbanner__nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  max-width: 338px; }
+  .blockaboutbanner__nav .blockaboutbanner__button {
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 16px;
+    height: 31px;
+    line-height: 31px;
+    color: #232325; }
+
 .shophidden {
   /*   .detailtable {
     display: none;
