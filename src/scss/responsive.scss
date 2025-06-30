@@ -306,7 +306,7 @@
   .mobilecatalog {
     display: block;
     padding: 11px 18px;
-    background: $red;
+    background: $yellow;
   }
   .mobilecatalog__header {
     display: flex;
@@ -319,7 +319,7 @@
     top: -58px;
   }
   .mobilemenu .searchinput {
-    border: 3px solid #f1de3a;
+   /*  border: 3px solid #f1de3a; */
     overflow: hidden;
   }
   .catalogexpand {
@@ -502,6 +502,12 @@
   }
   .searchinput button {
     padding-left: 0;
+    display: flex;
+
+    img {
+      max-width: 22px;
+      min-width: 22px;
+    }
   }
   .headermenu__items {
     margin: 10px 0;
@@ -2913,4 +2919,91 @@
   [data-menutoggle].menuicon.active span:nth-child(2) {
     opacity: 0;
   }
+  .catalogexpand.active {
+    width: 100%;
+  }
+  .searchinput button {
+    background: none;
+    border: none;
+  }
+  .mobilecatalog__title {
+   font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+text-align: center;
+color: #232325;
+font-family: var(--font-family);
+
+  }
+  .mobilemenu  {
+    height: 100vh;
+    
+    .mainmenu__level_1 {
+      max-height: unset;
+    }
+    ul.mainmenuLevelOne {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+
+.blockslider__wrapper {
+  position: relative;
+
+    height: 343px;
+
+
+  .blockslider__img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .blockslider__main {
+    max-width: 630px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    left: 70px;
+  }
+  .blockslider__title {
+    font-family: var(--font-family);
+font-weight: 600;
+font-size: 48px;
+line-height: 100%;
+color: #fff;
+margin-bottom: 17px;
+text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.btn_lg {
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+color: #232325;
+min-width: 282px;
+text-align: center;
+height: 58px;
+line-height: 58px;
+}
+
+.swiper-pagination-bullet {
+  width: 36px;
+  height: 3px;
+  background: #d9d9d9;
+opacity: 0.7;
+border-radius: 0;
+margin: 0 3px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #343c4b;
+  opacity: 1;
+}
+
+[data-slider="indexcat"] {
+  position: relative;
 }

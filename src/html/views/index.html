@@ -3,218 +3,232 @@
     <%= _.template(require('../includes/header.html').default)(data) %>
       <main>
         <div class="container">
-          
-        </div><!-- /.container -->
-        <div class="mainslider">
-          <div class="container">
-            <div class="mainslider__wrapper">
-              <!-- картинка из первого слайда для заглушки -->
-              <img src="img/slide1.webp" width="1106" height="548" alt="" title="" id='mainslider_placeholder'>
 
-              <div class="swiper mainswiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a aria-label="link" href="#"><img src="img/slide1.webp" alt="" title="" width="1106"
-                        height="548" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a aria-label="link" href="#"><img src="img/slide2.webp" width="1106" height="548" alt=""
-                        title="" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a aria-label="link" href="#"><img src="img/slide3.webp" width="1106" height="548" alt=""
-                        title="" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a aria-label="link" href="#"><img src="img/slide4.webp" width="1106" height="548" alt=""
-                        title="" /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a aria-label="link" href="#"><img src="img/slide1.webp" width="1106" height="548" alt=""
-                        title="" /></a>
+        </div><!-- /.container -->
+        <div class="  mainswiper" data-slider="mainswiper">
+          <div class="container blockslider__wrapper">
+            <img src="img/slide1.webp" width="1106" height="548" alt="" title="" id='mainslider_placeholder'>
+            <div class="blockslider__container swiper">
+              <div class="blockslider__slider swiper-wrapper">
+                <div class="blockslider__slide swiper-slide">
+                  <div class="blockslider__content">
+                    <div class="blockslider__wrapper">
+                      <img loading="lazy" src="img/slide1.webp" alt="" title="" width="1450" height="356"
+                        class="blockslider__img">
+                      <div class="blockslider__main">
+                        <div class="blockslider__title">Uniarch – бюджетная линейка оборудования от Uniview</div>
+                        <div class="blockslider__button">
+                          <a href="#" aria-label="link" class="btn_main btn_lg">В каталог</a>
+                        </div><!-- /.blockslider__button -->
+                      </div><!-- /.blockslider__main -->
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div thumbsSlider="" class="swiper mainswiperpreview">
-                <div class="swiper-scrollbar"></div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="img/slide11.webp" alt="" title="" width="315" height="153" alt=""
-                      title="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="img/slide11.webp" alt="" title="" width="315" height="153" alt=""
-                      title="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="img/slide11.webp" alt="" title="" width="315" height="153" alt=""
-                      title="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="img/slide11.webp" alt="" title="" width="315" height="153" alt=""
-                      title="" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img loading="lazy" src="img/slide11.webp" alt="" title="" width="315" height="153" alt=""
-                      title="" />
+                <div class="blockslider__slide swiper-slide">
+                  <div class="blockslider__content">
+                    <div class="blockslider__wrapper">
+                      <img loading="lazy" src="img/slide1.webp" alt="" title="" width="1450" height="356"
+                        class="blockslider__img">
+                      <div class="blockslider__main">
+                        <div class="blockslider__title">Uniarch – бюджетная линейка оборудования от Uniview</div>
+                        <div class="blockslider__button">
+                          <a href="#" aria-label="link" class="btn_main btn_lg">В каталог</a>
+                        </div><!-- /.blockslider__button -->
+                      </div><!-- /.blockslider__main -->
+                    </div>
                   </div>
                 </div>
+                <div class="blockslider__slide swiper-slide">
+                  <div class="blockslider__content">
+                    <div class="blockslider__wrapper">
+                      <img loading="lazy" src="img/slide1.webp" alt="" title="" width="1450" height="356"
+                        class="blockslider__img">
+                      <div class="blockslider__main">
+                        <div class="blockslider__title">Uniarch – бюджетная линейка оборудования от Uniview</div>
+                        <div class="blockslider__button">
+                          <a href="#" aria-label="link" class="btn_main btn_lg">В каталог</a>
+                        </div><!-- /.blockslider__button -->
+                      </div><!-- /.blockslider__main -->
+                    </div>
+                  </div>
+                </div>
+
               </div>
+              <div class="blockslider-pagination"></div>
             </div>
-            <div class="mainslider-pagination"></div>
-            <!-- /.mainslider__wrapper -->
           </div>
           <!-- /.container -->
         </div>
-        <!-- /.mainslider -->
+        <!-- /.blockslider -->
+
         <div class="pageblock indexcat">
-          <div class="container">
-            <div class="indexcat__items">
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+          <div class="container" data-slider="indexcat">
+            <div class="sliderarrow sliderarrows__left">
+              <img loading="lazy" src="img/leftslide.svg" width="26" height="26" alt="left" title="left">
+            </div>
+            <!-- /.sliderarrows__left -->
+            <div class="sliderarrow sliderarrows__right">
+              <img loading="lazy" src="img/rightslide.svg" width="26" height="26" alt="right" title="right">
+            </div>
+            <!-- /.sliderarrows__right -->
+
+            <div class="indexcat__slider swiper">
+              <div class="indexcat__items swiper-wrapper">
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+               <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
-              <div class="indexcat__item ">
-                <a aria-label="link" href="#" class='indexcat__link'>
-                  <div class="indexcat__wrapper" style='background-image: url(img/indexcat__item.webp); '>
-                    <div class="indexcat__content">
-                      <div class="indexcat__header">
-                        <div class="indexcat__title">Полуфабрикаты</div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
+
                       </div>
-                      <div class="indexcat__count">106 позиций</div>
-
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
                     </div>
-                    <!-- /.indexcat__content -->
-                    <div class="indexcat__image"><img loading="lazy"
-                        src="img/top-view-delicious-caviar-sandwiches-inside-plate-dark-surface 1.webp" alt="" title=""
-                        width="248" height="148"></div>
-                  </div>
-                  <!-- /.indexcat__wrapper -->
-                </a>
-              </div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+                <div class="indexcat__item swiper-slide">
+                  <a aria-label="link" href="#" class='indexcat__link'>
+                    <div class="indexcat__wrapper" >
+                      <div class="indexcat__content">
+                        <div class="indexcat__header">
+                          <div class="indexcat__title">Категория 1</div>
+                        </div>
 
+                      </div>
+                      <!-- /.indexcat__content -->
+                      <div class="indexcat__image"><img loading="lazy"
+                          src="img/category1.png " alt=""
+                          title="" width="248" height="148"></div>
+                    </div>
+                    <!-- /.indexcat__wrapper -->
+                  </a>
+                </div>
+
+              </div>
             </div>
             <!-- /.indexcat__items -->
           </div>

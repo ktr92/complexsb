@@ -25,10 +25,12 @@ function initFE() {
   /*  cardImagesSlider() */
   /*   menuInit() */
   mainSliderInit()
-  detailsliderInit()
-  imgSliderInit()
-  recipeSliderInit()
-  productSliderInit()
+  categorySlider()
+
+/*   detailsliderInit() */
+/*   imgSliderInit() */
+/*   recipeSliderInit() */
+/*   productSliderInit() */
   /*  mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside(".mainmenu", '[data-action="mainmenu"]', checkMenuExpand('mainmenu'))
@@ -37,10 +39,10 @@ function initFE() {
   fixElement(300, false, "headermain", "fixed")
   fixElement(300, false, "headercontainer", "fixed")
   /*  fixElement(false, 0, "mobilenav", "fixed") */
-  blockSliderInit()
+/*   blockSliderInit() */
   /*   productListImgLisder()
    */
-  moreNewsSliderInit()
+/*   moreNewsSliderInit() */
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
@@ -464,46 +466,24 @@ $(document).ready(function () {
 })
 
 function mainSliderInit() {
-  if ($(".mainswiper").length > 0) {
-    const swiper = new Swiper(".mainswiperpreview", {
-      lazy: true,
+  if ($('[data-slider="mainswiper"]').length > 0) {
 
-      spaceBetween: 9,
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        draggable: true,
-      },
-      slidesPerView: "auto",
-      mousewheel: true,
-      direction: "vertical",
-      freeMode: true,
-      watchSlidesProgress: true,
-      on: {
+      const blockslider = new Swiper('[data-slider="mainswiper"] .swiper', {
+        pagination: {
+          el: "[data-slider='mainswiper'] .blockslider-pagination",
+          clickable: true,
+        },
+      
+        on: {
         init: function () {
           $("#mainslider_placeholder").hide()
         },
       },
-    })
-    const swiper2 = new Swiper(".mainswiper", {
-      lazy: true,
-      loop: true,
-      effect: "fade",
-      fadeEffect: {
-        crossFade: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiper,
-      },
-      pagination: {
-        el: ".mainslider-pagination",
-        clickable: true,
-      },
-    })
-  }
+      })
+    }
+
+   
+
 }
 
 function detailsliderInit() {
@@ -540,6 +520,19 @@ function detailsliderInit() {
       $(this).zoom()
     })
   })
+}
+
+function categorySlider() {
+ if ($("[data-slider='indexcat']").length > 0) {
+    const blockslider = new Swiper('[data-slider="indexcat"] .swiper', {
+       slidesPerView: 6,
+      spaceBetween: 20,
+        navigation: {
+        nextEl: "[data-slider='indexcat'] .sliderarrows__right",
+        prevEl: "[data-slider='indexcat'] .sliderarrows__left",
+      },
+      })
+  }
 }
 
 function productSliderInit() {
@@ -794,7 +787,7 @@ function fixElement(topDesktop, topMobile, elementId, className) {
   }
 }
 
-function blockSliderInit() {
+/* function blockSliderInit() {
   if ($(".blockslider__container").length > 0) {
     const blockslider = new Swiper(".blockslider__container", {
       pagination: {
@@ -807,7 +800,7 @@ function blockSliderInit() {
       },
     })
   }
-}
+} */
 
 function mobileAccordeon() {
   if ($(".infobadge__main").length > 0) {
