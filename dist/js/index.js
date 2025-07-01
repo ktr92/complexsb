@@ -4,33 +4,37 @@ function initFE() {
   mainSliderInit()
   categorySlider()
 
-/*   detailsliderInit() */
-/*   imgSliderInit() */
-/*   recipeSliderInit() */
-/*   productSliderInit() */
+  /*   detailsliderInit() */
+  /*   imgSliderInit() */
+  /*   recipeSliderInit() */
+  /*   productSliderInit() */
   /*  mobileAccordeon() */
   closeByOutsideSelect()
-  closeByClickOutside(".mainmenu", '[data-action="mainmenu"]', checkMenuExpand('mainmenu'))
+  closeByClickOutside(
+    ".mainmenu",
+    '[data-action="mainmenu"]',
+    checkMenuExpand("mainmenu")
+  )
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
-/*   fixElement(false, 750, "mobpriceFixed", "fixed")
+  /*   fixElement(false, 750, "mobpriceFixed", "fixed")
   fixElement(300, false, "headermain", "fixed")
   fixElement(300, false, "headercontainer", "fixed") */
   /*  fixElement(false, 0, "mobilenav", "fixed") */
-/*   blockSliderInit() */
+  /*   blockSliderInit() */
   /*   productListImgLisder()
    */
-/*   moreNewsSliderInit() */
+  /*   moreNewsSliderInit() */
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
 
 const checkMenuExpand = (menu) => {
-    if ($(menu).hasClass('active')) {
-      $(".jsbackdrop").addClass("active")
-    } else {
-      $(".jsbackdrop").removeClass("active")
-    }
+  if ($(menu).hasClass("active")) {
+    $(".jsbackdrop").addClass("active")
+  } else {
+    $(".jsbackdrop").removeClass("active")
   }
+}
 
 function lazyLoadSrc(selector) {
   const callback = (entries, observer) => {
@@ -55,16 +59,58 @@ function lazyLoadSrc(selector) {
 }
 
 $(document).ready(function () {
-  $('.searchinput input').on("focus",  (e) => { 
-     $('.searchinput').addClass('active')
-  });
-  $('.searchinput input').on("blur",  (e) => { 
-     $('.searchinput').removeClass('active')
-  });
+  var something = (function () {
+    var executed = false
+    return function () {
+      if (!executed) {
+        executed = true
+        $(".stats__number span").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 2000,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now))
+                },
+              }
+            )
+        })
+      }
+    }
+  })()
+
+  $(window).scroll(function () {
+    if ($(".stats").length) {
+      var top_of_element = $(".stats").offset().top
+      var bottom_of_element =
+        $(".stats").offset().top + $(".stats").outerHeight()
+      var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight()
+      var top_of_screen = $(window).scrollTop()
+
+      if (
+        bottom_of_screen > top_of_element &&
+        top_of_screen < bottom_of_element
+      ) {
+        something()
+      }
+    }
+  })
+
+  $(".searchinput input").on("focus", (e) => {
+    $(".searchinput").addClass("active")
+  })
+  $(".searchinput input").on("blur", (e) => {
+    $(".searchinput").removeClass("active")
+  })
 
   $("[data-toggleclick]").on("click", function (e) {
     $(this).toggleClass("active")
-    $(this).closest("[data-toggleitem]").addClass('active')
+    $(this).closest("[data-toggleitem]").addClass("active")
     e.preventDefault()
     let dropdown = $(this).data("toggleclick")
     $("[data-toggle].active")
@@ -81,33 +127,36 @@ $(document).ready(function () {
   })
 
   /**
-     * кастомные select - выбор элемента из выпадающего списка, вывод значения в связанный с ним инпут
-     */
-    $("[data-togglevalue]").on("click", function (e) {
-      e.preventDefault()
-      $(this).toggleClass("active")
-      // get value
-      let val = $(this).data("togglevalue")
+   * кастомные select - выбор элемента из выпадающего списка, вывод значения в связанный с ним инпут
+   */
+  $("[data-togglevalue]").on("click", function (e) {
+    e.preventDefault()
+    $(this).toggleClass("active")
+    // get value
+    let val = $(this).data("togglevalue")
 
-      // get wrapper leement
-      const $wrapper = $(this).closest("[data-toggleitem]")
-      // get dropdown ID
-      let id = $wrapper.data("toggleitem")
-      // close dropdown
-      $(`[data-toggle=${id}]`).toggleClass("active")
-      // set value
-      $(`[data-value=${id}]`).text(val)
-      $(`[data-inputvalue=${id}]`).val(val).trigger('change')
-      $(`[data-inputfor=${id}]`).val('')
-      if ($(this).data("togglevalue2")) {
-        let val2 = $(this).data("togglevalue2")
-        $(`[data-value2=${id}]`).text(val2)
-      }
-      if ($(this).data("icon")) {
-        let icon = $(this).data("icon")
-        $(this).closest('[data-toggleitem]').find(`[data-toggleicon]`).attr('src', icon)
-      }
-    })
+    // get wrapper leement
+    const $wrapper = $(this).closest("[data-toggleitem]")
+    // get dropdown ID
+    let id = $wrapper.data("toggleitem")
+    // close dropdown
+    $(`[data-toggle=${id}]`).toggleClass("active")
+    // set value
+    $(`[data-value=${id}]`).text(val)
+    $(`[data-inputvalue=${id}]`).val(val).trigger("change")
+    $(`[data-inputfor=${id}]`).val("")
+    if ($(this).data("togglevalue2")) {
+      let val2 = $(this).data("togglevalue2")
+      $(`[data-value2=${id}]`).text(val2)
+    }
+    if ($(this).data("icon")) {
+      let icon = $(this).data("icon")
+      $(this)
+        .closest("[data-toggleitem]")
+        .find(`[data-toggleicon]`)
+        .attr("src", icon)
+    }
+  })
 
   document.querySelectorAll("form .stars").forEach((element) => {
     element.addEventListener("click", function (e) {
@@ -129,7 +178,6 @@ $(document).ready(function () {
     $(".changeShops_list").removeClass("active")
     $(".changeShops_map").addClass("active")
   })
-
 
   $(document).on("click", "[data-action='changeShops_map']", (e) => {
     $(".changeShops_map").removeClass("active")
@@ -233,8 +281,7 @@ $(document).ready(function () {
   $('[data-action="mainmenu"]').on("click", function (e) {
     $(this).toggleClass("active")
     $(".mainmenu").toggleClass("active")
- checkMenuExpand('mainmenu')
-    
+    checkMenuExpand("mainmenu")
   })
 
   $(".mobilemenu__level2 .js-toggler").on("click", function (e) {
@@ -248,7 +295,7 @@ $(document).ready(function () {
   $(".menubutton").on("click", function (e) {
     $(this).toggleClass("active")
     $(".mobilemenu").toggleClass("active")
-     checkMenuExpand('.mobilemenu')
+    checkMenuExpand(".mobilemenu")
     $(".mobilemenu__level2").removeClass("active")
     $(".mobilemenu__content").removeClass("active")
   })
@@ -444,23 +491,19 @@ $(document).ready(function () {
 
 function mainSliderInit() {
   if ($('[data-slider="mainswiper"]').length > 0) {
+    const blockslider = new Swiper('[data-slider="mainswiper"] .swiper', {
+      pagination: {
+        el: "[data-slider='mainswiper'] .blockslider-pagination",
+        clickable: true,
+      },
 
-      const blockslider = new Swiper('[data-slider="mainswiper"] .swiper', {
-        pagination: {
-          el: "[data-slider='mainswiper'] .blockslider-pagination",
-          clickable: true,
-        },
-      
-        on: {
+      on: {
         init: function () {
           $("#mainslider_placeholder").hide()
         },
       },
-      })
-    }
-
-   
-
+    })
+  }
 }
 
 function detailsliderInit() {
@@ -500,15 +543,15 @@ function detailsliderInit() {
 }
 
 function categorySlider() {
- if ($("[data-slider='indexcat']").length > 0) {
+  if ($("[data-slider='indexcat']").length > 0) {
     const blockslider = new Swiper('[data-slider="indexcat"] .swiper', {
-       slidesPerView: 6,
+      slidesPerView: 6,
       spaceBetween: 20,
-        navigation: {
+      navigation: {
         nextEl: "[data-slider='indexcat'] .sliderarrows__right",
         prevEl: "[data-slider='indexcat'] .sliderarrows__left",
       },
-      })
+    })
   }
 }
 
@@ -811,7 +854,7 @@ function closeByClickOutside(element, button, fn = () => {}) {
       $(button).removeClass("active")
       $(element).removeClass("active")
 
-       if (fn) {
+      if (fn) {
         fn()
       }
     }
