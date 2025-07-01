@@ -35,9 +35,9 @@ function initFE() {
   closeByOutsideSelect()
   closeByClickOutside(".mainmenu", '[data-action="mainmenu"]', checkMenuExpand('mainmenu'))
   closeByClickOutside(".catalogpage__aside", ".js-mobilefilter")
-  fixElement(false, 750, "mobpriceFixed", "fixed")
+/*   fixElement(false, 750, "mobpriceFixed", "fixed")
   fixElement(300, false, "headermain", "fixed")
-  fixElement(300, false, "headercontainer", "fixed")
+  fixElement(300, false, "headercontainer", "fixed") */
   /*  fixElement(false, 0, "mobilenav", "fixed") */
 /*   blockSliderInit() */
   /*   productListImgLisder()
