@@ -47,6 +47,10 @@
   /*   .indexcat__items_full .indexcat__item {
     width: 33.333%;
   } */
+
+   .indexcat__items_full {
+    gap: 8px;
+  }
   .logo {
     width: 120px;
   }
@@ -55,6 +59,10 @@
   }
 }
 @include large-screen {
+  .indexcat__items_full .indexcat__wrapper {
+  padding-left: 20px;
+}
+
   .blockabout__wrapper .blockabout__cardwrapper {
     gap: 10px;
   }
@@ -1124,7 +1132,7 @@ color: #232325;
     margin-bottom: 6px;
   }
   header#header {
-    padding-bottom: 24px;
+    padding-bottom: 20px;
   }
   .catalogheader {
     -ms-flex-wrap: wrap;
@@ -1354,6 +1362,13 @@ color: #232325;
   .breadcrumbs__items ul span {
     font-size: 12px;
     line-height: 12px;
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 11px;
+color: rgba(46, 47, 49, 0.5);
+  }
+  .breadcrumbs__items ul li:after {
+    font-size: 11px;
   }
   .detailinfo__title {
     display: -webkit-box;
@@ -1695,9 +1710,10 @@ color: #232325;
     flex-wrap: wrap;
     h1 {
       width: 100%;
-      margin-bottom: 6px;
-      font-size: 22px;
-      line-height: 26px;
+    font-weight: 600;
+font-size: 22px;
+line-height: 100%;
+color: #232325;
     }
   }
   .linkicon span {
@@ -1872,7 +1888,7 @@ color: #232325;
     }
   }
   .breadcrumbs {
-    margin-bottom: 19px;
+    margin-bottom: 22px;
   }
   .recipedetail__images {
     margin-bottom: 24px;
@@ -2515,6 +2531,13 @@ color: #232325;
       width: 100%;
     }
   }
+   .indexcat__items_full {
+    gap: 8px;
+  }
+  .indexcat__items_full .indexcat__item {
+    width: calc(50% - 14px);
+}
+
 }
 @include small-screen {
   .catalogroot {
@@ -3271,7 +3294,7 @@ line-height: 120%;
     max-width: 100%;
   }
   .subscribe__item.subscribe__header {
-    height: 65px;
+    height: 66px;
   }
 /*   .subscribe__img img {
     position: absolute;
@@ -3280,4 +3303,45 @@ line-height: 120%;
     width: 100%;
     overflow: hidden;
   }
+   .indexcat__items_full  {
+    gap: 20px;
+   }
+ .indexcat__items_full .indexcat__item {
+    width: 100%;
+}
+.indexcat__image {
+  position: static;
+}
+.indexcat__items_full .indexcat__wrapper {
+  padding-bottom: 0;
+  padding-right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.seoblock {
+  margin: 23px 0;
+  padding: 0;
+}
+.breadcrumbs__items * {
+  line-height: 1;
+}
+.indexcat__items_full .indexcat__title {
+  font-family: var(--third-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+color: #232325;
+margin-bottom: 12px;
+}
+.indexcat__items_full .indexcat__count {
+  font-family: var(--second-family);
+font-weight: 400;
+font-size: 13px;
+line-height: 100%;
+color: #232325;
+}
+.indexcat__items_full .indexcat__image {
+  max-width: 122px;
+}
 }

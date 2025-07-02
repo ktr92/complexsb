@@ -71,66 +71,77 @@
 }
 
 @font-face {
-	font-family: 'Circe Bold';
-	src: url('../fonts/circe_bold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/circe_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/circe_bold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/circe_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/circe_bold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/circe_bold.svg#circe_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Circe Bold";
+  src: url("../fonts/circe_bold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/circe_bold.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/circe_bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/circe_bold.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/circe_bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/circe_bold.svg#circe_bold")
+      format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
-	font-family: 'Circe ExtraBold';
-	src: url('../fonts/circe_extrabold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/circe_extrabold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/circe_extrabold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/circe_extrabold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/circe_extrabold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/circe_extrabold.svg#circe_extrabold') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Circe ExtraBold";
+  src: url("../fonts/circe_extrabold.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/circe_extrabold.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/circe_extrabold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/circe_extrabold.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/circe_extrabold.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/circe_extrabold.svg#circe_extrabold") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
-	font-family: 'Circe ExtraLight';
-	src: url('../fonts/circe_extralight.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/circe_extralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/circe_extralight.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/circe_extralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/circe_extralight.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/circe_extralight.svg#circe_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Circe ExtraLight";
+  src: url("../fonts/circe_extralight.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/circe_extralight.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/circe_extralight.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/circe_extralight.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/circe_extralight.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/circe_extralight.svg#circe_extralight") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
-	font-family: 'Circe Light';
-	src: url('../fonts/circe_light.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/circe_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/circe_light.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/circe_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/circe_light.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/circe_light.svg#circe_light') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Circe Light";
+  src: url("../fonts/circe_light.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/circe_light.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/circe_light.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/circe_light.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/circe_light.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/circe_light.svg#circe_light")
+      format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
-	font-family: 'Circe';
-	src: url('../fonts/circe.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/circe.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/circe.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/circe.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/circe.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/circe.svg#circe') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Circe";
+  src: url("../fonts/circe.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/circe.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/circe.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/circe.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */ url("../fonts/circe.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/circe.svg#circe") format("svg"); /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
-	font-family: 'Circe Thin';
-	src: url('../fonts/circe_thin.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/circe_thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/circe_thin.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/circe_thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/circe_thin.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/circe_thin.svg#circe_thin') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Circe Thin";
+  src: url("../fonts/circe_thin.eot"); /* IE 9 Compatibility Mode */
+  src: url("../fonts/circe_thin.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("../fonts/circe_thin.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/circe_thin.woff") format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("../fonts/circe_thin.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/circe_thin.svg#circe_thin")
+      format("svg"); /* Chrome < 4, Legacy iOS */
 }
-
-
 
 :root {
   --font-family: "FuturaDemiC";
@@ -1325,8 +1336,7 @@ h2 {
   font-weight: 800;
   font-size: 20px;
   color: #ed1e26;
-    white-space: nowrap;
-
+  white-space: nowrap;
 }
 .productcard__pricevalue {
   font-family: var(--font-family);
@@ -1334,8 +1344,7 @@ h2 {
   font-size: 24px;
   line-height: 100%;
   color: #303640;
-    white-space: nowrap;
-
+  white-space: nowrap;
 }
 
 .productcard__info {
@@ -1686,9 +1695,9 @@ h2 {
   display: inline-block;
   vertical-align: middle;
 }
-.page {
+/* .page {
   padding-bottom: 65px;
-}
+} */
 .itemslistcard__icon {
   margin-right: 6px;
   display: inline-block;
@@ -1977,7 +1986,6 @@ h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
 }
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
@@ -1989,7 +1997,6 @@ h2 {
   font-size: 16px;
   color: #232325;
 }
-
 
 .footer__main {
   padding: 65px 0 44px 0;
@@ -2007,8 +2014,8 @@ h2 {
   gap: 100px;
 }
 .footer__col {
- /*  padding: 0 37px; */
-/*   min-width: 242px; */
+  /*  padding: 0 37px; */
+  /*   min-width: 242px; */
 }
 .footer__col_contacts {
   min-width: 242px;
@@ -2044,7 +2051,6 @@ h2 {
         &:hover {
           border-color: #febd18;
         }
-       
       }
     }
   }
@@ -2128,11 +2134,11 @@ h2 {
 }
 .footer__address {
   margin-bottom: 25px;
-font-family: var(--second-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 120%;
-color: #232325;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #232325;
 }
 .footer__socials {
   margin-bottom: 20px;
@@ -2173,7 +2179,7 @@ color: #232325;
       filter: none;
       background: $hover;
 
-     /*  path {
+      /*  path {
         fill: #fff;
       } */
     }
@@ -2194,7 +2200,7 @@ color: #232325;
   padding: 34px 45px; */
 }
 .footer__col.footer__col_b2 {
-    min-width: 35%;
+  min-width: 35%;
 }
 .footer__items {
 }
@@ -2205,12 +2211,11 @@ color: #232325;
   max-width: 100%;
 }
 .footer__maincopy {
-  
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 16px;
-line-height: 100%;
-color: #232325;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #232325;
   /* identical to box height, or 16px */
   color: #2e2f31;
   margin-bottom: 12px;
@@ -2221,11 +2226,11 @@ small {
 }
 .footer__textcopy {
   font-family: var(--second-family);
-font-weight: 400;
-font-size: 12px;
-line-height: 100%;
-color: #232325;
-opacity: 0.5;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #232325;
+  opacity: 0.5;
   color: rgba(37, 52, 79, 0.5);
   a {
     color: rgba(37, 52, 79, 0.5);
@@ -2240,15 +2245,14 @@ opacity: 0.5;
     margin-bottom: 0;
   }
   a {
-   font-family: var(--font-family);
-font-weight: 600;
-font-size: 16px;
-line-height: 100%;
-color: #232325;
- 
-    &:hover {
-         text-decoration-line: underline;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #232325;
 
+    &:hover {
+      text-decoration-line: underline;
     }
   }
 }
@@ -2589,8 +2593,8 @@ a.btn_main {
   text-decoration: none !important;
 }
 .breadcrumbs {
-  margin-bottom: 33px;
-  margin-top: 30px;
+  margin-bottom: 26px;
+  margin-top: 6px;
 }
 .breadcrumbs__items {
   ul {
@@ -2605,12 +2609,11 @@ a.btn_main {
         content: "/";
         position: absolute;
         right: -6px;
-
-        font-style: normal;
-        font-weight: 500;
+        bottom: 0;
+        font-family: var(--second-family);
+        font-weight: 400;
         font-size: 14px;
-        line-height: 16px;
-        color: rgba(37, 52, 79, 0.5);
+        color: rgba(46, 47, 49, 0.5);
       }
       &:last-child:after {
         display: none;
@@ -2622,13 +2625,12 @@ a.btn_main {
     }
     span {
       font-style: normal;
-      font-weight: 500;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 14px;
       color: #2e2f31;
     }
     a span {
-      line-height: 16px;
+      line-height: 1614pxpx;
       color: rgba(37, 52, 79, 0.5);
     }
   }
@@ -3022,31 +3024,29 @@ button:hover {
   margin: auto;
 }
 .seoblock {
-  padding: 75px 0;
+  margin: 55px 0;
   /*   background: #f8f8fb; */
 }
 .seoblock__wrapper {
 }
 .seoblock__title {
   margin-bottom: 29px;
-  max-width: 800px;
   h2 {
-    font-style: normal;
-    font-weight: 500;
+    font-family: var(--font-family);
+    font-weight: 600;
     font-size: 36px;
     line-height: 100%;
-    margin: 0;
-    color: #2e2f31;
+    color: #232325;
+    margin-bottom: 0;
   }
 }
 .seoblock__text {
   p {
-    font-style: normal;
+    font-family: var(--second-family);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    color: rgba(37, 52, 79, 0.7);
-    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232325;
   }
 }
 .disabled {
@@ -4062,7 +4062,7 @@ input.quantity-field::-webkit-inner-spin-button {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
   h1 {
     margin: 0;
   }
@@ -5128,9 +5128,11 @@ p {
 }
 .pageheader {
   h1 {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 33px;
+   font-family: var(--font-family);
+font-weight: 600;
+font-size: 36px;
+line-height: 100%;
+color: #232325;
   }
 }
 .pageheader__type2 {
@@ -5464,18 +5466,10 @@ p {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.catalogroot {
+/* .catalogroot {
   margin-bottom: 30px;
-}
-.indexcat__items_full {
-  .indexcat__item {
-  }
-  .indexcat__wrapper {
-    /*     border: 1px solid #ffd9a7; */
-    height: 269px;
-    padding: 26px 23px 23px 29px;
-  }
-}
+} */
+
 a.indexcat__title {
   &:hover {
     opacity: 1;
@@ -7798,16 +7792,13 @@ $dropdownblock_top: 2px;
   background: #232325;
 }
 
-
-
 .blockslider__wrapper {
   position: relative;
-background-position: center right;
-    height: 343px;
-    background-size: cover;
-    border-radius: 20px;
-    overflow: hidden;
-
+  background-position: center right;
+  height: 343px;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
 
   .blockslider__img {
     object-fit: cover;
@@ -7827,33 +7818,33 @@ background-position: center right;
   }
   .blockslider__title {
     font-family: var(--font-family);
-font-weight: 600;
-font-size: 48px;
-line-height: 100%;
-color: #fff;
-margin-bottom: 17px;
-text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #fff;
+    margin-bottom: 17px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
   }
 }
 
 .btn_lg {
   font-family: var(--font-family);
-font-weight: 600;
-font-size: 18px;
-color: #232325;
-min-width: 282px;
-text-align: center;
-height: 58px;
-line-height: 58px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #232325;
+  min-width: 282px;
+  text-align: center;
+  height: 58px;
+  line-height: 58px;
 }
 
 .swiper-pagination-bullet {
   width: 36px;
   height: 3px;
   background: #d9d9d9;
-opacity: 0.7;
-border-radius: 0;
-margin: 0 3px;
+  opacity: 0.7;
+  border-radius: 0;
+  margin: 0 3px;
 }
 
 .swiper-pagination-bullet-active {
@@ -7864,9 +7855,9 @@ margin: 0 3px;
 [data-slider="indexcat"] {
   position: relative;
 }
-.blockabout__cardlink, .blockabout__cardwrapper {
+.blockabout__cardlink,
+.blockabout__cardwrapper {
   height: 100%;
- 
 }
 
 .container .container {
@@ -7875,4 +7866,48 @@ margin: 0 3px;
 
 .blockslider_mobile {
   display: none;
+}
+
+.indexcat__items_full {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .indexcat__item {
+    width: calc(33.333% - 14px);
+  }
+  .indexcat__wrapper {
+    /*     border: 1px solid #ffd9a7; */
+    height: 172px;
+    padding: 0 43px;
+    display: flex;
+    align-items: center;
+  }
+  .indexcat__content {
+    height: unset;
+  }
+  .indexcat__title {
+    margin-bottom: 19px;
+    font-family: var(--third-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    color: #232325;
+  }
+  .indexcat__count {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #232325;
+  }
+}
+
+.indexcat__items_full .indexcat__image {
+  max-width: 50%;
+  bottom: 0;
+  right: 0;
+}
+.indexcat__items_full .indexcat__content {
+  max-width: 50%;
 }
