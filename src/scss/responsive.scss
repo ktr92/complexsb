@@ -3251,4 +3251,33 @@ line-height: 120%;
   .indexcat .sliderarrows__right {
     display: none;
   }
+  .blockslider_desktop {
+    display: block;
+  }
+  .blockslider_mobile {
+    display: none;
+  }
+  .headerpanel{
+    width: 100%;
+  }
+  .blockaboutbanner__wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .blockabout__banner, .blockaboutbanner {
+    width: 100%;
+  }
+  .productcard {
+    max-width: 100%;
+  }
+  .subscribe__item.subscribe__header {
+    height: 65px;
+  }
+/*   .subscribe__img img {
+    position: absolute;
+  } */
+  .subscribeblock {
+    width: 100%;
+    overflow: hidden;
+  }
 }
