@@ -568,11 +568,22 @@ function detailsliderInit() {
 function categorySlider() {
   if ($("[data-slider='indexcat']").length > 0) {
     const blockslider = new Swiper('[data-slider="indexcat"] .swiper', {
-      slidesPerView: 6,
-      spaceBetween: 20,
+       slidesPerView: 'auto',
+      spaceBetween: 8,
       navigation: {
         nextEl: "[data-slider='indexcat'] .sliderarrows__right",
         prevEl: "[data-slider='indexcat'] .sliderarrows__left",
+      },
+      breakpoints: {
+        1023: {
+          slidesPerView: 6,
+          spaceBetween: 8,
+        },
+        // when window width is >= 1400
+        1400: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        },
       },
     })
   }
