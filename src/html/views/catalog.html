@@ -56,13 +56,7 @@
                         </a>
                       </div>
                       <!-- /.catalogcats__item -->
-                      <div class="catalogcats__item">
-                        <a href="#">
-                          <span class="catalogcats__title">Куриные недели с выгодой 10%</span>
-                          
-                        </a>
-                      </div>
-                      <!-- /.catalogcats__item -->
+                     
                       <div class="catalogcats__item">
                         <a href="#">
                           <span class="catalogcats__title">CVI </span>
@@ -91,9 +85,9 @@
                       <div class="filter">
                         <form action="">
                           <div class="filter__items">
-                            <div class="filter__item filter__item_open">
+                            <div class="filter__item filter__item_open filter__item_price">
                               <div class="filter__header filter__header-js">
-                                <span>Цена, ₽</span>
+                                <span>Цена, <span class="rouble">₽</span></span>
                                 <img src="img/filterArrow.svg" alt="" title="" width="12" height="8">
                               </div>
                               <div class="filter__form">
@@ -117,12 +111,12 @@
                                   <div class="formCost__inputs">
                                     <div class="formCost__price_left">
                                       <label for="minCost1"></label>
-                                      <input type="text" id="minCost1" value="" placeholder="" class="notchanged">
+                                      <input type="text" id="minCost1" value="0" placeholder="" class="notchanged">
                                     </div>
                                     <span class='formCost__delimeter'></span>
                                     <div class="formCost__price_right">
                                       <label for="maxCost1"></label>
-                                      <input type="text" id="maxCost1" value="" placeholder="" class="notchanged">
+                                      <input type="text" id="maxCost1" value="750" placeholder="" class="notchanged">
                                     </div>
                                   </div>
                                 </div>
@@ -130,7 +124,7 @@
                             </div>
                             <div class="filter__item filter__item_open">
                               <div class="filter__header filter__header-js">
-                                <span>Предложения</span>
+                                <span>Тип</span>
                                 <img src="img/filterArrow.svg" alt="" title="" width="12" height="8">
                               </div>
                               <div class="filter__form">
@@ -138,15 +132,15 @@
                                   <div class="dcheckbox">
                                     <label for="filter1-1" class="dcheckbox__label"><span>
                                         <input type="checkbox" id="filter1-1">
-                                        <span class="dcheckbox__text">В наличии <span class='dcheckbox__count'>
-                                            241</span></span>
+                                        <span class="dcheckbox__text">Уличные  <span class='dcheckbox__count'>
+                                            281</span></span>
                                       </span>
                                     </label>
                                   </div>
                                   <div class="dcheckbox">
                                     <label for="filter1-2" class="dcheckbox__label"><span>
-                                        <input type="checkbox" checked="checked" id="filter1-2">
-                                        <span class="dcheckbox__text">Участвует в акции <span
+                                        <input type="checkbox"  id="filter1-2">
+                                        <span class="dcheckbox__text">Купольные <span
                                             class='dcheckbox__count'>43</span></span>
                                       </span>
                                     </label>
@@ -154,7 +148,7 @@
                                   <div class="dcheckbox">
                                     <label for="filter1-3" class="dcheckbox__label"><span>
                                         <input type="checkbox" id="filter1-3">
-                                        <span class="dcheckbox__text">Хиты продаж <span
+                                        <span class="dcheckbox__text">Миниатюрные <span
                                             class='dcheckbox__count'>21</span></span>
                                       </span>
                                     </label>
@@ -162,7 +156,7 @@
                                   <div class="dcheckbox">
                                     <label for="filter1-4" class="dcheckbox__label"><span>
                                         <input type="checkbox" checked="checked" id="filter1-4">
-                                        <span class="dcheckbox__text">Новинки <span
+                                        <span class="dcheckbox__text">Управляемые <span
                                             class='dcheckbox__count'>8</span></span>
                                       </span>
                                     </label>
@@ -172,7 +166,7 @@
                             </div>
                             <div class="filter__item filter__item_open">
                               <div class="filter__header filter__header-js">
-                                <span>Вид мяса</span>
+                                <span>Камера</span>
                                 <img src="img/filterArrow.svg" alt="" title="" width="12" height="8">
                               </div>
                               <div class="filter__form">
@@ -180,15 +174,15 @@
                                   <div class="dcheckbox">
                                     <label for="filter2-1" class="dcheckbox__label"><span>
                                         <input type="checkbox" id="filter2-1">
-                                        <span class="dcheckbox__text">Говядина <span class='dcheckbox__count'>
-                                            8</span></span>
+                                        <span class="dcheckbox__text">1 Мп <span class='dcheckbox__count'>
+                                            228</span></span>
                                       </span>
                                     </label>
                                   </div>
                                   <div class="dcheckbox">
                                     <label for="filter2-2" class="dcheckbox__label"><span>
                                         <input type="checkbox" checked="checked" id="filter2-2">
-                                        <span class="dcheckbox__text">Курица <span
+                                        <span class="dcheckbox__text">2 Мп <span
                                             class='dcheckbox__count'>43</span></span>
                                       </span>
                                     </label>
@@ -196,7 +190,7 @@
                                   <div class="dcheckbox">
                                     <label for="filter2-3" class="dcheckbox__label"><span>
                                         <input type="checkbox" id="filter2-3">
-                                        <span class="dcheckbox__text">Свинина <span
+                                        <span class="dcheckbox__text">5 Мп <span
                                             class='dcheckbox__count'>21</span></span>
                                       </span>
                                     </label>
@@ -204,38 +198,7 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="filter__item filter__item_open">
-                              <div class="filter__header filter__header-js">
-                                <span>Нарезка</span>
-                                <img src="img/filterArrow.svg" alt="" title="" width="12" height="8">
-                              </div>
-                              <div class="filter__form">
-                                <div class="filter__checkbox">
-                                  <div class="dcheckbox">
-                                    <label for="filter3-1" class="dcheckbox__label"><span>
-                                        <input type="checkbox" id="filter3-1">
-                                        <span class="dcheckbox__text">Кусок / в упаковке</span>
-                                      </span>
-                                    </label>
-                                  </div>
-                                  <div class="dcheckbox">
-                                    <label for="filter3-2" class="dcheckbox__label"><span>
-                                        <input type="checkbox" checked="checked" id="filter3-2">
-                                        <span class="dcheckbox__text">Нарезка</span>
-                                      </span>
-                                    </label>
-                                  </div>
-                                  <div class="dcheckbox">
-                                    <label for="filter3-3" class="dcheckbox__label"><span>
-                                        <input type="checkbox" id="filter3-3">
-                                        <span class="dcheckbox__text">Батон</span>
-                                      </span>
-                                    </label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
+                           
                           </div>
                         </form>
                       </div>
@@ -765,8 +728,1261 @@
                           </div>
                         </div>
                       </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cataloglist__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">
+                            <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="productcard__actions">
+                              <a href="#" class="productcard__fav imghover">
+                                <span class="stat-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Stat.svg" alt="Сравнение" title="Сравнение" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/statactive.svg" alt="Сравнение" title="Сравнение"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                              <a href="#" class="productcard__stat imghover">
+                                <span class="fav-default">
+                                  <span class="iconlinks__icon">
+                                    <img loading="lazy" src="img/Star.svg" alt="Избранное" title="Избранное" width="26"
+                                      height="26" class="onUnhover">
+                                    <img loading="lazy" src="img/StarFill.svg" alt="Избранное" title="Избранное"
+                                      width="26" height="26" class="onHover">
+                                  </span>
+                                </span>
+                              </a>
+                            </div><!-- /.productcard__actions -->
+                            <a aria-label="link" href="#" class="productcard__images ">
+                              <div class="productcard__img">
+                                <img loading="lazy" src="img/product.webp"
+                                  data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                  title="" width="192" height="200">
+                              </div>
+                            </a>
+
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <div class="productcard__title">
+                              <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            </div>
+
+
+                            <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                          data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                          width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+
+                  <div class="catalognav">
+                      <div class="catalognav__showmore">
+                        <a href="#" class="showmorelink">
+                          <img src="img/Synchronize.svg" alt="Обновить" title="Обновить" width="28" height="28">
+                          <span>Показать еще 24 товаров</span>
+                        </a>
+                      </div>
+                     
+
                 </div>
                 <!-- /.catalogpage__main -->
               </div>
@@ -782,8 +1998,7 @@
           <div class="container">
             <div class="seoblock__wrapper">
               <div class="seoblock__title">
-                <h2>Высокотехнологичное предприятие, оснащенное современным оборудованием от ведущих мировых
-                  производителей</h2>
+                <h2>Заголовок для SEO</h2>
               </div>
               <div class="seoblock__text">
                 <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности
