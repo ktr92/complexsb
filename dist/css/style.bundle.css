@@ -514,7 +514,7 @@ button.close {
   border: 2px solid #fff;
   box-sizing: border-box;
   cursor: pointer;
-  box-shadow: inset 0 0 0 2px #df000f; }
+  box-shadow: inset 0 0 0 2px #febd18; }
 
 .ui-slider .ui-slider-range {
   position: absolute;
@@ -554,7 +554,7 @@ button.close {
   background: #E2E2EA !important; }
 
 .ui-slider-range.ui-corner-all.ui-widget-header:last-child {
-  background: #df000f !important; }
+  background: #febd18 !important; }
 
 .ui-corner-all {
   -moz-border-radius: 4px;
@@ -679,8 +679,8 @@ span.dcheckbox__text:before {
   background-position: center; }
 
 .dcheckbox input[type="checkbox"]:checked + .dcheckbox__text:before {
-  border-color: #df000f;
-  background-color: #df000f;
+  border-color: #febd18;
+  background-color: #febd18;
   background-image: url(../img/checked.svg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -689,8 +689,8 @@ span.dcheckbox__text:before {
   opacity: 1; }
 
 .dcheckbox input[type="radio"]:checked + .dcheckbox__text:before {
-  border-color: #df000f;
-  background-color: #df000f;
+  border-color: #febd18;
+  background-color: #febd18;
   background-image: url(../img/checked.svg);
   background-repeat: no-repeat;
   background-position: center; }
@@ -1114,7 +1114,7 @@ img {
   width: 100%; }
 
 .headerpanel {
-  margin-bottom: 42px;
+  margin-bottom: 24px;
   gap: 20px;
   position: relative; }
 
@@ -2810,7 +2810,7 @@ header#header {
   position: relative;
   z-index: 99;
   background: #fff;
-  padding-bottom: 9px; }
+  /*   padding-bottom: 9px; */ }
 
 .mainmenu {
   display: none;
@@ -3084,9 +3084,10 @@ a.btn_main {
     font-style: normal;
     font-size: 14px;
     line-height: 14px;
-    color: #2e2f31; }
+    color: rgba(37, 52, 79, 0.5);
+    /*       color: #2e2f31; */ }
   .breadcrumbs__items ul a span {
-    line-height: 1614pxpx;
+    line-height: 14px;
     color: rgba(37, 52, 79, 0.5); }
 
 .catalogpage__main {
@@ -3096,45 +3097,44 @@ a.btn_main {
 .catalogaside__back a {
   display: block;
   background: #f8f8fb;
-  border-radius: 555px;
-  margin-bottom: 18px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #2e2f31;
-  padding: 13px 32px;
+  /*   border-radius: 555px; */
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #232325;
+  padding: 18px 18px 13px 46px;
   background-image: url(../img/backlink.svg);
-  background-position: left 15px center;
+  background-position: left 25px top 23px;
   background-repeat: no-repeat; }
   .catalogaside__back a:hover, .catalogaside__back a:after {
     opacity: 0.85; }
 
 .catalogaside__links {
-  margin-bottom: 32px; }
+  padding: 8px; }
 
 .catalogcats {
-  max-height: 300px;
+  /*   max-height: 300px;
   overflow: auto;
-  padding-right: 8px; }
+  padding-right: 8px; */ }
 
 .catalogcats__item a {
-  border-radius: 555px;
+  border-radius: 8px;
   display: block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #2e2f31;
-  padding: 6px 15px; }
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #232325;
+  padding: 9px 9px 7px 20px; }
 
 .catalogcats__item.active a {
-  background: rgba(255, 214, 0, 0.15);
-  color: #febd18; }
+  /*  color: #febd18; */ }
 
 .catalogcats__item:hover a,
 .catalogcats__item:focus a {
-  color: #febd18; }
+  /*  color: #febd18; */
+  background: rgba(254, 189, 24, 0.2); }
 
 .catalogcats__count {
   color: rgba(37, 52, 79, 0.5); }
@@ -3179,19 +3179,18 @@ a.btn_main {
   justify-content: space-between; }
 
 .catalogheader__title h1 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
-  /* identical to box height */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 5px 0;
-  color: #2e2f31; }
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  color: #232325;
+  margin-bottom: 35px; }
 
 .catalogheader {
   margin-bottom: 25px; }
@@ -7641,6 +7640,14 @@ textarea {
 
 .indexcat__items_full .indexcat__content {
   max-width: 50%; }
+
+.cataloglist_page .cataloglist__item {
+  width: 33.3333%; }
+
+.catalogaside__nav {
+  border-radius: 12px;
+  border: 2px solid #f6f6f6;
+  margin-bottom: 34px; }
 
 @media only screen and (max-width: 1500px) {
   .cartblock__aside {
