@@ -1,0 +1,716 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+
+                  <li>
+                    <a href="">
+                      <span>Главная </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Каталог товаров</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Видеонаблюдение</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Видеокамеры</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="catalogpage">
+
+            <div class="container">
+              <div class="catalogheader__title">
+                <h1>Сравнение</h1>
+              </div>
+              <div class="catalogheader__linktab">
+                <a href="" class="active">Все характеристики</a>
+                <a href="" class="">Только отличия</a>
+              </div><!-- /.catalogheader__linktab -->
+
+              <div class="catalogsliderwrapper cardslider" data-slider="productslider">
+                <div class="sliderarrow sliderarrows__left">
+                  <img loading="lazy" src="img/leftslide.svg" width="26" height="26" alt="left" title="left">
+                </div>
+                <!-- /.sliderarrows__left -->
+                <div class="sliderarrow sliderarrows__right">
+                  <img loading="lazy" src="img/rightslide.svg" width="26" height="26" alt="right" title="right">
+                </div>
+                <!-- /.sliderarrows__right -->
+
+                <div class="cardslider__wrapper swiper">
+                  <div class="cardslider__slider swiper-wrapper">
+                    <div class="cardslider__item swiper-slide">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_purple">
+                                <span class="productsticker__text">NEW</span>
+                              </div>
+                            </div>
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">HIT</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          <a aria-label="link" href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img loading="lazy" src="img/product.webp"
+                                data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                title="" width="192" height="200">
+                            </div>
+                          </a>
+
+                          <div class="productcard__status productcard__status_instock">
+                            В наличии
+                          </div>
+
+                          <div class="productcard__title">
+                            <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                          </div>
+
+
+                          <div class="productcard__buy">
+                            <div class="productcard__buymain">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__form">
+                                <form action="">
+                                  <div class="productcard__fromwrapper">
+                                    <div class="productcard__addcart">
+                                      <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                        data-item="" data-toggleclass="active">
+                                        <div class="tocart__content tocart__before">
+                                          <span>В корзину</span>
+                                        </div>
+                                        <div class="tocart__content tocart__after">
+                                          <span>В корзине</span>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="productcard__buyfooter">
+                              <div class="productcard__buyfooterwrapper">
+                                <div class="productcard__buyfooterprice">
+                                  6 970 <span class="rouble">₽</span>
+                                </div><!-- /.productcard__buyfooterprice -->
+                                <div class="productcard__buyfooterinfo">
+                                  <div class="productcard__buyfooterinfotext">
+                                    Опт
+                                  </div><!-- /.productcard__buyfooterinfotext -->
+                                  <div class="productcard__buyfooterinfoicon">
+                                    <a href="#">
+                                      <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                        width="16" height="16">
+
+                                    </a>
+                                  </div><!-- /.productcard__buyfooterinfoicon -->
+                                </div><!-- /.productcard__buyfooterinfo -->
+                              </div><!-- /.productcard__buyfooterwrapper -->
+                            </div><!-- /.productcard__buyfooter -->
+                          </div>
+
+                          <div class="productcard__params">
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Рама</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав; Технологии - стандарты F/K/C-Mount,
+                                кареточный стакан BSA, рулевой стакан ZS, съемный петух, открытая прокладка тросов</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вилка</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав 6061, жесткая, конусная форма ног,
+                                прямой шток</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вес всего велосипеда </div>
+                              <div class="productcard__paramtext">8.80 кг</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Размер колеса и цвет рамы в наличии</div>
+                              <div class="productcard__paramtext">Синий: 20; Бежево-фиолетовый: 20; Розовый: 20</div>
+                            </div><!-- /.productcard__param -->
+                          </div><!-- /.productcard__params -->
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="cardslider__item swiper-slide">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_purple">
+                                <span class="productsticker__text">NEW</span>
+                              </div>
+                            </div>
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">HIT</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          <a aria-label="link" href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img loading="lazy" src="img/product.webp"
+                                data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                title="" width="192" height="200">
+                            </div>
+                          </a>
+
+                          <div class="productcard__status productcard__status_instock">
+                            В наличии
+                          </div>
+
+                          <div class="productcard__title">
+                            <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                          </div>
+
+
+                          <div class="productcard__buy">
+                            <div class="productcard__buymain">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__form">
+                                <form action="">
+                                  <div class="productcard__fromwrapper">
+                                    <div class="productcard__addcart">
+                                      <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                        data-item="" data-toggleclass="active">
+                                        <div class="tocart__content tocart__before">
+                                          <span>В корзину</span>
+                                        </div>
+                                        <div class="tocart__content tocart__after">
+                                          <span>В корзине</span>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="productcard__buyfooter">
+                              <div class="productcard__buyfooterwrapper">
+                                <div class="productcard__buyfooterprice">
+                                  6 970 <span class="rouble">₽</span>
+                                </div><!-- /.productcard__buyfooterprice -->
+                                <div class="productcard__buyfooterinfo">
+                                  <div class="productcard__buyfooterinfotext">
+                                    Опт
+                                  </div><!-- /.productcard__buyfooterinfotext -->
+                                  <div class="productcard__buyfooterinfoicon">
+                                    <a href="#">
+                                      <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                        width="16" height="16">
+
+                                    </a>
+                                  </div><!-- /.productcard__buyfooterinfoicon -->
+                                </div><!-- /.productcard__buyfooterinfo -->
+                              </div><!-- /.productcard__buyfooterwrapper -->
+                            </div><!-- /.productcard__buyfooter -->
+                          </div>
+
+                          <div class="productcard__params">
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Рама</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав; Технологии - стандарты F/K/C-Mount,
+                                кареточный стакан BSA, рулевой стакан ZS, съемный петух, открытая прокладка тросов</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вилка</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав 6061, жесткая, конусная форма ног,
+                                прямой шток</div>
+                            </div><!-- /.productcard__param -->
+
+                          </div><!-- /.productcard__params -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cardslider__item swiper-slide">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_purple">
+                                <span class="productsticker__text">NEW</span>
+                              </div>
+                            </div>
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">HIT</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          <a aria-label="link" href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img loading="lazy" src="img/product.webp"
+                                data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                title="" width="192" height="200">
+                            </div>
+                          </a>
+
+                          <div class="productcard__status productcard__status_instock">
+                            В наличии
+                          </div>
+
+                          <div class="productcard__title">
+                            <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                          </div>
+
+
+                          <div class="productcard__buy">
+                            <div class="productcard__buymain">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__form">
+                                <form action="">
+                                  <div class="productcard__fromwrapper">
+                                    <div class="productcard__addcart">
+                                      <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                        data-item="" data-toggleclass="active">
+                                        <div class="tocart__content tocart__before">
+                                          <span>В корзину</span>
+                                        </div>
+                                        <div class="tocart__content tocart__after">
+                                          <span>В корзине</span>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="productcard__buyfooter">
+                              <div class="productcard__buyfooterwrapper">
+                                <div class="productcard__buyfooterprice">
+                                  6 970 <span class="rouble">₽</span>
+                                </div><!-- /.productcard__buyfooterprice -->
+                                <div class="productcard__buyfooterinfo">
+                                  <div class="productcard__buyfooterinfotext">
+                                    Опт
+                                  </div><!-- /.productcard__buyfooterinfotext -->
+                                  <div class="productcard__buyfooterinfoicon">
+                                    <a href="#">
+                                      <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                        width="16" height="16">
+
+                                    </a>
+                                  </div><!-- /.productcard__buyfooterinfoicon -->
+                                </div><!-- /.productcard__buyfooterinfo -->
+                              </div><!-- /.productcard__buyfooterwrapper -->
+                            </div><!-- /.productcard__buyfooter -->
+                          </div>
+
+                          <div class="productcard__params">
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Рама</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав; Технологии - стандарты F/K/C-Mount,
+                                кареточный стакан BSA, рулевой стакан ZS, съемный петух, открытая прокладка тросов</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вилка</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав 6061, жесткая, конусная форма ног,
+                                прямой шток</div>
+                            </div><!-- /.productcard__param -->
+
+                          </div><!-- /.productcard__params -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cardslider__item swiper-slide">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_purple">
+                                <span class="productsticker__text">NEW</span>
+                              </div>
+                            </div>
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">HIT</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          <a aria-label="link" href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img loading="lazy" src="img/product.webp"
+                                data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                title="" width="192" height="200">
+                            </div>
+                          </a>
+
+                          <div class="productcard__status productcard__status_instock">
+                            В наличии
+                          </div>
+
+                          <div class="productcard__title">
+                            <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                          </div>
+
+
+                          <div class="productcard__buy">
+                            <div class="productcard__buymain">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__form">
+                                <form action="">
+                                  <div class="productcard__fromwrapper">
+                                    <div class="productcard__addcart">
+                                      <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                        data-item="" data-toggleclass="active">
+                                        <div class="tocart__content tocart__before">
+                                          <span>В корзину</span>
+                                        </div>
+                                        <div class="tocart__content tocart__after">
+                                          <span>В корзине</span>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="productcard__buyfooter">
+                              <div class="productcard__buyfooterwrapper">
+                                <div class="productcard__buyfooterprice">
+                                  6 970 <span class="rouble">₽</span>
+                                </div><!-- /.productcard__buyfooterprice -->
+                                <div class="productcard__buyfooterinfo">
+                                  <div class="productcard__buyfooterinfotext">
+                                    Опт
+                                  </div><!-- /.productcard__buyfooterinfotext -->
+                                  <div class="productcard__buyfooterinfoicon">
+                                    <a href="#">
+                                      <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                        width="16" height="16">
+
+                                    </a>
+                                  </div><!-- /.productcard__buyfooterinfoicon -->
+                                </div><!-- /.productcard__buyfooterinfo -->
+                              </div><!-- /.productcard__buyfooterwrapper -->
+                            </div><!-- /.productcard__buyfooter -->
+                          </div>
+
+                          <div class="productcard__params">
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Рама</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав; Технологии - стандарты F/K/C-Mount,
+                                кареточный стакан BSA, рулевой стакан ZS, съемный петух, открытая прокладка тросов</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вилка</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав 6061, жесткая, конусная форма ног,
+                                прямой шток</div>
+                            </div><!-- /.productcard__param -->
+
+                          </div><!-- /.productcard__params -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cardslider__item swiper-slide">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_purple">
+                                <span class="productsticker__text">NEW</span>
+                              </div>
+                            </div>
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">HIT</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          <a aria-label="link" href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img loading="lazy" src="img/product.webp"
+                                data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                title="" width="192" height="200">
+                            </div>
+                          </a>
+
+                          <div class="productcard__status productcard__status_instock">
+                            В наличии
+                          </div>
+
+                          <div class="productcard__title">
+                            <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                          </div>
+
+
+                          <div class="productcard__buy">
+                            <div class="productcard__buymain">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__form">
+                                <form action="">
+                                  <div class="productcard__fromwrapper">
+                                    <div class="productcard__addcart">
+                                      <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                        data-item="" data-toggleclass="active">
+                                        <div class="tocart__content tocart__before">
+                                          <span>В корзину</span>
+                                        </div>
+                                        <div class="tocart__content tocart__after">
+                                          <span>В корзине</span>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="productcard__buyfooter">
+                              <div class="productcard__buyfooterwrapper">
+                                <div class="productcard__buyfooterprice">
+                                  6 970 <span class="rouble">₽</span>
+                                </div><!-- /.productcard__buyfooterprice -->
+                                <div class="productcard__buyfooterinfo">
+                                  <div class="productcard__buyfooterinfotext">
+                                    Опт
+                                  </div><!-- /.productcard__buyfooterinfotext -->
+                                  <div class="productcard__buyfooterinfoicon">
+                                    <a href="#">
+                                      <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                        width="16" height="16">
+
+                                    </a>
+                                  </div><!-- /.productcard__buyfooterinfoicon -->
+                                </div><!-- /.productcard__buyfooterinfo -->
+                              </div><!-- /.productcard__buyfooterwrapper -->
+                            </div><!-- /.productcard__buyfooter -->
+                          </div>
+
+                          <div class="productcard__params">
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Рама</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав; Технологии - стандарты F/K/C-Mount,
+                                кареточный стакан BSA, рулевой стакан ZS, съемный петух, открытая прокладка тросов</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вилка</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав 6061, жесткая, конусная форма ног,
+                                прямой шток</div>
+                            </div><!-- /.productcard__param -->
+
+                          </div><!-- /.productcard__params -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cardslider__item swiper-slide">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">
+                          <div class="productcard__stickers">
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_purple">
+                                <span class="productsticker__text">NEW</span>
+                              </div>
+                            </div>
+                            <div class="productcard__sticker">
+                              <div class="productsticker productsticker_yellow">
+                                <span class="productsticker__text">HIT</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          
+                          <a aria-label="link" href="#" class="productcard__images ">
+                            <div class="productcard__img">
+                              <img loading="lazy" src="img/product.webp"
+                                data-hover-slides="img/category1.webp, img/product.webp, img/category1.webp" alt=""
+                                title="" width="192" height="200">
+                            </div>
+                          </a>
+
+                          <div class="productcard__status productcard__status_instock">
+                            В наличии
+                          </div>
+
+                          <div class="productcard__title">
+                            <a aria-label="link" href="">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                          </div>
+
+
+                          <div class="productcard__buy">
+                            <div class="productcard__buymain">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__form">
+                                <form action="">
+                                  <div class="productcard__fromwrapper">
+                                    <div class="productcard__addcart">
+                                      <button aria-label="button" class="btn btn_cart" data-entity="add2basket"
+                                        data-item="" data-toggleclass="active">
+                                        <div class="tocart__content tocart__before">
+                                          <span>В корзину</span>
+                                        </div>
+                                        <div class="tocart__content tocart__after">
+                                          <span>В корзине</span>
+                                        </div>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="productcard__buyfooter">
+                              <div class="productcard__buyfooterwrapper">
+                                <div class="productcard__buyfooterprice">
+                                  6 970 <span class="rouble">₽</span>
+                                </div><!-- /.productcard__buyfooterprice -->
+                                <div class="productcard__buyfooterinfo">
+                                  <div class="productcard__buyfooterinfotext">
+                                    Опт
+                                  </div><!-- /.productcard__buyfooterinfotext -->
+                                  <div class="productcard__buyfooterinfoicon">
+                                    <a href="#">
+                                      <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title=""
+                                        width="16" height="16">
+
+                                    </a>
+                                  </div><!-- /.productcard__buyfooterinfoicon -->
+                                </div><!-- /.productcard__buyfooterinfo -->
+                              </div><!-- /.productcard__buyfooterwrapper -->
+                            </div><!-- /.productcard__buyfooter -->
+                          </div>
+
+                          <div class="productcard__params">
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Рама</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав; Технологии - стандарты F/K/C-Mount,
+                                кареточный стакан BSA, рулевой стакан ZS, съемный петух, открытая прокладка тросов</div>
+                            </div><!-- /.productcard__param -->
+                            <div class="productcard__param">
+                              <div class="productcard__paramtitle">Вилка</div>
+                              <div class="productcard__paramtext">Алюминиевый сплав 6061, жесткая, конусная форма ног,
+                                прямой шток</div>
+                            </div><!-- /.productcard__param -->
+
+                          </div><!-- /.productcard__params -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                                  <div class="blockslider-pagination"></div>
+
+              </div><!-- /.catalogsliderwrapper -->
+
+
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

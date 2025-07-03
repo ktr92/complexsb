@@ -30,7 +30,7 @@ function initFE() {
   /*   detailsliderInit() */
   /*   imgSliderInit() */
   /*   recipeSliderInit() */
-  /*   productSliderInit() */
+    productSliderInit()
   /*  mobileAccordeon() */
   closeByOutsideSelect()
   closeByClickOutside(
@@ -590,48 +590,30 @@ function categorySlider() {
 }
 
 function productSliderInit() {
-  if ($(".productslider__slider").length > 0) {
-    $(".productslider__slider").each(function () {
-      $(this).slick({
-        dots: false,
-        arrows: true,
-        infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        /*  autoplay: true,
-            autoplaySpeed: 3000, */
-        swipe: false,
-        nextArrow: $(this)
-          .closest(".productslider")
-          .find(".sliderarrows__right"),
-        prevArrow: $(this)
-          .closest(".productslider")
-          .find(".sliderarrows__left"),
-        responsive: [
-          {
-            breakpoint: 1530,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-            },
-          },
-
-          {
-            breakpoint: 1023,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      })
+   if ($("[data-slider='productslider']").length > 0) {
+    const blockslider = new Swiper('[data-slider="productslider"] .swiper', {
+       slidesPerView: 2,
+      spaceBetween: 13,
+      navigation: {
+        nextEl: "[data-slider='productslider'] .sliderarrows__right",
+        prevEl: "[data-slider='productslider'] .sliderarrows__left",
+      },
+       pagination: {
+        el: "[data-slider='productslider'] .blockslider-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+       
+        1023: {
+          slidesPerView: 3,
+        
+        },
+        // when window width is >= 1400
+        1400: {
+          slidesPerView: 4,
+       
+        },
+      },
     })
   }
   if ($(".productslider__modalslider").length > 0) {
