@@ -2053,7 +2053,7 @@ padding-right: 5px;
     margin-bottom: 14px;
   }
   .page {
-    padding-bottom: 22px;
+    margin-bottom: 22px;
   }
   .partners__items {
     -webkit-box-pack: start;
@@ -3426,4 +3426,41 @@ padding-right: 5px;
   .cataloglist_page .cataloglist__item {
     margin-bottom: 5px;
   }
+  .logoheader {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+.logoheader {
+
+.logoheader__image {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+  .h1 {
+   font-weight: 600;
+font-size: 22px;
+  }
+
+  .logoheader__text {
+  font-size: 12px;
+line-height: 140%;
+  }
+}
+
+.catalogpage__logoheader {
+  padding: 12px 0 16px 0;
+    margin-bottom: 20px;
+}
+
+.logoheader__img {
+border-radius: 12px;
+height: 52px;
+width: 85px;
+  img {
+    max-width: 58px;
+  }
+}
 }
