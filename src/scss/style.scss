@@ -3872,14 +3872,13 @@ input.quantity-field::-webkit-inner-spin-button {
 .minicard {
 }
 .minicard__wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 .minicard__left {
@@ -3895,51 +3894,28 @@ input.quantity-field::-webkit-inner-spin-button {
 }
 .minicard__image {
   display: block;
+
 }
 .minicard__main {
   margin-left: 41px;
 }
 .minicard__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  /* identical to box height */
-  margin-bottom: 11px;
-  display: block;
-  color: #2e2f31;
+ font-family: var(--second-family);
+font-weight: 400;
+font-size: 22px;
+line-height: 100%;
+color: #303640;
+display: block;
+margin-bottom: 30px;
 }
 .minicard__buyblock {
 }
 .minicard__right {
-  text-align: right;
+    width: 100%;
+    max-width: 339px;
+
 }
-.minicard__pricetitle {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #2e2f31;
-  margin-bottom: 10px;
-}
-.minicard__price {
-}
-.productcard__prices {
-}
-.productcard__topprice {
-}
-.productcard__oldprice {
-}
-.productcard__badge {
-}
-.productcard__mainprice {
-}
-.productcard__price {
-}
-.productcard__pricevalue {
-}
-.productcard__priceunit {
-}
+
 .modalproduct__buttons {
   min-width: 210px;
   max-width: 210px;
@@ -4082,10 +4058,11 @@ input.quantity-field::-webkit-inner-spin-button {
   -ms-flex-align: center;
   align-items: center;
   span {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: #303640;
   }
   img,
   svg {
@@ -4150,7 +4127,7 @@ p {
   margin-bottom: 28px;
 }
 .cartblock__item {
-  padding-bottom: 38px;
+  padding-bottom: 8px;
   border-bottom: 2px solid rgba(48, 54, 64, 0.1);
   margin-bottom: 26px;
 }
@@ -6984,16 +6961,24 @@ iframe {
 }
 .minicard_page {
   .minicard__title {
-    font-size: 18px;
-    margin-bottom: 25px;
+     font-family: var(--second-family);
+font-weight: 400;
+font-size: 22px;
+line-height: 100%;
+color: #303640;
+display: block;
+margin-bottom: 30px;
+max-width: 310px;
   }
   .minicard__image {
-    width: 177px;
-    height: 177px;
+      padding: 38px 17px 27px 17px;
+
+    width: 250px;
+    height: 200px;
 
     img {
       width: 100%;
-      height: 100%;
+   /*    height: 100%; */
       object-fit: cover;
       object-position: center;
     }
