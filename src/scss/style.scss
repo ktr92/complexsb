@@ -8023,3 +8023,20 @@ color: #232325;
     transform: translateX(100%);
   }
 }
+
+.brandsblockpage {
+  .brandsblock__items {
+    flex-wrap: wrap;
+  }
+  .brandsblock__item {
+    width: calc(100% / 6);
+  }
+  .brandsblock__link {
+    height: 146px;
+
+    img {
+      max-width: 163px;
+      
+    }
+  }
+}
