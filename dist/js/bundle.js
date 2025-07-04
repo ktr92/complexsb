@@ -27,7 +27,7 @@ function initFE() {
   mainSliderInit()
   categorySlider()
 
-  /*   detailsliderInit() */
+    detailsliderInit()
   /*   imgSliderInit() */
   /*   recipeSliderInit() */
     productSliderInit()
@@ -391,80 +391,51 @@ $(document).ready(function () {
   })
 
   MathUtils = {
-    roundToPrecision: function (subject, precision) {
-      return +(+subject).toFixed(precision)
-    },
-  }
+          roundToPrecision: function (subject, precision) {
+            return +(+subject).toFixed(precision)
+          },
+        }
 
-  function decrementValue(e, step) {
-    e.preventDefault()
-    let $el = $(e.target)
-    if (!$el.data("field")) {
-      $el = $el.parent()
-    }
-    var fieldName = $el.data("field")
-    var parent = $el.closest("div")
-    var currentVal = +parseFloat(
-      parent.find("input[name=" + fieldName + "]").val()
-    ).toFixed(1)
-    var minValue =
-      +parseFloat(
-        parent.find("input[name=" + fieldName + "]").attr("min")
-      ).toFixed(1) || 0
+        function decrementValue(e, step) {
+          e.preventDefault();
+          var fieldName = $(e.target).data("field");
+          var parent = $(e.target).closest("div");
+          var currentVal = +parseFloat(parent.find("input[name=" + fieldName + "]").val()).toFixed(1);
+          var minValue = +parseFloat(parent.find("input[name=" + fieldName + "]").attr("min")).toFixed(1) || 0;
 
-    if (!isNaN(currentVal) && currentVal > minValue) {
-      parent
-        .find("input[name=" + fieldName + "]")
-        .val(
-          Math.max(MathUtils.roundToPrecision(currentVal - step, 1), minValue)
-        )
-    } else {
-      parent.find("input[name=" + fieldName + "]").val(minValue)
-    }
-    parent.find("input[name=" + fieldName + "]").trigger("change")
-  }
+          if (!isNaN(currentVal) && currentVal > minValue) {
+            parent.find("input[name=" + fieldName + "]").val(Math.max(MathUtils.roundToPrecision(currentVal - step, 1), minValue));
+          } else {
+            parent.find("input[name=" + fieldName + "]").val(minValue);
+          }
+          parent.find("input[name=" + fieldName + "]").trigger("change");
+        }
 
-  function incrementValue(e, step) {
-    e.preventDefault()
-    let $el = $(e.target)
-    if (!$el.data("field")) {
-      $el = $el.parent()
-    }
-    var fieldName = $el.data("field")
-    var parent = $el.closest("div")
-    var currentVal = +parseFloat(
-      parent.find("input[name=" + fieldName + "]").val()
-    ).toFixed(1)
-    var maxValue = parent.find("input[name=" + fieldName + "]").attr("max")
-    maxValue = maxValue ? +parseFloat(maxValue).toFixed(1) : Infinity
+        function incrementValue(e, step) {
+          e.preventDefault();
+          var fieldName = $(e.target).data("field");
+          var parent = $(e.target).closest("div");
+          var currentVal = +parseFloat(parent.find("input[name=" + fieldName + "]").val()).toFixed(1);
+          var maxValue = parent.find("input[name=" + fieldName + "]").attr("max");
+          maxValue = maxValue ? +parseFloat(maxValue).toFixed(1) : Infinity;
 
-    if (!isNaN(currentVal) && currentVal + step <= maxValue) {
-      parent
-        .find("input[name=" + fieldName + "]")
-        .val(MathUtils.roundToPrecision(currentVal + step, 1))
-    } else {
-      parent.find("input[name=" + fieldName + "]").val(maxValue)
-    }
-    parent.find("input[name=" + fieldName + "]").trigger("change")
-  }
+          if (!isNaN(currentVal) && currentVal + step <= maxValue) {
+            parent.find("input[name=" + fieldName + "]").val(MathUtils.roundToPrecision(currentVal + step, 1));
+          } else {
+            parent.find("input[name=" + fieldName + "]").val(maxValue);
+          }
+          parent.find("input[name=" + fieldName + "]").trigger("change");
+        }
 
-  $(document).on("click", ".quantity-plus", function (e) {
-    e.preventDefault()
-    e.stopPropagation()
-    let step = +parseFloat(
-      $(this).siblings('[type="number"]').attr("step")
-    ).toFixed(1)
-    incrementValue(e, step)
-  })
+        $(document).on("click", ".quantity-plus", function (e) {
+          let step = +parseFloat($(this).siblings('[type="number"]').attr("step")).toFixed(1);
+          incrementValue(e, step);
+        });
 
-  $(document).on("click", ".quantity-minus", function (e) {
-    e.preventDefault()
-    e.stopPropagation()
-    let step = +parseFloat(
-      $(this).siblings('[type="number"]').attr("step")
-    ).toFixed(1)
-    decrementValue(e, step)
-  })
+        $(document).on("click", ".quantity-minus", function (e) {
+          let step = +parseFloat($(this).siblings('[type="number"]').attr("step")).toFixed(1);
+          decrementValue(e, step);
+        });
   ;(function ($) {
     $(function () {
       $(".js-tabsheader").on("click", "li:not(.active)", function () {
@@ -532,7 +503,7 @@ function mainSliderInit() {
 function detailsliderInit() {
   if ($(".detailswiperpreview").length > 0) {
     const swiper = new Swiper(".detailswiperpreview", {
-      spaceBetween: 9,
+      spaceBetween: 7,
       scrollbar: {
         el: ".swiper-scrollbar",
         draggable: true,
@@ -616,7 +587,7 @@ function productSliderInit() {
       },
     })
   }
-  if ($(".productslider__modalslider").length > 0) {
+  /* if ($(".productslider__modalslider").length > 0) {
     $(".productslider__modalslider").each(function () {
       $(this).slick({
         dots: false,
@@ -650,7 +621,7 @@ function productSliderInit() {
         ],
       })
     })
-  }
+  } */
 }
 
 function recipeSliderInit() {
