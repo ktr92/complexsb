@@ -2373,7 +2373,9 @@ h2 {
   gap: 70px; }
 
 .docblock__icon {
-  margin-right: 27px; }
+  margin-right: 27px;
+  min-width: 54px;
+  max-width: 54px; }
 
 .docblock__link {
   display: flex;
@@ -3669,8 +3671,9 @@ button:hover {
   display: none; }
 
 .productpage__right {
-  width: 100%;
-  max-width: calc(527px + 63px); }
+  width: 100%; }
+  .productpage__right .detailinfo {
+    max-width: 537px; }
 
 .cardrating_large .score-wrap {
   width: 90px;
@@ -7946,6 +7949,23 @@ span.headerpanel_text2 {
       width: 440px;
       height: 2px; }
 
+.productactions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+  justify-content: flex-end; }
+  .productactions a {
+    border: 1px solid #d8d9da;
+    border-radius: 5555px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .productactions a img {
+      width: 20px;
+      height: 20px; }
+
 @media only screen and (max-width: 1500px) {
   .brandsblockpage .brandsblock__item {
     width: calc(100% / 5); }
@@ -10720,7 +10740,30 @@ padding-right: 5px;
     margin-left: 0;
     margin-right: 0; }
   .productpage__main {
-    max-width: 500px; } }
+    max-width: 500px; }
+  .description__table td:first-child {
+    min-width: unset;
+    padding-bottom: 12px; }
+  .docblock {
+    gap: 29px; }
+  .description__table td {
+    font-size: 13px; }
+  .sitetabs__header li {
+    font-size: 16px;
+    margin-right: 24px; }
+  /* .docblock__icon {
+    margin-right: 12px;
+    min-width: 34px;
+    max-width: 34px;
+} */
+  .productpage__images {
+    padding: 50px 0 0 0; }
+  .productactions {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .productpage__main {
+    position: relative; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .itemslist__item_col3 {
