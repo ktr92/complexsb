@@ -1,231 +1,289 @@
-<% var data = {
-  title: "MAIN",
-  author: ""
-  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
-  <div class="page">
-    <div class="breadcrumbs">
-      <div class="container">
-        <div class="breadcrumbs__items">
-          <ul>
-            <li>
-              <a href="/">
-                <span>
-                  <img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16">
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <span>Каталог</span>
-              </a>
-            </li>
-            <li>
-              <span>Мясо, птица</span>
-            </li>
-          </ul>
-        </div>
-        <!-- /.breadcrumbs__items -->
-      </div>
-      <!-- /.container -->
-    </div>
-    <!-- /.breadcrumbs -->
-    <div class="container">
-      <div class="pageheader">
-        <h1>Обязательные правила безопасности в условиях пандемии</h1>
-      </div>
-      <div class="pageparams">
-        <div class="pageparams__item">14.05.2022</div>
-      </div>
-      <!-- /.pageparams -->
-      <div class="pagecontent">
-        <div class="pagecontent__images">
-          <div class="pagecontent__image">
-            <a href='img/newsdetail1.webp' data-lightbox='pagecontent__images_1' class="pagecontent__img">
-              <img src="img/newsdetail1.webp" alt="" title="" width="942" height="628">
-            </a>
-          </div>
-          <div class="pagecontent__image">
-            <a href='img/newsdetail2.webp' data-lightbox='pagecontent__images_1' class="pagecontent__img">
-              <img src="img/newsdetail2.webp" alt="" title="" width="628" height="942">
-            </a>
-          </div>
-        </div>
-        <!-- /.pagecontent__images -->
-        <div class="pageshortdescr">
-          <div class="pageshortdescr__text">Дополнительные меры гигиены и безопасности, принятые на производстве Мясницкий ряд в условиях пандемии, останутся стандартом работы на постоянной основе.</div>
-          <!-- /.pageshortdescr__text -->
-        </div>
-        <!-- /.pagedescripton -->
-        <div class="pagetext">
-          <p> Пандемия COVID-19 внесла коррективы в бизнес-процессы компании «Мясницкий ряд». Основной акцент - это обеспечение безопасности продукции, сотрудников компании и покупателей. Введены дополнительные меры гигиены для соблюдения санитарных требований к организации работы предприятий, исключающих риски инфицирования, в период режима повышенной готовности. Предпринятые меры стали частью обязательного технологического процесса. </p>
-          <p>Для гарантии пищевой безопасности каждое производственное помещение дважды в день обрабатывается дезинфицирующими средствами. Затем промываются чистой водой. Качество обработки контролируют при помощи индикаторов, портативных люменометров и лабораторных исследований. Цеха и линии дезинфицируются при помощи технологии «холодного тумана». Установка генерирует облако со специальным составом, которое равномерно распределяется по всем поверхностям. Микро капли способы проникать и обеззараживать даже самые труднодоступные места. </p>
-          <p>Сотрудникам компании ежедневно, перед началом рабочего дня, измеряется температура бесконтактными термометрами и контролируется их состояние здоровья. Все обеспечены в необходимом объеме средствами индивидуальной защиты: перчатками, лицевыми масками, защитными лицевыми экранами, санитарно-гигиеническими шапочками. Дополнительно, на каждом рабочем месте есть антисептик, чтобы в процессе работы регулярно обрабатывать руки. Обязательным условием является соблюдение дистанции. Проводится качественная уборка помещений, уделяется особое внимание дезинфекции поверхности дверных ручек, столов, выключателям, перил и контактных поверхностей. Каждый час, в каждом помещении обязательное проветривание, а также обработка всех помещений бактерицидными УФ облучателями. Входные двери оборудованы датчиками позволяющими бесконтактно обеспечивать вход в помещения. Офисные сотрудники максимально переведены на удаленный режим работы. </p>
-          <p>Компания заботится о здоровье сотрудников, поэтому в меню столовой дополнительно добавлены фрукты и овощи, для обеспечения витаминами. </p>
-          <p>Во время карантина фирменные магазины продолжают работу в стандартном режиме. Продавцы в обязательном порядке носят средства индивидуальной защиты: перчатки, маски, лицевые защитные экраны, для покупателей в открытом доступе представлен антисептик. </p>
-          <p>Чтобы покупатели чувствовали себя в безопасности и соблюдали рекомендованный режим самоизоляции, «Мясницкий ряд» оперативно открыл онлайн-магазин и осуществляет бесконтактную доставку по Москве и Московской области, Рязани, Калуге и Твери.</p>
-        </div>
-        <!-- /.pagetext -->
-      </div>
-      <!-- /.pagecontent -->
-    </div>
-    <div class="pageblocksl morenewsslider">
-      <div class="container">
-        <div class="blockheader flex items-center content-between">
-          <div class="blockheader__left">
-            <h2>Другие статьи</h2>
-            <a href="#" class="onlyMobile">Смотреть все</a>
-
-          </div>
-          <!-- /.blockheader__left -->
-          <div class='blockheader__right'>
-            <a aria-label="link" href="#" class='extlink onlyDesktop'>Смотреть все</a>
-
-            <div class="sliderarrows flex">
-              <div class="sliderarrows__left">
-                <img loading="lazy" src="img/left.svg" width="26" height="26" alt="left" title="left">
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+                  <li>
+                    <a href="/">
+                      <span>
+                        <img src="img/Home.svg" alt="Главная" title="Главная" width="16" height="16">
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Мясо, птица</span>
+                  </li>
+                </ul>
               </div>
-              <!-- /.sliderarrows__left -->
-              <div class="sliderarrows__right">
-                <img loading="lazy" src="img/right.svg" width="26" height="26" alt="right" title="right">
-              </div>
-              <!-- /.sliderarrows__right -->
+              <!-- /.breadcrumbs__items -->
             </div>
-            <!-- /.sliderarrows -->
+            <!-- /.container -->
           </div>
-        </div>
-        <!-- /.blockheader -->
-        <div class="itemslistslider__wrapper">
-          <div class="itemslistslider__container">
-            <div class="itemslist__slider morenews__slider ">
-              <div class="itemslistslider__slide">
-                <div class="itemslistslider__item">
-                  <div class="itemslistcard itemslistcar_large">
-                    <div class="itemslistcard__wrapper">
-                      <a href="#" class="itemslistcard__image">
-                        <div class="itemslistcard__img">
-                          <img src="img/newsslider1.webp" alt="" title="" width="942" height="628">
-                        </div>
-                      </a>
-                      <!-- /.itemslistcard__image -->
-                      <div class="itemslistcard__info">
-                        <div class="itemslistcard__params">
-                          <div class="itemslistcard__param">
-                            <span class="itemslistcard__text">14.05.2022</span>
-                          </div>
-                        </div>
-                        <!-- /.itemslistcard__params -->
-                      </div>
-                      <div class="itemslistcard__title">
-                        <a href="">Обязательные правила безопасности в условиях пандемии</a>
-                      </div>
-                      
-                      <!-- /.itemslistcard__info -->
-                    </div>
-                    <!-- /.itemslistcard__wrapper -->
-                  </div>
-                  <!-- /.itemslistcard -->
-                </div>
-                <!-- /.itemslistslider__item -->
+          <!-- /.breadcrumbs -->
+          <div class="catalogpage__logoheader">
+            <div class="container">
+              <div class="logoheader logoheader_news">
+                <div class="logoheader__image">
+                  <div class="logoheader__img">
+                    <img src="img/Rectangle 2429.jpg" alt="" title="" width="410" height="274">
+                  </div><!-- /.logoheader__img -->
+
+                </div><!-- /.logoheader__image -->
+                <div class="logoheader__content">
+                  <div class="logoheader__title ">
+                    <h1>Качественное изображение без помех: купольные IP-камеры HiWatch с белой подсветкой и технологией
+                      EchoLight</h1>
+                  </div><!-- /.logoheader__title -->
+                  <div class="logoheader__text">14.05.2025</div>
+                </div><!-- /.logoheader__content -->
+              </div><!-- /.logoheader -->
+
+            </div><!-- /.container -->
+          </div><!-- /.catalogpage__logoheader -->
+          <div class="container">
+
+            <div class="pagecontent">
+
+              <div class="pagetext">
+                <h2>Заголовок</h2>
+                <p> Задача организации, в особенности же новая модель организационной деятельности требуют от нас
+                  анализа системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего
+                  порядка, а также новая модель организационной деятельности требуют определения и уточнения
+                  соответствующий условий активизации. Не следует, однако забывать, что новая модель организационной
+                  деятельности способствует подготовки и реализации существенных финансовых и административных условий.
+                  Разнообразный и богатый опыт новая модель организационной деятельности влечет за собой процесс
+                  внедрения и модернизации дальнейших направлений развития. Товарищи! дальнейшее развитие различных форм
+                  деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в
+                  отношении поставленных задач. С другой стороны постоянное информационно-пропагандистское обеспечение
+                  нашей деятельности способствует подготовки и реализации дальнейших направлений развития.</p>
+
+                <p> Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает
+                  широкому кругу (специалистов) участие в формировании существенных финансовых и административных
+                  условий. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры представляет
+                  собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
+                  Не следует, однако забывать, что дальнейшее развитие различных форм деятельности играет важную роль в
+                  формировании системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся
+                  структура организации способствует подготовки и реализации существенных финансовых и административных
+                  условий.</p>
+
+                  <h2>Заголовок</h2>
+
+                  <ul>
+                    <li>Эксклюзивный дистрибьютор видеонаблюдения <a href="">AMATEK</a></li>
+                    <li>Эксклюзивный дистрибьютор аналогового видеонаблюдения AVTECH и официальный дистрибьютор IP-видеонаблюдения AVTECH в России. Официальный дистрибьютор оборудования Pyronix , Visonic и TAMRON. </li>
+                    <li>Является дилером оборудования известных брендов: CTV, Tantos, Hikvision, Jablotron, DSC, Optex, Eldes, Ритм, Came, IronLogic, Gate, Сфинкс, Strazh, INTER-M, Олевс, Faraday, Промрукав и многих других. </li>
+                    <li>Осуществляет оптовые и розничные продажи оборудования систем безопасности по направлениям видеонаблюдения, СКУД, ОПС, пожаротушения, оповещения, расходных материалов и других.  </li>
+                    <li>Продаёт и отгружает оборудование по России и СНГ. Офисы и склады компании находятся в Санкт-Петербурге и Москве.</li>
+                    <li>Консультирует по выбору оборудования систем безопасности.</li>
+                    <li>Обеспечивает техническую поддержку, гарантийный ремонт и сервисное обслуживание оборудования в собственном Сервисном Центре. </li>
+                  </ul>
               </div>
-              <!-- /.itemslistslider__slide -->
-              <div class="itemslistslider__slide">
-                <div class="itemslistslider__item">
-                  <div class="itemslistcard itemslistcar_large">
-                    <div class="itemslistcard__wrapper">
-                      <a href="#" class="itemslistcard__image">
-                        <div class="itemslistcard__img">
-                          <img src="img/newsslider2.webp" alt="" title="" width="628" height="942">
-                        </div>
-                      </a>
-                      <!-- /.itemslistcard__image -->
-                      <div class="itemslistcard__info">
-                        <div class="itemslistcard__params">
-                          <div class="itemslistcard__param">
-                            <span class="itemslistcard__text">14.05.2022</span>
-                          </div>
-                        </div>
-                        <!-- /.itemslistcard__params -->
-                      </div>
-                      <div class="itemslistcard__title">
-                        <a href="">Обязательные правила безопасности в условиях пандемии</a>
-                      </div>
-                      
-                      <!-- /.itemslistcard__info -->
-                    </div>
-                    <!-- /.itemslistcard__wrapper -->
-                  </div>
-                  <!-- /.itemslistcard -->
-                </div>
-                <!-- /.itemslistslider__item -->
+              <!-- /.pagetext -->
+            </div>
+            <!-- /.pagecontent -->
+          </div>
+          <div class="pageblocksl morenewsslider">
+            <div class="container">
+              <div class="pageblocksl__header">
+                <h2>Другие новости</h2>
+                <a href="#" class="borderlink">Смотреть все</a>
               </div>
-              <!-- /.itemslistslider__slide -->
-              <div class="itemslistslider__slide">
-                <div class="itemslistslider__item">
-                  <div class="itemslistcard itemslistcar_large">
-                    <div class="itemslistcard__wrapper">
-                      <a href="#" class="itemslistcard__image">
-                        <div class="itemslistcard__img">
-                          <img src="img/newsslider3.webp" alt="" title="" width="942" height="707">
-                        </div>
-                      </a>
-                      <!-- /.itemslistcard__image -->
-                      <div class="itemslistcard__info">
-                        <div class="itemslistcard__params">
-                          <div class="itemslistcard__param">
-                            <span class="itemslistcard__text">14.05.2022</span>
-                          </div>
-                        </div>
-                        <!-- /.itemslistcard__params -->
-                      </div>
-                      <div class="itemslistcard__title">
-                        <a href="">Обязательные правила безопасности в условиях пандемии</a>
-                      </div>
-                      
-                      <!-- /.itemslistcard__info -->
-                    </div>
-                    <!-- /.itemslistcard__wrapper -->
-                  </div>
-                  <!-- /.itemslistcard -->
+              <div class="itemslistslider__wrapper" data-slider="morenews">
+                <div class="sliderarrow sliderarrows__left">
+                  <img loading="lazy" src="img/leftslide.svg" width="26" height="26" alt="left" title="left">
                 </div>
-                <!-- /.itemslistslider__item -->
-              </div>
-              <!-- /.itemslistslider__slide -->
-              <div class="itemslistslider__slide">
-                <div class="itemslistslider__item">
-                  <div class="itemslistcard itemslistcar_large">
-                    <div class="itemslistcard__wrapper">
-                      <a href="#" class="itemslistcard__image">
-                        <div class="itemslistcard__img">
-                          <img src="img/newsslider1.webp" alt="" title="" width="942" height="628">
-                        </div>
-                      </a>
-                      <!-- /.itemslistcard__image -->
-                      <div class="itemslistcard__info">
-                        <div class="itemslistcard__params">
-                          <div class="itemslistcard__param">
-                            <span class="itemslistcard__text">14.05.2022</span>
-                          </div>
-                        </div>
-                        <!-- /.itemslistcard__params -->
-                      </div>
-                      <div class="itemslistcard__title">
-                        <a href="">Обязательные правила безопасности в условиях пандемии</a>
-                      </div>
-                      
-                      <!-- /.itemslistcard__info -->
-                    </div>
-                    <!-- /.itemslistcard__wrapper -->
-                  </div>
-                  <!-- /.itemslistcard -->
+                <!-- /.sliderarrows__left -->
+                <div class="sliderarrow sliderarrows__right">
+                  <img loading="lazy" src="img/rightslide.svg" width="26" height="26" alt="right" title="right">
                 </div>
-                <!-- /.itemslistslider__item -->
+                <!-- /.sliderarrows__right -->
+                <div class="itemslistslider__container swiper">
+                  <div class="itemslist__slider morenews__slider swiper-wrapper">
+                    <div class="itemslistslider__slide swiper-slide">
+                      <div class="itemslistslider__item">
+                        <div class="itemslistcard itemslistcar_large">
+                          <div class="itemslistcard__wrapper">
+                            <a href="#" class="itemslistcard__image">
+                              <div class="itemslistcard__img">
+                                <img src="img/6be1d7278598f1168dcf74110ae8e3639d06467e.webp" alt="" title="" width="942"
+                                  height="628">
+                              </div>
+                            </a>
+                            <!-- /.itemslistcard__image -->
+
+                            <div class="itemslistcard__title">
+                              <a href="">Качественное изображение без помех: купольные IP-камеры HiWatch с белой
+                                подсветкой и технологией EchoLight</a>
+                            </div>
+                            <div class="itemslistcard__info">
+                              <div class="itemslistcard__params">
+                                <div class="itemslistcard__param">
+                                  <span class="itemslistcard__text">14.05.2022</span>
+                                </div>
+                              </div>
+                              <!-- /.itemslistcard__params -->
+                            </div>
+
+                            <!-- /.itemslistcard__info -->
+                          </div>
+                          <!-- /.itemslistcard__wrapper -->
+                        </div>
+                        <!-- /.itemslistcard -->
+                      </div>
+                      <!-- /.itemslistslider__item -->
+                    </div>
+                    <!-- /.itemslistslider__slide -->
+                    <div class="itemslistslider__slide swiper-slide">
+                      <div class="itemslistslider__item">
+                        <div class="itemslistcard itemslistcar_large">
+                          <div class="itemslistcard__wrapper">
+                            <a href="#" class="itemslistcard__image">
+                              <div class="itemslistcard__img">
+                                <img src="img/6be1d7278598f1168dcf74110ae8e3639d06467e.webp" alt="" title="" width="942"
+                                  height="628">
+                              </div>
+                            </a>
+                            <!-- /.itemslistcard__image -->
+
+                            <div class="itemslistcard__title">
+                              <a href="">Качественное изображение без помех: купольные IP-камеры HiWatch с белой
+                                подсветкой и технологией EchoLight</a>
+                            </div>
+                            <div class="itemslistcard__info">
+                              <div class="itemslistcard__params">
+                                <div class="itemslistcard__param">
+                                  <span class="itemslistcard__text">14.05.2022</span>
+                                </div>
+                              </div>
+                              <!-- /.itemslistcard__params -->
+                            </div>
+
+                            <!-- /.itemslistcard__info -->
+                          </div>
+                          <!-- /.itemslistcard__wrapper -->
+                        </div>
+                        <!-- /.itemslistcard -->
+                      </div>
+                      <!-- /.itemslistslider__item -->
+                    </div>
+                    <!-- /.itemslistslider__slide -->
+                    <div class="itemslistslider__slide swiper-slide">
+                      <div class="itemslistslider__item">
+                        <div class="itemslistcard itemslistcar_large">
+                          <div class="itemslistcard__wrapper">
+                            <a href="#" class="itemslistcard__image">
+                              <div class="itemslistcard__img">
+                                <img src="img/6be1d7278598f1168dcf74110ae8e3639d06467e.webp" alt="" title="" width="942"
+                                  height="628">
+                              </div>
+                            </a>
+                            <!-- /.itemslistcard__image -->
+
+                            <div class="itemslistcard__title">
+                              <a href="">Качественное изображение без помех: купольные IP-камеры HiWatch с белой
+                                подсветкой и технологией EchoLight</a>
+                            </div>
+                            <div class="itemslistcard__info">
+                              <div class="itemslistcard__params">
+                                <div class="itemslistcard__param">
+                                  <span class="itemslistcard__text">14.05.2022</span>
+                                </div>
+                              </div>
+                              <!-- /.itemslistcard__params -->
+                            </div>
+
+                            <!-- /.itemslistcard__info -->
+                          </div>
+                          <!-- /.itemslistcard__wrapper -->
+                        </div>
+                        <!-- /.itemslistcard -->
+                      </div>
+                      <!-- /.itemslistslider__item -->
+                    </div>
+                    <!-- /.itemslistslider__slide -->
+                    <div class="itemslistslider__slide swiper-slide">
+                      <div class="itemslistslider__item">
+                        <div class="itemslistcard itemslistcar_large">
+                          <div class="itemslistcard__wrapper">
+                            <a href="#" class="itemslistcard__image">
+                              <div class="itemslistcard__img">
+                                <img src="img/6be1d7278598f1168dcf74110ae8e3639d06467e.webp" alt="" title="" width="942"
+                                  height="628">
+                              </div>
+                            </a>
+                            <!-- /.itemslistcard__image -->
+
+                            <div class="itemslistcard__title">
+                              <a href="">Качественное изображение без помех: купольные IP-камеры HiWatch с белой
+                                подсветкой и технологией EchoLight</a>
+                            </div>
+                            <div class="itemslistcard__info">
+                              <div class="itemslistcard__params">
+                                <div class="itemslistcard__param">
+                                  <span class="itemslistcard__text">14.05.2022</span>
+                                </div>
+                              </div>
+                              <!-- /.itemslistcard__params -->
+                            </div>
+
+                            <!-- /.itemslistcard__info -->
+                          </div>
+                          <!-- /.itemslistcard__wrapper -->
+                        </div>
+                        <!-- /.itemslistcard -->
+                      </div>
+                      <!-- /.itemslistslider__item -->
+                    </div>
+                    <!-- /.itemslistslider__slide -->
+                    <div class="itemslistslider__slide swiper-slide">
+                      <div class="itemslistslider__item">
+                        <div class="itemslistcard itemslistcar_large">
+                          <div class="itemslistcard__wrapper">
+                            <a href="#" class="itemslistcard__image">
+                              <div class="itemslistcard__img">
+                                <img src="img/6be1d7278598f1168dcf74110ae8e3639d06467e.webp" alt="" title="" width="942"
+                                  height="628">
+                              </div>
+                            </a>
+                            <!-- /.itemslistcard__image -->
+
+                            <div class="itemslistcard__title">
+                              <a href="">Качественное изображение без помех: купольные IP-камеры HiWatch с белой
+                                подсветкой и технологией EchoLight</a>
+                            </div>
+                            <div class="itemslistcard__info">
+                              <div class="itemslistcard__params">
+                                <div class="itemslistcard__param">
+                                  <span class="itemslistcard__text">14.05.2022</span>
+                                </div>
+                              </div>
+                              <!-- /.itemslistcard__params -->
+                            </div>
+
+                            <!-- /.itemslistcard__info -->
+                          </div>
+                          <!-- /.itemslistcard__wrapper -->
+                        </div>
+                        <!-- /.itemslistcard -->
+                      </div>
+                      <!-- /.itemslistslider__item -->
+                    </div>
+                    <!-- /.itemslistslider__slide -->
+                  </div>
+                </div>
+                <!-- /.itemslistslider__container -->
               </div>
-              <!-- /.itemslistslider__slide -->
             </div>
           </div>
-          <!-- /.itemslistslider__container -->
         </div>
-      </div>
-    </div>
-  </div>
-</main><%= _.template(require('../includes/footer.html').default)(data) %>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>

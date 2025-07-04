@@ -46,7 +46,7 @@ function initFE() {
   /*   blockSliderInit() */
   /*   productListImgLisder()
    */
-  /*   moreNewsSliderInit() */
+    moreNewsSliderInit()
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
@@ -698,49 +698,27 @@ function recipeSliderInit() {
   }
 }
 function moreNewsSliderInit() {
-  if ($(".morenews__slider").length > 0) {
-    $(".morenews__slider").each(function () {
-      $(this).slick({
-        dots: false,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        swipe: false,
-        nextArrow: $(this)
-          .closest(".morenewsslider")
-          .find(".sliderarrows__right"),
-        prevArrow: $(this)
-          .closest(".morenewsslider")
-          .find(".sliderarrows__left"),
-        responsive: [
-          {
-            breakpoint: 1530,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-            },
-          },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      })
+  if ($('[data-slider="morenews"]').length > 0) {
+    const blockslider = new Swiper('[data-slider="morenews"] .swiper', {
+       slidesPerView: 1,
+      spaceBetween: 8,
+      navigation: {
+        nextEl: '[data-slider="morenews"] .sliderarrows__right',
+        prevEl: '[data-slider="morenews"] .sliderarrows__left',
+      },
+      breakpoints: {
+        481: {
+          slidesPerView: 2,
+          spaceBetween: 8,
+        },
+        // when window width is >= 1400
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
     })
+
   }
 }
 
