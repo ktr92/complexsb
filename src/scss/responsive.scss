@@ -2234,6 +2234,7 @@ line-height: 140%;
     line-height: 14px;
   }
   .errorpage {
+    justify-content: center;
   }
   .errorpage__code {
     font-size: 134px;
@@ -2245,12 +2246,17 @@ line-height: 140%;
   .errorpage__title {
     font-size: 22px;
     line-height: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    br {
+      display: none;
+    }
   }
   .errorpage__text {
     font-size: 14px;
     line-height: 140%;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
+        text-align: center;
   }
   .errorpage__main {
     width: 100%;
@@ -2694,14 +2700,19 @@ line-height: 140%;
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      justify-content: center;
+      max-width: 256px;
+      margin-left: auto;margin-right: auto;
+      gap: 22px;
+      margin-bottom: 20px;
     }
     li {
-      width: 50%;
+    /*   width: 50%; */
       white-space: nowrap;
       margin-right: 0;
-      margin-bottom: 8px;
+      margin-bottom: 0;
       a {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 100%;
       }
     }

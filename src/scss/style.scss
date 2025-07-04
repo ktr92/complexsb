@@ -4451,26 +4451,7 @@ p {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.detail_off {
-  .productpage__left,
-  .detailinfo__title,
-  .productcard__mainprice {
-    opacity: 0.5;
-  }
-  .productcard__pricevalue,
-  .productcard__priceunit {
-    color: #2e2f31;
-  }
-  .detailtable {
-    background: #fff;
-    -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-    box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
-  }
-  .detailtable__body .detailtable__row {
-    background: #f8f8fb;
-    border: 4px solid #fff;
-  }
-}
+
 .detailinfo__outofstock {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5553,7 +5534,7 @@ a.indexcat__title {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 30px;
+/*   padding-top: 30px; */
 }
 .errorpage__code {
   font-style: normal;
@@ -5568,6 +5549,8 @@ a.indexcat__title {
   margin-left: 85px;
 }
 .errorpage__title {
+  font-family: var(--font-family);
+
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -5576,6 +5559,7 @@ a.indexcat__title {
   color: #2e2f31;
 }
 .errorpage__text {
+  font-family: var(--second-family);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -5599,7 +5583,7 @@ a.indexcat__title {
       content: "";
       position: absolute;
       left: 0;
-      top: 5px;
+      top: 7px;
       border-radius: 50%;
       background: #ffd600;
     }
@@ -8300,6 +8284,43 @@ span.headerpanel_text2 {
     img {
       width: 20px;
       height: 20px;
+    }
+  }
+}
+
+.detail_off {
+  .productpage__left,
+  .detailinfo__title,
+  .productcard__mainprice {
+    opacity: 0.5;
+  }
+  .productcard__pricevalue,
+  .productcard__priceunit {
+    color: #2e2f31;
+  }
+  .detailtable {
+    background: #fff;
+    -webkit-box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
+    box-shadow: 8px 8px 40px rgba(48, 54, 64, 0.1);
+  }
+  .detailtable__body .detailtable__row {
+    background: #f8f8fb;
+    border: 4px solid #fff;
+  }
+  .productcard__addcart {
+    .productcard__topprice {
+      display: none;
+    }
+    .productcard__quantity {
+      display: none;
+    }
+    .btn_cart {
+      background: transparent;
+      border: 1px solid #e9e9e9;
+      .tocart__before {
+        padding: 0;
+        background-image: none;
+      }
     }
   }
 }
