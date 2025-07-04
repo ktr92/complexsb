@@ -3649,13 +3649,14 @@ padding-right: 5px;
     }
     .logoheader__img {
       background: transparent;
-      border-radius: 0;
+
       border: none;
       width: unset;
       height: unset;
 
       img {
         max-width: 100%;
+              border-radius: 0;
       }
     }
     .logoheader__text {

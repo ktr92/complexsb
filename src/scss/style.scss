@@ -5199,8 +5199,8 @@ p {
       padding-left: 60px;
       position: relative;
       min-height: 45px;
-      /*     display: flex;
-      align-items: center; */
+          display: flex;
+      align-items: center;
       /*      gap: 15px; */
       font-family: var(--second-family);
       font-weight: 400;
@@ -8116,13 +8116,14 @@ span.headerpanel_text2 {
   }
   .logoheader__img {
     background: transparent;
-    border-radius: 10px;
     border: none;
     width: 410px;
     height: 274px;
 
     img {
       max-width: 100%;
+      border-radius: 10px;
+
     }
   }
   .logoheader__text {

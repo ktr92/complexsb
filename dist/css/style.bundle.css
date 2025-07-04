@@ -5399,8 +5399,8 @@ p a {
       padding-left: 60px;
       position: relative;
       min-height: 45px;
-      /*     display: flex;
-      align-items: center; */
+      display: flex;
+      align-items: center;
       /*      gap: 15px; */
       font-family: var(--second-family);
       font-weight: 400;
@@ -7818,12 +7818,12 @@ span.headerpanel_text2 {
 
 .logoheader_news .logoheader__img {
   background: transparent;
-  border-radius: 10px;
   border: none;
   width: 410px;
   height: 274px; }
   .logoheader_news .logoheader__img img {
-    max-width: 100%; }
+    max-width: 100%;
+    border-radius: 10px; }
 
 .logoheader_news .logoheader__text {
   font-weight: 600;
@@ -10534,12 +10534,12 @@ padding-right: 5px;
     line-height: 120%; }
   .logoheader_news .logoheader__img {
     background: transparent;
-    border-radius: 0;
     border: none;
     width: unset;
     height: unset; }
     .logoheader_news .logoheader__img img {
-      max-width: 100%; }
+      max-width: 100%;
+      border-radius: 0; }
   .logoheader_news .logoheader__text {
     font-size: 14px;
     line-height: 120%; }
