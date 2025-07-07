@@ -96,6 +96,18 @@
   .productcard__buyfooter {
     padding-left: 13px;
   }
+  .pagewithbanner__wrapper {
+    max-width: 50%;
+  }
+  .pagewithbanner__wrapper {
+    padding: 70px 30px;
+   
+  }
+  .pagewithbanner {
+ .container {
+      padding: 0;
+    }
+  }
 }
 @include large-screen {
   .brandsblockpage {
@@ -2649,6 +2661,35 @@ line-height: 140%;
   }
 }
 @include small-screen {
+  .pagewithbanner__wrapper {
+    padding: 26px;
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .pagewithbanner__text {
+    font-size: 14px;
+line-height: 130%;
+  }
+
+  .pagecontent .catalogroot {
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+  .pagecontent {
+    margin-top: 23px;
+  }
+  .pagewithbanner__title {
+    margin-bottom: 22px;
+    font-size: 22px;
+line-height: 100%;
+  }
+  .pagewithbanner {
+    margin-bottom: 23px;
+    height: 364px;
+    padding-top: 167px;
+    background-size: 222%;
+    background-position: top right;
+  }
   .cataloglist_page .cataloglist__item {
     width: 50%;
   }
@@ -3445,6 +3486,7 @@ line-height: 140%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
   }
   .seoblock {
     margin: 23px 0;
@@ -3798,6 +3840,9 @@ line-height: 140%;
  .productpage__main  {
   position: relative;
  }
+   .indexcat__items_full .indexcat__wrapper {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1023px) {
