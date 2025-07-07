@@ -1052,6 +1052,10 @@ h2 {
   color: #2e2f31;
   margin-top: 2px;
 }
+.link_blue {
+color: #0084fe;  font-weight: 600;
+
+}
 .indexcat__text {
   font-style: normal;
   font-weight: 400;
@@ -8407,5 +8411,23 @@ span.headerpanel_text2 {
         margin-right: 10px;
       }
     }
+  }
+}
+.pagetext {
+  h2 {
+    margin-top: 60px;
+  }
+}
+
+.brandsblock__wrapper_wrap {
+  .brandsblock__items {
+    flex-wrap: wrap;
+  }
+  .brandsblock__item {
+    width: 20%;
+  }
+  .brandsblock__link {
+    height: 177px;
+    padding: 25px;
   }
 }

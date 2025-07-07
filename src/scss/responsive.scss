@@ -348,6 +348,12 @@
 }
 /* mobile */
 @include medium-screen {
+  .brandsblock__wrapper_wrap .brandsblock__item {
+      width: 50%;
+  }
+  .brandsblock__wrapper_wrap .brandsblock__link {
+    
+  }
   .brandsblockpage {
     .brandsblock__item {
       width: calc(100% / 3);
