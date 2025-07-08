@@ -2562,12 +2562,16 @@ li.mainmenuLevelOne__item {
   a.btn_main,
   a.btn_border,
   button {
-    height: 50px;
+    height: 60px;
     padding: 0 20px;
-    line-height: 50px;
+    line-height: 60px;
     display: block;
     width: 100%;
     max-width: 100%;
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 16px;
+color: #232325;
   }
   .btn_border {
     line-height: 46px;
@@ -5934,16 +5938,17 @@ input.input_image {
     }
   }
 }
-
+.formblock__check {
+  margin-top: 30px;
+}
 .check label {
   cursor: pointer;
   display: inline-block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 110%;
-
-  color: #3b435a;
+ font-family: var(--third-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 110%;
+color: #232325;
   padding-left: 38px;
   position: relative;
 }
@@ -5962,8 +5967,8 @@ input.input_image {
 }
 
 .check label:before {
-  background-color: #ed1e26;
-  border-radius: 4px;
+  background-color: #febd18;
+  border-radius: 50%;
   content: "";
   height: 18px;
   left: 0;
@@ -5977,7 +5982,7 @@ input.input_image {
   background-image: url(../img/checkbox_checked.svg);
   background-repeat: no-repeat;
 
-  background-position: center;
+  background-position: center left 4px;
 }
 
 .blockheader__left {
@@ -6236,7 +6241,7 @@ iframe {
   margin-bottom: 36px;
 }
 .formblock__main {
-  margin-bottom: 40px;
+  margin-bottom: 22px;
 }
 .formblock__check {
   margin-bottom: 30px;
@@ -6283,10 +6288,13 @@ iframe {
 }
 
 .formblock .check label {
-  font-size: 14px;
-  line-height: 110%;
-  margin-bottom: 0;
-  padding-left: 32px;
+font-family: var(--third-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 110%;
+color: #232325;
+margin-bottom: 3px;
+  padding-left: 29px;
 }
 .formblock .check label:before {
   top: 0;
@@ -6335,58 +6343,59 @@ iframe {
   }
 }
 .passwordforgot a {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-
-  color: #febd18;
+ font-size: 16px;
 }
 .red {
   color: $red !important;
 }
 
 .passwordforgot .check label {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-
-  color: #2e2f31;
+  font-family: var(--third-family);
+font-weight: 500;
+font-size: 16px;
+color: #232325;
 }
 
 .textlogin {
-  margin-top: 35px;
+  margin-top: 33px;
+}
+.textlogin.flex {
+  justify-content: center;
+  gap: 10px;
+  > * {
+    margin-bottom: 0;
+    
+  }
 }
 
 .textlogin__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-
-  color: #3b435a;
+font-family: var(--third-family);
+font-weight: 500;
+font-size: 16px;
+color: #232325;
+margin-bottom: 12px;
 }
 
 .textlogin__link a {
-  font-style: normal;
-  font-weight: 700;
+   font-family: var(--font-family);
+  font-weight: 600;
   font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
+  line-height: 100%;
+  color: #232325;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #febd18;
 
-  color: #febd18;
+  &:hover {
+    border-color: transparent;
+  }
 }
 
 .textinput {
-  color: rgba(59, 67, 90, 0.5);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
+font-family: var(--third-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+color: rgba(35, 35, 37, 0.5);
   margin-top: 15px;
 }
 
@@ -6426,7 +6435,7 @@ iframe {
 }
 
 .modalinfo__text {
-  margin-bottom: 34px;
+ /*  margin-bottom: 34px; */
   color: rgba(37, 52, 79, 0.6);
   font-style: normal;
   font-weight: 400;

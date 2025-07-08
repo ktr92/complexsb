@@ -70,7 +70,7 @@ a {
   vertical-align: middle; }
 
 .modal {
-  z-index: 9999999999; }
+  z-index: 1100; }
 
 .modal-dialog {
   width: 662px;
@@ -85,7 +85,7 @@ a {
   background: #25344f; }
 
 .modal-backdrop.in {
-  opacity: .3; }
+  opacity: 0.3; }
 
 .modal-content {
   box-shadow: none;
@@ -98,27 +98,29 @@ a {
 button.close {
   top: 15px;
   right: 15px;
-  opacity: 1 !important;
   z-index: 999;
   position: absolute;
   font-size: 35px; }
 
 .modal-title {
-  font-size: 24px;
-  text-transform: none;
-  font-weight: bold;
-  text-align: center; }
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 100%;
+  color: #232325;
+  text-align: center;
+  margin-bottom: 13px; }
 
 .modal-content {
   border: none;
   box-shadow: none;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 12px;
   padding: 39px 62px 30px 62px; }
 
 .deliverytabs__header {
   margin-bottom: 24px;
-  background: #F3F5F8;
+  background: #f3f5f8;
   border-radius: 5555px;
   overflow: hidden;
   padding: 5px; }
@@ -159,15 +161,13 @@ button.close {
   width: 33.3333%;
   margin-bottom: 14px; }
 
-label {
-  font-style: normal;
-  font-weight: 400;
+.formblock__input label {
+  font-family: var(--third-family);
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-  display: block;
-  margin-bottom: 7px;
-  color: #3B435A; }
+  color: rgba(35, 35, 37, 0.7);
+  margin-bottom: 12px;
+  display: block; }
 
 textarea {
   display: block;
@@ -185,9 +185,9 @@ textarea {
   line-height: 19px;
   border: 2px solid #f3f3f7;
   /* identical to box height */
-  color: #3B435A; }
+  color: #3b435a; }
   textarea.input-error {
-    border: 2px solid #FF585F; }
+    border: 2px solid #ff585f; }
   textarea:focus {
     border: 2px solid #df000f; }
 
@@ -197,16 +197,7 @@ textarea {
   font-size: 12px;
   line-height: 100%;
   /* or 12px */
-  color: #FF585F; }
-
-.modal-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 100%;
-  /* identical to box height, or 22px */
-  margin-bottom: 24px;
-  color: #25344F; }
+  color: #ff585f; }
 
 .modal-body {
   padding: 0;
@@ -224,7 +215,10 @@ button.close {
   padding: 0;
   font-size: 10px;
   top: 21px;
-  right: 21px; }
+  right: 21px;
+  opacity: 0.5; }
+  button.close:hover {
+    opacity: 1; }
 
 .map-delivery {
   height: 252px;
@@ -232,6 +226,16 @@ button.close {
 
 .modal-dialog_product {
   width: 1174px; }
+
+.modal input[type="text"],
+.modal input[type="email"],
+.modal input[type="tel"],
+.modal input[type="password"] {
+  height: 56px;
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #232325; }
 
 @media only screen and (max-width: 1023px) {
   .pickuplist__addr {
@@ -3037,12 +3041,16 @@ li.mainmenuLevelOne__item {
   .buttonsrow__item a.btn_main,
   .buttonsrow__item a.btn_border,
   .buttonsrow__item button {
-    height: 50px;
+    height: 60px;
     padding: 0 20px;
-    line-height: 50px;
+    line-height: 60px;
     display: block;
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: #232325; }
   .buttonsrow__item .btn_border {
     line-height: 46px; }
 
@@ -6026,14 +6034,17 @@ input.input_image {
   .headermain__contacts:hover .contacts__dropdown {
     display: block; } }
 
+.formblock__check {
+  margin-top: 30px; }
+
 .check label {
   cursor: pointer;
   display: inline-block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 14px;
   line-height: 110%;
-  color: #3b435a;
+  color: #232325;
   padding-left: 38px;
   position: relative; }
 
@@ -6048,8 +6059,8 @@ input.input_image {
   text-decoration: none; }
 
 .check label:before {
-  background-color: #ed1e26;
-  border-radius: 4px;
+  background-color: #febd18;
+  border-radius: 50%;
   content: "";
   height: 18px;
   left: 0;
@@ -6061,7 +6072,7 @@ input.input_image {
 .check input[type="checkbox"]:checked + label:before {
   background-image: url(../img/checkbox_checked.svg);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center left 4px; }
 
 .blockheader__left .infocard__title {
   margin-bottom: 0; }
@@ -6262,7 +6273,7 @@ iframe {
   margin-bottom: 36px; }
 
 .formblock__main {
-  margin-bottom: 40px; }
+  margin-bottom: 22px; }
 
 .formblock__check {
   margin-bottom: 30px; }
@@ -6308,10 +6319,13 @@ iframe {
   margin-bottom: 9px; }
 
 .formblock .check label {
+  font-family: var(--third-family);
+  font-weight: 500;
   font-size: 14px;
   line-height: 110%;
-  margin-bottom: 0;
-  padding-left: 32px; }
+  color: #232325;
+  margin-bottom: 3px;
+  padding-left: 29px; }
 
 .formblock .check label:before {
   top: 0;
@@ -6353,49 +6367,50 @@ iframe {
     line-height: 60px; }
 
 .passwordforgot a {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-  color: #febd18; }
+  font-size: 16px; }
 
 .red {
   color: #ff1d1d !important; }
 
 .passwordforgot .check label {
-  font-style: normal;
-  font-weight: 700;
+  font-family: var(--third-family);
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-  color: #2e2f31; }
+  color: #232325; }
 
 .textlogin {
-  margin-top: 35px; }
+  margin-top: 33px; }
+
+.textlogin.flex {
+  justify-content: center;
+  gap: 10px; }
+  .textlogin.flex > * {
+    margin-bottom: 0; }
 
 .textlogin__text {
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--third-family);
+  font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-  color: #3b435a; }
+  color: #232325;
+  margin-bottom: 12px; }
 
 .textlogin__link a {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height */
-  color: #febd18; }
-
-.textinput {
-  color: rgba(59, 67, 90, 0.5);
-  font-style: normal;
-  font-weight: 400;
+  font-family: var(--font-family);
+  font-weight: 600;
   font-size: 16px;
   line-height: 100%;
+  color: #232325;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #febd18; }
+  .textlogin__link a:hover {
+    border-color: transparent; }
+
+.textinput {
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(35, 35, 37, 0.5);
   margin-top: 15px; }
 
 .formblock__input_center {
@@ -6428,7 +6443,7 @@ iframe {
   color: #2e2f31; }
 
 .modalinfo__text {
-  margin-bottom: 34px;
+  /*  margin-bottom: 34px; */
   color: rgba(37, 52, 79, 0.6);
   font-style: normal;
   font-weight: 400;
@@ -9971,7 +9986,8 @@ padding-right: 5px;
   .textlogin__link a,
   .textlogin__text {
     font-size: 12px;
-    line-height: 18px; }
+    line-height: 18px;
+    margin-bottom: 0; }
   .formblock__main {
     margin-bottom: 24px; }
   .passwordforgot {
@@ -11044,7 +11060,13 @@ padding-right: 5px;
       font-size: 14px;
       text-align: center; }
   .contactobject__phones > div {
-    width: calc(50% - 12px); } }
+    width: calc(50% - 12px); }
+  .modal input[type="text"], .modal input[type="email"], .modal input[type="tel"], .modal input[type="password"] {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 14px; }
+  .modal {
+    bottom: unset; } }
 
 @media (min-width: 481px) and (max-width: 1023px) {
   .itemslist__item_col3 {

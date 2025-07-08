@@ -1290,474 +1290,28 @@
 <!-- /#header.header --> 
   <style>
     [data-toggle='modal'] {margin-bottom: 5px;}
+    main .container {
+      margin: 150px 0;
+    }
   </style>
   <main>
   <div class="container">
     <!-- эти попапы в футере  -->
-    <a href="#popup_delivery" data-toggle='modal' class="btn btn_main"> Выбрать способ доставки </a>
     <a href="#popup_callback" data-toggle='modal' class="btn btn_main"> Заказать звонок</a>
     <a href="#popup_auth" data-toggle='modal' class="btn btn_main"> Авторизация</a>
     <a href="#popup_reg" data-toggle='modal' class="btn btn_main"> Регистрация</a>
+    <a href="#popup_request" data-toggle='modal' class="btn btn_main"> Отправить запрос</a>
     <a href="#popup_password" data-toggle='modal' class="btn btn_main"> Восстановление пароля</a>
-    <a href="#popup_sms" data-toggle='modal' class="btn btn_main">Вход по SMS</a>
-    <a href="#popup_reset" data-toggle='modal' class="btn btn_main">Сброс пароля</a>
-    <a href="#popup_email" data-toggle='modal' class="btn btn_main">Мы отправили письмо</a>
+    <a href="#popup_email" data-toggle='modal' class="btn btn_main">Email</a>
     <a href="#popup_success" data-toggle='modal' class="btn btn_main">Успешная отправка</a>
-    <a href="#popup_review" data-toggle='modal' class="btn btn_main">Оставить отзыв</a>
-    <a href="#popup_rate" data-toggle='modal' class="btn btn_main">Оцените </a>
 
-    <!-- эти попапы в карточке товара и ниже -->
-    <a href="#popup_fastorder" data-toggle='modal' class="btn btn_main">Купить в 1 клик </a>
-    <a href="#popup_addproduct" data-toggle='modal' class="btn btn_main">Добавлен в корзину </a>
+
     <br>
     <br>
   </div>
   <!-- /.container -->
 </main>
 
-<div class="modal modal_twicelarge fade" tabindex="-1" role="dialog" id='popup_fastorder'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title onlyMobile">Купить в 1 клик</div>
-
-        
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="" title="">
-          </span>
-        </button>
-        <div class="modal-body">
-          <form action="">
-            
-            <div class="modalcols">
-              <div class="modalcols__left">
-                <div class="modalcols__product">
-                  <div class="modalcols__productimage onlyMobile">
-                    <img src="img/product1.jpg" alt="" title="" width="177" height="176">
-                  </div>
-                  <div class="modalcols__productcontent">
-                    <div class="modalcols__producttitle">Кета в масле 280 гр.
-                    </div>
-                    <div class="modalcols__productimage onlyDesktop">
-                      <img src="img/product1.jpg" alt="" title="" width="177" height="176">
-                    </div>
-                    <div class="modalcols__productprice">
-                      <div class="productcard__prices">
-                        <div class="productcard__mainprice">
-                          <div class="productcard__price">
-                            <div class="productcard__pricevalue">674.94</div>
-                            <div class="productcard__priceunit">₽/кг</div>
-                          </div>
-                          <!-- /.productcard__price -->
-                        </div>
-                        <!-- /.productcard__mainprice -->
-                        <div class="productcard__topprice">
-                          <div class="productcard__oldprice">762.92</div>
-                          <div class="productcard__badge">12%</div>
-                        </div>
-                      </div>
-                    </div><!-- /.modalcols__productprice -->
-                  </div><!-- /.modalcols__productcontent -->
-                  
-                </div><!-- /.modalcols__product -->
-              </div><!-- /.modalcols__left -->
-              <div class="modalcols__right">
-                <div class="modal-title onlyDesktop">Купить в 1 клик</div>
-            <div class="formblock">
-              <div class="formblock__main">
-                <div class="formblock__input">
-                  <label for="">Имя</label>
-                  <input type="text" class='' value=''>
-                </div><!-- /.formblock__input -->
-                <div class="formblock__input">
-                  <label for="">Телефон</label>
-                  <input type="tel" class='' >
-         
-                </div><!-- /.formblock__input -->
-               
-                <div class="formblock__input">
-                  <label for="">Комментарий к заказу</label>
-                  <textarea name="" id="" cols="" rows="3"></textarea><!-- /# -->
-                </div><!-- /.formblock__input -->
-               
-              </div><!-- /.formblock__main -->
-              <div class="formblock__check">
-                <div class="check">
-                  <input type="checkbox" id="agree" checked="checked" value="Y">
-                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
-                      href=""> с
-                      политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
-                  </label>
-                </div>
-              </div><!-- /.formblock__check -->
-              <div class="modal-submit modal-submit_small">
-                <div class="buttonsrow">
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
-                  </div>
-                  <!-- /.buttonsrow__item -->
-                </div>
-                <!-- /.buttonsrow -->
-              </div>
-            </div><!-- /.formblock -->
-          </div><!-- /.modalcols__right -->
-        </div><!-- /.modalcols -->
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="modal fade" tabindex="-1" role="dialog" id="popup_addproduct">
-  <div class="modal-dialog modal-dialog_product" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal-title modal-title_left">Товар добавлен в корзину</div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><img src="img/closebutton.svg" alt="closebutton" title="closebutton" width="10" height="10"></span>
-        </button>
-        <div class="modal-body">
-          <div class="modalproduct">
-            <div class="modalproduct__main">
-              <div class="modalproduct__product">
-                <div class="minicard">
-                  <div class="minicard__wrapper">
-                    <div class="minicard__left">
-                      <div class="minicard__image">
-                        <img src="img/product1.jpg" alt="" title="" width="177" height="176" />
-                      </div>
-                      <div class="minicard__info onlyMobile">
-                        <div class="minicard__title">Кета в масле 280 гр.</div>
-                        <div class="minicard__right">
-                          <div class="minicard__price">
-                            <div class="productcard__prices">
-                              <div class="productcard__topprice">
-                                <div class="productcard__oldprice">762.92</div>
-                                <div class="productcard__badge">12%</div>
-                              </div>
-                              <!-- /.productcard__oldprice -->
-                              <div class="productcard__mainprice">
-                                <div class="productcard__price">
-                                  <div class="productcard__pricevalue">674.94</div>
-                                  <div class="productcard__priceunit">₽/кг</div>
-                                </div>
-                                <!-- /.productcard__price -->
-                              </div>
-                              <!-- /.productcard__mainprice -->
-                            </div>
-                          </div>
-                          <!-- /.minicard__price -->
-                        </div>
-                      </div>
-                      <!-- /.minicard__info -->
-                      <div class="minicard__main">
-                        <div class="minicard__title onlyDesktop">Кета в масле 280 гр.</div>
-                        <!-- /.minicard__title -->
-                        <div class="minicard__buyblock">
-                          
-                          <div class="minicard__count">
-                            <div class="buyblock__quantity">
-                              <div class="quantity">
-                                <span class="quantity-minus" data-field="quantity">
-                                  <img loading="lazy" src="img/minusform.svg" alt="minus" width="8" height="3" title="minus">
-                                </span>
-                                <input lang="en-150" type="number" readonly="" step="0.3" data-base="1" max=""
-                                  min='0.3' value="0.3" name="quantity" class="quantity-field"
-                                  data-entity="quantity" data-item="">
-                                <span class="quantity-plus" data-field="quantity">
-                                  <img loading="lazy" src="img/plusform.svg" alt="plus" width="8" height="9" title="plus">
-                                </span>
-                              </div>
-                            </div>
-                            <div class="minicard__amount">
-                              <div class="minicard__pricecount">674.94 ₽/кг.</div>
-                            </div>
-                          </div>
-                          <!-- /.minicard__count -->
-
-                          <!-- /.minicard__amount -->
-                        </div>
-                        <!-- /.minicard__buyblock -->
-                      </div>
-                      <!-- /.minicard__main -->
-                    </div>
-                    <div class="minicard__right onlyDesktop">
-                      <div class="minicard__price">
-                        <div class="productcard__prices">
-                          <div class="productcard__topprice">
-                            <div class="productcard__oldprice">762.92</div>
-                            <div class="productcard__badge">12%</div>
-                          </div>
-                          <!-- /.productcard__oldprice -->
-                          <div class="productcard__mainprice">
-                            <div class="productcard__price">
-                              <div class="productcard__pricevalue">674.94</div>
-                              <div class="productcard__priceunit">₽/кг</div>
-                            </div>
-                            <!-- /.productcard__price -->
-                          </div>
-                          <!-- /.productcard__mainprice -->
-                        </div>
-                      </div>
-                      <!-- /.minicard__price -->
-                    </div>
-                  </div>
-                  <!-- /.minicard__wrapper -->
-                </div>
-                <!-- /.minicard -->
-              </div>
-              <!-- /.modalproduct__product -->
-              <div class="modalproduct__buttons">
-                <a href="#" data-dismiss="modal" class="btn_border2">Продолжить покупки</a>
-                <a href="#" class="btn_main">Оформить заказ</a>
-              </div>
-              <!-- /.modalproduct__buttons -->
-            </div>
-            <!-- /.modalproduct__main -->
-            <div class="modalproduct__related">
-              <div class="miniproductslider">
-                <div class="pageblocksl productslider">
-                  <div class="blockheader flex items-center content-between">
-                    <div class="blockheader__left">
-                      <h2>С этим покупают</h2>
-                    </div>
-                    <!-- /.blockheader__left -->
-                    <div>
-                      <div class="sliderarrows flex">
-                        <div class="sliderarrows__left">
-                          <img src="img/left.svg" alt="left" title="left" width="26" height="26" />
-                        </div>
-                        <!-- /.sliderarrows__left -->
-                        <div class="sliderarrows__right">
-                          <img src="img/right.svg" alt="right" title="right" width="26" height="26" />
-                        </div>
-                        <!-- /.sliderarrows__right -->
-                      </div>
-                      <!-- /.sliderarrows -->
-                    </div>
-                  </div>
-                  <!-- /.blockheader -->
-                  <div class="productslider__wrapper">
-                    <div class="productslider__container wrap-modal-slider">
-                      <div class="productslider__modalslider">
-                        <div class="productslider__slide">
-                          <div class="productslider__item">
-                            <div class="productcard">
-                              <div class="productcard__wrapper">
-                                <div class="productcard__left">
-                                  <a href="#" class="productcard__images">
-                                    <div class="productcard__img">
-                                      <img src="img/product.webp" width="212" height="201" alt="" title=""/>
-                                    </div>
-                                  </a>
-                                  <!-- /.productcard__images -->
-                                </div>
-                                <!-- /.productcard__left -->
-                                <div class="productcard__right">
-                                  <div class="productcard__title">
-                                    <a href="">Кета в масле 280 гр.</a>
-                                  </div>
-                                  <div class="productcard__buy">
-                                    <div class="productcard__prices">
-                                      <div class="productcard__topprice">
-                                        <div class="productcard__oldprice">762.92</div>
-                                        <div class="productcard__badge">12%</div>
-                                      </div>
-                                      <!-- /.productcard__oldprice -->
-                                      <div class="productcard__mainprice">
-                                        <div class="productcard__price">
-                                          <div class="productcard__pricevalue">674.94</div>
-                                          <div class="productcard__priceunit">₽/кг</div>
-                                        </div>
-                                        <!-- /.productcard__price -->
-                                      </div>
-                                      <!-- /.productcard__mainprice -->
-                                    </div>
-                                    <!-- /.productcard__prices -->
-                                    <div class="productcard__button">
-                                      <button class="productcard__addtocart btn "></button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- /.productcard__wrapper -->
-                            </div>
-                            <!-- /.productcard -->
-                          </div>
-                          <!-- /.productslider__item -->
-                        </div>
-                        <!-- /.productslider__slide  -->
-                        <div class="productslider__slide">
-                          <div class="productslider__item">
-                            <div class="productcard">
-                              <div class="productcard__wrapper">
-                                <div class="productcard__left">
-                                  <a href="#" class="productcard__images">
-                                    <div class="productcard__img">
-                                      <img src="img/product.webp" width="212" height="201" alt="" title=""/>
-                                    </div>
-                                  </a>
-                                  <!-- /.productcard__images -->
-                                </div>
-                                <!-- /.productcard__left -->
-                                <div class="productcard__right">
-                                  <div class="productcard__title">
-                                    <a href="">Кета в масле 280 гр.</a>
-                                  </div>
-                                  <div class="productcard__buy">
-                                    <div class="productcard__prices">
-                                      <div class="productcard__topprice">
-                                        <div class="productcard__oldprice">762.92</div>
-                                        <div class="productcard__badge">12%</div>
-                                      </div>
-                                      <!-- /.productcard__oldprice -->
-                                      <div class="productcard__mainprice">
-                                        <div class="productcard__price">
-                                          <div class="productcard__pricevalue">674.94</div>
-                                          <div class="productcard__priceunit">₽/кг</div>
-                                        </div>
-                                        <!-- /.productcard__price -->
-                                      </div>
-                                      <!-- /.productcard__mainprice -->
-                                    </div>
-                                    <!-- /.productcard__prices -->
-                                    <div class="productcard__button">
-                                      <button class="productcard__addtocart btn "></button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- /.productcard__wrapper -->
-                            </div>
-                            <!-- /.productcard -->
-                          </div>
-                          <!-- /.productslider__item -->
-                        </div>
-                        <!-- /.productslider__slide  -->
-                        <div class="productslider__slide">
-                          <div class="productslider__item">
-                            <div class="productcard">
-                              <div class="productcard__wrapper">
-                                <div class="productcard__left">
-                                  <a href="#" class="productcard__images">
-                                    <div class="productcard__img">
-                                      <img src="img/product.webp" width="212" height="201" alt="" title=""/>
-                                    </div>
-                                  </a>
-                                  <!-- /.productcard__images -->
-                                </div>
-                                <!-- /.productcard__left -->
-                                <div class="productcard__right">
-                                  <div class="productcard__title">
-                                    <a href="">Кета в масле 280 гр.</a>
-                                  </div>
-                                  <div class="productcard__buy">
-                                    <div class="productcard__prices">
-                                      <div class="productcard__topprice">
-                                        <div class="productcard__oldprice">762.92</div>
-                                        <div class="productcard__badge">12%</div>
-                                      </div>
-                                      <!-- /.productcard__oldprice -->
-                                      <div class="productcard__mainprice">
-                                        <div class="productcard__price">
-                                          <div class="productcard__pricevalue">674.94</div>
-                                          <div class="productcard__priceunit">₽/кг</div>
-                                        </div>
-                                        <!-- /.productcard__price -->
-                                      </div>
-                                      <!-- /.productcard__mainprice -->
-                                    </div>
-                                    <!-- /.productcard__prices -->
-                                    <div class="productcard__button">
-                                      <button class="productcard__addtocart btn "></button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- /.productcard__wrapper -->
-                            </div>
-                            <!-- /.productcard -->
-                          </div>
-                          <!-- /.productslider__item -->
-                        </div>
-                        <!-- /.productslider__slide  -->
-                        <div class="productslider__slide">
-                          <div class="productslider__item">
-                            <div class="productcard">
-                              <div class="productcard__wrapper">
-                                <div class="productcard__left">
-                                  <a href="#" class="productcard__images">
-                                    <div class="productcard__img">
-                                      <img src="img/product.webp" width="212" height="201" alt="" title=""/>
-                                    </div>
-                                  </a>
-                                  <!-- /.productcard__images -->
-                                </div>
-                                <!-- /.productcard__left -->
-                                <div class="productcard__right">
-                                  <div class="productcard__title">
-                                    <a href="">Кета в масле 280 гр.</a>
-                                  </div>
-                                  <div class="productcard__buy">
-                                    <div class="productcard__prices">
-                                      <div class="productcard__topprice">
-                                        <div class="productcard__oldprice">762.92</div>
-                                        <div class="productcard__badge">12%</div>
-                                      </div>
-                                      <!-- /.productcard__oldprice -->
-                                      <div class="productcard__mainprice">
-                                        <div class="productcard__price">
-                                          <div class="productcard__pricevalue">674.94</div>
-                                          <div class="productcard__priceunit">₽/кг</div>
-                                        </div>
-                                        <!-- /.productcard__price -->
-                                      </div>
-                                      <!-- /.productcard__mainprice -->
-                                    </div>
-                                    <!-- /.productcard__prices -->
-                                    <div class="productcard__button">
-                                      <button class="productcard__addtocart btn "></button>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <!-- /.productcard__wrapper -->
-                            </div>
-                            <!-- /.productcard -->
-                          </div>
-                          <!-- /.productslider__item -->
-                        </div>
-                        <!-- /.productslider__slide  -->
-                      </div>
-                      <!-- /.productslider__slide r -->
-                    </div>
-                    <!-- /.productslider__container -->
-                  </div>
-                  <!-- /.productslider__wrapper -->
-                </div>
-                <!-- /.pageblock -->
-              </div>
-              <!-- /.miniproductslider -->
-            </div>
-            <!-- /.modalproduct__related -->
-          </div>
-          <!-- /.modalproduct -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-
-  $("#popup_addproduct").on("shown.bs.modal", function (e) {
-    $(".wrap-modal-slider .productslider__modalslider").slick("setPosition");
-    $(".wrap-modal-slider").addClass("open");
-  });
-</script>
 <div class="subscribeblock">
   <div class="container subscribe">
     <div class="subscribe__wrapper">
@@ -1937,104 +1491,6 @@
   </div><!-- /.footer__bottom -->
 </footer>
 
-<div class="modal fade" tabindex="-1" role="dialog" id='popup_delivery'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal-title">Укажите адрес доставки</div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="closebutton" title="closebutton">
-          </span>
-        </button>
-        <div class="modal-body">
-
-          <div class="deliverytabs js-tabs">
-
-            <div class="deliverytabs__main">
-              <div class="deliverytabs__item active js-tabscontent">
-                <div class="deliverytabs__form">
-                  <form action="#">
-                    <div class="deliverytabs__inputrow">
-                      <div class="address_result">
-                        <div class="address_error">Ваш адрес не в зоне доставки !!!!</div>
-                      </div>
-                      <div class="deliverytabs__inputcol mobile-full" style="width: 100% !important">
-                        <div class="deliverytabs__input">
-                          <label>Город, улица, дом</label>
-                          <textarea rows="2" type="text" name="address" class="address suggestions-input" id="address"
-                            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                            style="box-sizing: border-box;" ></textarea>
-                          <div class="suggestions-wrapper">
-                            <div class="suggestions-suggestions" style="display: none;"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="deliverytabs__inputcol">
-                        <div class="deliverytabs__input">
-                          <label>Подъезд</label>
-                          <input type="text" name="entrance">
-                        </div>
-                      </div>
-                      <div class="deliverytabs__inputcol">
-                        <div class="deliverytabs__input">
-                          <label>Этаж</label>
-                          <input type="text" name="floor">
-                        </div>
-                      </div>
-                      <!-- /.deliverytabs__inputcol -->
-                      <div class="deliverytabs__inputcol">
-                        <div class="deliverytabs__input">
-                          <label>Квартира</label>
-                          <input type="text" name="room">
-                        </div>
-                        <!-- /.deliverytabs__input -->
-                      </div>
-                      <!-- /.deliverytabs__inputcol -->
-                    </div>
-                    <!-- /.deliverytabs__inputrow -->
-                    <div class="deliverytabs__map">
-                      <div class="map-delivery">
-                        <!-- заглушка карты -->
-                        <iframe title="video"
-                          data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A910d035e8541c432b40bd4d37b0412bfbb2a89bb51d5eb57d49fe768cb62627d&amp;source=constructor"
-                          width="100%" height="400" frameborder="0"></iframe>
-                      </div>
-                      <!-- /.map-delivery -->
-                    </div>
-                    <!-- /.deliverytabs__map -->
-                    <div class="modal-submit">
-                      <div class="buttonsrow">
-                        <div class="buttonsrow__item">
-                          <a class='btn_border btn_gray' href="#">Отмена</a>
-                        </div>
-                        <!-- /.buttonsrow__item -->
-                        <div class="buttonsrow__item">
-                          <button aria-label="button" type='submit' class='btn btn_main confirm'
-                            disabled>Подтвердить</button>
-                        </div>
-                        <!-- /.buttonsrow__item -->
-                      </div>
-                      <!-- /.buttonsrow -->
-                    </div>
-                    <!-- /.modal-submit -->
-                  </form>
-                </div>
-                <!-- /.deliverytabs__form -->
-              </div>
-
-
-            </div>
-            <!-- /.deliverytabs__main -->
-          </div>
-          <!-- /.deliverytabs -->
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_callback'>
@@ -2043,7 +1499,6 @@
       <div class="modal-content">
         <div class="modal__header">
           <div class="modal-title">Заказать звонок</div>
-          <div class="modal-subtitle">Наш оператор свяжется с Вами в течение нескольких минут</div>
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">
@@ -2056,33 +1511,34 @@
               <div class="formblock__main">
                 <div class="formblock__input">
                   <label for="">Ваше имя</label>
-                  <input type="text" class='input-error' value='123'>
+                  <input type="text" class='input-error' value='123' required>
                   <span class="input-errortext">Имя не может содержать символы: 123</span>
 
                 </div><!-- /.formblock__input -->
                 <div class="formblock__input">
-                  <label for="">Телефон</label>
+                  <label for="" required>Телефон</label>
                   <input type="tel" placeholder='7 (___) ___-__-__'>
                 </div><!-- /.formblock__input -->
               </div><!-- /.formblock__main -->
-              <div class="formblock__check">
-                <div class="check">
-                  <input type="checkbox" id="agree" checked="checked" value="Y">
-                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
-                      href=""> с
-                      политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
-                  </label>
-                </div>
-              </div><!-- /.formblock__check -->
+           
               <div class="modal-submit modal-submit_small">
                 <div class="buttonsrow">
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
+                    <button aria-label="button" type='submit' class='btn btn_main '>Отправить</button>
                   </div>
                   <!-- /.buttonsrow__item -->
                 </div>
                 <!-- /.buttonsrow -->
               </div>
+                 <div class="formblock__check">
+                <div class="check">
+                  <input type="checkbox" id="agree_callback" value="Y">
+                  <label for="agree_callback">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
+                      href=""> с
+                      политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
+                  </label>
+                </div>
+              </div><!-- /.formblock__check -->
             </div><!-- /.formblock -->
           </form>
         </div>
@@ -2109,14 +1565,14 @@
               <div class="formblock__main">
                 <div class="formblock__input">
                   <label for="">Телефон или Email</label>
-                  <input type="text" class='input-error' value='123'>
+                  <input type="text" class='input-error' value='123' required>
                   <span class="input-errortext">Имя не может содержать символы: 123</span>
 
                 </div><!-- /.formblock__input -->
                 <div class="formblock__input">
                   <label for="">Пароль</label>
                   <div class="inputpassword">
-                    <input type="password">
+                    <input type="password" required>
                     <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
                       width="22" height="22">
                   </div><!-- /.inputpassword -->
@@ -2128,19 +1584,14 @@
                   <label for="save">Запомнить меня</a>
                   </label>
                 </div>
-                <a aria-label="link" href="#">Забыли пароль?</a>
+                <a aria-label="link" href="#" class="borderlink">Забыли пароль?</a>
               </div>
               <div class="modal-submit modal-submit_small">
                 <div class="buttonsrow">
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Войти</button>
+                    <button aria-label="button" type='submit' class='btn btn_main '>Войти</button>
                   </div>
-                  <!-- /.buttonsrow__item -->
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <a class='btn_border btn_gray ' href="#">SMS-авторизация</a>
-
-                  </div>
-                  <!-- /.buttonsrow__item -->
+                
                 </div>
                 <!-- /.buttonsrow -->
               </div>
@@ -2174,7 +1625,7 @@
               <div class="formblock__main">
                 <div class="formblock__input">
                   <label for="">Email</label>
-                  <input type="text">
+                  <input type="text" required>
                   <div class="textinput">Ссылка для смены пароля будет отправлена на указанную почту</div>
                   <!-- /.textinput -->
                 </div><!-- /.formblock__input -->
@@ -2187,14 +1638,9 @@
               <div class="modal-submit modal-submit_small">
                 <div class="buttonsrow">
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Сбросить пароль</button>
+                    <button aria-label="button" type='submit' class='btn btn_main '>Сбросить пароль</button>
                   </div>
-                  <!-- /.buttonsrow__item -->
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <a class='btn_border btn_gray ' href="#">SMS-авторизация</a>
-
-                  </div>
-                  <!-- /.buttonsrow__item -->
+                 
                 </div>
                 <!-- /.buttonsrow -->
               </div>
@@ -2206,97 +1652,12 @@
     </div>
   </div>
 </div>
-
-<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_sms'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Вход по SMS</div>
-
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="Закрыть" title="Закрыть">
-          </span>
-        </button>
-        <div class="modal-body">
-          <form action="">
-            <div class="formblock">
-              <div class="formblock__main formblock__main_small">
-                <div class="formblock__input">
-                  <label for="">Ваш телефон</label>
-                  <input type="tel" placeholder='7 (___) ___-__-__'>
-                </div><!-- /.formblock__input -->
-
-              </div><!-- /.formblock__main -->
-
-              <div class="modal-submit modal-submit_small">
-                <div class="buttonsrow">
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Войти по SMS</button>
-                  </div>
-                  <!-- /.buttonsrow__item -->
-
-                </div>
-                <!-- /.buttonsrow -->
-              </div>
-              <div class="textlogin  content-between items-center">
-                <div class="textlogin__text">У вас еще нет учетной записи?</div>
-                <div class="textlogin__link"><a aria-label="link" href="">Зарегистрируйтесь</a></div>
-              </div><!-- /.textlogin -->
-
-            </div><!-- /.formblock -->
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_email'>
   <div class="modal-dialog" role="document">
     <div class="modalwrapper">
       <div class="modal-content">
-
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="Закрыть" title="Закрыть">
-          </span>
-        </button>
-        <div class="modal-body">
-
-          <div class="modalinfo">
-            <div class="modalinfo__image"><img loading="lazy" src="img/send.svg" alt="Отправить" width="22" height="22">
-            </div>
-            <!-- /.modalinfo__image -->
-            <div class="modalinfo__title">Мы отправили письмо на <span class="red">*****llz@gmail.com</span></div>
-            <!-- /.modalinfo__title -->
-            <div class="modalinfo__text">Следуйте инструкциям в письме для продолжение процедуры сброса пароля</div>
-            <!-- /.modalinfo_-text -->
-          </div><!-- /.modalinfo -->
-          <div class="modal-submit modal-submit_small">
-            <div class="buttonsrow">
-              <div class="buttonsrow__item buttonsrow__item_full">
-                <button aria-label="button" type='submit' class='btn btn_main btn_round'>Ок</button>
-              </div>
-              <!-- /.buttonsrow__item -->
-
-            </div>
-            <!-- /.buttonsrow -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_reset'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
         <div class="modal__header">
-          <div class="modal-title">Сброс пароля</div>
+          <div class="modal-title">Прайс-лист будет отправлен на указанный e-mail</div>
 
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -2308,30 +1669,23 @@
           <form action="">
             <div class="formblock">
               <div class="formblock__main">
+                <div class="formblock__input">
+                  <label for="">Email</label>
+                  <input type="text" required>
+                  <!-- /.textinput -->
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input formblock__input_center">
+                  <img loading="lazy" src="img/captcha.webp" alt="captcha" title="captcha" width="122" height="22">
+                </div><!-- /.formblock__input -->
 
-                <div class="formblock__input">
-                  <label for="">Новый пароль</label>
-                  <div class="inputpassword">
-                    <input type="password">
-                    <img loading="lazy" src="img/Invisible.svg" alt="" data-toggle="password" width="22" height="22">
-                  </div><!-- /.inputpassword -->
-                </div><!-- /.formblock__input -->
-                <div class="formblock__input">
-                  <label for="">Повторите, пожалуйста</label>
-                  <div class="inputpassword">
-                    <input type="password">
-                    <img loading="lazy" src="img/Invisible.svg" alt="" data-toggle="password" width="22" height="22">
-                  </div><!-- /.inputpassword -->
-                </div><!-- /.formblock__input -->
               </div><!-- /.formblock__main -->
 
               <div class="modal-submit modal-submit_small">
                 <div class="buttonsrow">
                   <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Обновить пароль</button>
+                    <button aria-label="button" type='submit' class='btn btn_main '>Отправить</button>
                   </div>
-                  <!-- /.buttonsrow__item -->
-
+                 
                 </div>
                 <!-- /.buttonsrow -->
               </div>
@@ -2343,6 +1697,7 @@
     </div>
   </div>
 </div>
+
 
 <div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_success'>
   <div class="modal-dialog" role="document">
@@ -2360,20 +1715,10 @@
             <div class="modalinfo__image"><img loading="lazy" src="img/success.svg" alt="Успешно" title="Успешно"
                 width="86" height="86"></div>
             <!-- /.modalinfo__image -->
-            <div class="modalinfo__title">Текст успешного оставления отзыва!</div><!-- /.modalinfo__title -->
-            <div class="modalinfo__text">Теперь вы можете войти в вашую учетную запись.</div><!-- /.modalinfo_-text -->
+            <div class="modalinfo__title">Текст успешной заявки</div><!-- /.modalinfo__title -->
+            <div class="modalinfo__text">Текст о продолжении действий после оставления заявки</div><!-- /.modalinfo_-text -->
           </div><!-- /.modalinfo -->
-          <div class="modal-submit modal-submit_small">
-            <div class="buttonsrow">
-              <div class="buttonsrow__item buttonsrow__item_full">
-                <button aria-label="button" type='submit' class='btn btn_main btn_round'>Войти</button>
-              </div>
-              <!-- /.buttonsrow__item -->
-
-            </div>
-            <!-- /.buttonsrow -->
-          </div>
-
+         
         </div>
       </div>
     </div>
@@ -2386,9 +1731,9 @@
       <div class="modal-content">
         <div class="modal__header">
           <div class="modal-title">Регистрация</div>
-          <div class="textlogin  content-between items-center">
+          <div class="textlogin flex  items-center">
             <div class="textlogin__text">Уже есть учетная запись?</div>
-            <div class="textlogin__link"><a aria-label="link" href="">Авторизируйтесь</a></div>
+            <div class="textlogin__link"><a aria-label="link" href="#popup_auth" data-toggle="modal">Авторизируйтесь</a></div>
           </div><!-- /.textlogin -->
         </div>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -2399,8 +1744,8 @@
         <div class="modal-body">
           <div class="formblock__main formblock__main_cols">
             <div class="formblock__input">
-              <label for="">Ваше имя</label>
-              <input type="text" class='input-error' value='123'>
+              <label for="">Ваше имя <span class="red">*</span></label>
+              <input type="text" class='input-error' value='123' required>
               <span class="input-errortext">Имя не может содержать символы: 123</span>
 
             </div><!-- /.formblock__input -->
@@ -2409,39 +1754,26 @@
               <input type="text">
             </div><!-- /.formblock__input -->
             <div class="formblock__input">
-              <label for="">Email</label>
-              <input type="text">
+              <label for="">Email (логин) <span class="red">*</span></label>
+              <input type="text" required>
             </div><!-- /.formblock__input -->
             <div class="formblock__input">
               <label for="">Телефон</label>
               <input type="tel" placeholder='7 (___) ___-__-__'>
             </div><!-- /.formblock__input -->
-            <div class="formblock__input formblock__input__full">
-              <div class="informwrapper informwrapper_green">
-                <div class="informwrapper__title">Укажите почту и получите:</div>
-                <div class="informwrapper__list">
-                  <div class="checklist">
-                    <ul>
-                      <li>Скидку 15% на первый заказ от 1000 рублей.</li>
-                      <li>Участвие в розыгрышах и выигрыш промокодов.</li>
-                      <li>Уведомления о всех акциях, новинах и новостях.</li>
-                    </ul>
-                  </div><!-- /.checklist -->
-                </div><!-- /.informwrapper__list -->
-              </div><!-- /.informwrapper -->
-            </div><!-- /.formblock__input__full -->
+         
             <div class="formblock__input">
-              <label for="">Новый пароль</label>
+              <label for="">Новый пароль <span class="red">*</span></label>
               <div class="inputpassword">
-                <input type="password">
+                <input type="password" required>
                 <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
                   width="22" height="22">
               </div><!-- /.inputpassword -->
             </div><!-- /.formblock__input -->
             <div class="formblock__input">
-              <label for="">Повторите, пожалуйста</label>
+              <label for="">Повторите, пожалуйста <span class="red">*</span></label>
               <div class="inputpassword">
-                <input type="password">
+                <input type="password" required>
                 <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
                   width="22" height="22">
               </div><!-- /.inputpassword -->
@@ -2451,24 +1783,108 @@
           <div class="modal-submit modal-submit_small">
             <div class="buttonsrow xs-full">
               <div class="buttonsrow__item ">
-                <div class="formblock__check">
+                <img src="img/captcha.png">
+              </div>
+              <!-- /.buttonsrow__item -->
+              <div class="buttonsrow__item ">
+                <button aria-label="button" type='submit' class='btn btn_main '>Зарегистрироваться</button>
+              </div>
+              <!-- /.buttonsrow__item -->
+
+            </div>
+            <!-- /.buttonsrow -->
+
+             <div class="formblock__check">
                   <div class="check">
-                    <input type="checkbox" id="agree_reg" checked="checked" value="Y">
+                    <input type="checkbox" id="agree_reg"  value="Y" required>
                     <label for="agree_reg">Даю свое согласие на обработку персональных данных, соглашаюсь <a
                         aria-label="link" href=""> с
                         политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
                     </label>
                   </div>
                 </div><!-- /.formblock__check -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_large fade" tabindex="-1" role="dialog" id='popup_request'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Отправить запрос</div>
+        
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="Закрыть" title="Закрыть">
+          </span>
+        </button>
+        <div class="modal-body">
+          <div class="formblock__main formblock__main_cols">
+            <div class="formblock__input">
+              <label for="">Ваше имя <span class="red">*</span></label>
+              <input type="text" class='input-error' value='123' required>
+              <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Фамилия</label>
+              <input type="text">
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Email (логин) <span class="red">*</span></label>
+              <input type="text" required>
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Телефон</label>
+              <input type="tel" placeholder='7 (___) ___-__-__'>
+            </div><!-- /.formblock__input -->
+         
+            <div class="formblock__input">
+              <label for="">Новый пароль <span class="red">*</span></label>
+              <div class="inputpassword">
+                <input type="password" required>
+                <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
+                  width="22" height="22">
+              </div><!-- /.inputpassword -->
+            </div><!-- /.formblock__input -->
+            <div class="formblock__input">
+              <label for="">Повторите, пожалуйста <span class="red">*</span></label>
+              <div class="inputpassword">
+                <input type="password" required>
+                <img loading="lazy" src="img/Invisible.svg" alt="Пароль" title="Пароль" data-toggle="password"
+                  width="22" height="22">
+              </div><!-- /.inputpassword -->
+            </div><!-- /.formblock__input -->
+          </div><!-- /.formblock__main -->
+
+          <div class="modal-submit modal-submit_small">
+            <div class="buttonsrow xs-full">
+              <div class="buttonsrow__item ">
+                <img src="img/captcha.png">
               </div>
               <!-- /.buttonsrow__item -->
               <div class="buttonsrow__item ">
-                <button aria-label="button" type='submit' class='btn btn_main btn_round'>Зарегистрироваться</button>
+                <button aria-label="button" type='submit' class='btn btn_main '>Зарегистрироваться</button>
               </div>
               <!-- /.buttonsrow__item -->
 
             </div>
             <!-- /.buttonsrow -->
+
+             <div class="formblock__check">
+                  <div class="check">
+                    <input type="checkbox" id="agree_request"  value="Y" required>
+                    <label for="agree_request">Даю свое согласие на обработку персональных данных, соглашаюсь <a
+                        aria-label="link" href=""> с
+                        политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
+                    </label>
+                  </div>
+                </div><!-- /.formblock__check -->
           </div>
 
         </div>
@@ -2477,167 +1893,6 @@
   </div>
 </div>
 
-<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_review'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Оставить отзыв</div>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="Закрыть" title="Закрыть">
-          </span>
-        </button>
-        <div class="modal-body">
-          <form action="">
-            <div class="accountname">
-              <div class="accountname__image">
-                <div class="accountname__img"><img loading="lazy" src="img/accplh.svg" alt="Аккаунт" width="60"
-                    height="60"></div>
-                <!-- /.accountname__img -->
-              </div><!-- /.accountname__image -->
-              <div class="accountname__content">
-                <div class="accountname__label">от имени:</div><!-- /.accountname__label -->
-                <div class="accountname__name">Андрей Маринович</div><!-- /.accountname__name -->
-              </div><!-- /.accountname__content -->
-            </div><!-- /.accountname -->
-            <div class="formblock">
-              <div class="formblock__main">
-                <div class="formblock__input">
-                  <label for="">Email</label>
-                  <input type="text" class='input-error' value='xolxllz@gmail.com'>
-                  <span class="input-errortext">Имя не может содержать символы: 123</span>
-                </div><!-- /.formblock__input -->
-                <div class="formblock__input">
-                  <label for="">Текст отзыва</label>
-                  <textarea name="" id="" cols="" rows="2"></textarea><!-- /# -->
-                </div><!-- /.formblock__input -->
-                <div class="formblock__input">
-                  <div class="formrating">
-                    <div class="formrating__text">Ваша оценка:</div>
-                    <span class="stars">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </span>
-                  <span class='formrating__value'>0</span>
-                  <input type="hidden" name="formrating" value='0'>
 
-                </div>
-              
-              </div><!-- /.formblock__input -->
-            </div><!-- /.formblock__main -->
-            <div class="formblock__check">
-              <div class="check">
-                <input type="checkbox" id="agree" checked="checked" value="Y">
-                <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
-                    href=""> с
-                    политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
-                </label>
-              </div>
-            </div><!-- /.formblock__check -->
-            <div class="modal-submit modal-submit_small">
-              <div class="buttonsrow">
-                <div class="buttonsrow__item buttonsrow__item_full">
-                  <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
-                </div>
-                <!-- /.buttonsrow__item -->
-              </div>
-              <!-- /.buttonsrow -->
-            </div>
-        </div><!-- /.formblock -->
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_rate'>
-  <div class="modal-dialog" role="document">
-    <div class="modalwrapper">
-      <div class="modal-content">
-        <div class="modal__header">
-          <div class="modal-title">Оцените новый сайт</div>
-          <div class="modal-text">Расскажите о ваших впечатлениях о нашем интернет-магазине. Что понравилось и что можно
-            улучшить?
-            Это поможет нам понять, все ли правильно мы делаем.</div>
-        </div>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <img loading="lazy" src="img/closebutton.svg" width="10" height="10" alt="Закрыть" title="Закрыть">
-          </span>
-        </button>
-        <div class="modal-body">
-          <form action="">
-
-            <div class="formblock">
-              <div class="formblock__main">
-                <div class="formblock__input">
-                  <label for="">Имя</label>
-                  <input type="text" class='input-error' value='xolxllz@gmail.com'>
-                  <span class="input-errortext">Имя не может содержать символы: 123</span>
-                </div><!-- /.formblock__input -->
-                <div class="formblock__input">
-                  <label for="">Телефон</label>
-                  <input type="tel" class=''>
-
-                </div><!-- /.formblock__input -->
-
-                <div class="formblock__input">
-                  <label for="">Ваши комментарии</label>
-                  <textarea name="" id="" cols="" rows="3"></textarea><!-- /# -->
-                </div><!-- /.formblock__input -->
-                <div class="formblock__input">
-                  <div class="formrating">
-                    <div class="formrating__text">Ваша оценка:</div>
-                    <span class="stars">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </span>
-                  </span>
-                  <span class='formrating__value'>0</span>
-                  <input type="hidden" name="formrating" value='0'>
-
-                </div>
-                
-                </div><!-- /.formblock__input -->
-              </div><!-- /.formblock__main -->
-              <div class="formblock__check">
-                <div class="check">
-                  <input type="checkbox" id="agree" checked="checked" value="Y">
-                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a aria-label="link"
-                      href=""> с
-                      политикой конфиденциальности</a> и принимаю <a aria-label="link" href="">условия оферты</a>
-                  </label>
-                </div>
-              </div><!-- /.formblock__check -->
-              <div class="modal-submit modal-submit_small">
-                <div class="buttonsrow">
-                  <div class="buttonsrow__item buttonsrow__item_full">
-                    <button aria-label="button" type='submit' class='btn btn_main btn_round'>Отправить</button>
-                  </div>
-                  <!-- /.buttonsrow__item -->
-                </div>
-                <!-- /.buttonsrow -->
-              </div>
-            </div><!-- /.formblock -->
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    <script src="js/hover-slider.min.js"></script>
-
+<script src="js/hover-slider.min.js"></script>
 <script src="js/index.js"></script>
-<!-- <script>
-  arObjectAutoFiling.json = { 'SELECTOR_INPUT': '#title-search-input_fixed', 'LIST_TITLE': ['Сосиски Телячьи, весовые', 'Пастрами из свинины', 'Буженина запеченная', 'Бедро куриное', 'Паштет Гасконский'], 'CACHE_TYPE': 'A', '~SELECTOR_INPUT': '#title-search-input_fixed', '~LIST_TITLE': ['Сосиски Телячьи, весовые', 'Пастрами из свинины', 'Буженина запеченная', 'Бедро куриное', 'Паштет Гасконский'], '~CACHE_TYPE': 'A' };
-</script> -->

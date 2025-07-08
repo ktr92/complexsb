@@ -1,14 +1,8 @@
 function initFE() {
-  /*  cardImagesSlider() */
-  /*   menuInit() */
   mainSliderInit()
   categorySlider()
-
-    detailsliderInit()
-  /*   imgSliderInit() */
-  /*   recipeSliderInit() */
-    productSliderInit()
-  /*  mobileAccordeon() */
+  detailsliderInit()
+  productSliderInit()
   closeByOutsideSelect()
   closeByClickOutside(
     ".mainmenu",
@@ -20,10 +14,7 @@ function initFE() {
   fixElement(300, false, "headermain", "fixed")
   fixElement(300, false, "headercontainer", "fixed") */
   /*  fixElement(false, 0, "mobilenav", "fixed") */
-  /*   blockSliderInit() */
-  /*   productListImgLisder()
-   */
-    moreNewsSliderInit()
+  moreNewsSliderInit()
   lazyLoadSrc("iframe")
   lazyLoadSrc("img")
 }
@@ -59,6 +50,11 @@ function lazyLoadSrc(selector) {
 }
 
 $(document).ready(function () {
+
+  $('.modal').on('show.bs.modal', function () {
+    $('.modal.in').not($(this)).modal('hide')
+  })
+
   var something = (function () {
     var executed = false
     return function () {
@@ -197,10 +193,6 @@ $(document).ready(function () {
     })
   })
 
-  /*     flatpickr("#js-flatpickr", {
-        minDate: "today",
-    }); */
-
   document.querySelectorAll('[data-toggle="password"]').forEach((item) => {
     item.addEventListener("click", (event) => {
       let inp = item.previousElementSibling
@@ -212,22 +204,11 @@ $(document).ready(function () {
     })
   })
 
-  /*  $(function() {
-        $("iframe[data-src]").each(function() {
-            $(this).Lazy();
-        })
-    }); */
   $(".js-mobilefilter").on("click", function (e) {
     e.preventDefault()
     $(this).toggleClass("active")
     $(".catalogpage__aside").toggleClass("active")
   })
-
-  /*  $('.headermain__contacts').on('click', function(e) {
-      e.preventDefault()
-      $(this).toggleClass('active')
-      $('.contacts__dropdown').slideToggle()
-  }) */
 
   $(".jscatalog .js-toggler").on("click", function (e) {
     slideSubmenu($(this))
@@ -330,35 +311,8 @@ $(document).ready(function () {
         }
       })
     })
+  }
 
-    /* $(".productcard .cardrating").each(function () {
-      $(this)
-        .find("span.stars-active")
-        .css("width", $(this).find(".cardrating__value").text() * 11.6)
-    }) */
-  }
-  if ($(".detailinfo__reviews .cardrating").length > 0) {
-    /* if ($(window).width() < 1024) {
-      $(".detailinfo__reviews .cardrating").each(function () {
-        $(this)
-          .find("span.stars-active")
-          .css("width", +$(this).find(".cardrating__value").text() * 15)
-      })
-    } else {
-      $(".detailinfo__reviews .cardrating").each(function () {
-        $(this)
-          .find("span.stars-active")
-          .css("width", +$(this).find(".cardrating__value").text() * 18)
-      })
-    } */
-  }
-  if ($("reviews__rating .cardrating").length > 0) {
-    /*  $(".reviews__rating .cardrating").each(function () {
-      $(this)
-        .find("span.stars-active")
-        .css("width", $(this).find(".cardrating__value").text() * 18)
-    }) */
-  }
   if ($("input[type=tel]").length > 0) {
     $("input[type=tel]").mask("7 (999) 999-99-99")
   }
@@ -368,51 +322,68 @@ $(document).ready(function () {
   })
 
   MathUtils = {
-          roundToPrecision: function (subject, precision) {
-            return +(+subject).toFixed(precision)
-          },
-        }
+    roundToPrecision: function (subject, precision) {
+      return +(+subject).toFixed(precision)
+    },
+  }
 
-        function decrementValue(e, step) {
-          e.preventDefault();
-          var fieldName = $(e.target).data("field");
-          var parent = $(e.target).closest("div");
-          var currentVal = +parseFloat(parent.find("input[name=" + fieldName + "]").val()).toFixed(1);
-          var minValue = +parseFloat(parent.find("input[name=" + fieldName + "]").attr("min")).toFixed(1) || 0;
+  function decrementValue(e, step) {
+    e.preventDefault()
+    var fieldName = $(e.target).data("field")
+    var parent = $(e.target).closest("div")
+    var currentVal = +parseFloat(
+      parent.find("input[name=" + fieldName + "]").val()
+    ).toFixed(1)
+    var minValue =
+      +parseFloat(
+        parent.find("input[name=" + fieldName + "]").attr("min")
+      ).toFixed(1) || 0
 
-          if (!isNaN(currentVal) && currentVal > minValue) {
-            parent.find("input[name=" + fieldName + "]").val(Math.max(MathUtils.roundToPrecision(currentVal - step, 1), minValue));
-          } else {
-            parent.find("input[name=" + fieldName + "]").val(minValue);
-          }
-          parent.find("input[name=" + fieldName + "]").trigger("change");
-        }
+    if (!isNaN(currentVal) && currentVal > minValue) {
+      parent
+        .find("input[name=" + fieldName + "]")
+        .val(
+          Math.max(MathUtils.roundToPrecision(currentVal - step, 1), minValue)
+        )
+    } else {
+      parent.find("input[name=" + fieldName + "]").val(minValue)
+    }
+    parent.find("input[name=" + fieldName + "]").trigger("change")
+  }
 
-        function incrementValue(e, step) {
-          e.preventDefault();
-          var fieldName = $(e.target).data("field");
-          var parent = $(e.target).closest("div");
-          var currentVal = +parseFloat(parent.find("input[name=" + fieldName + "]").val()).toFixed(1);
-          var maxValue = parent.find("input[name=" + fieldName + "]").attr("max");
-          maxValue = maxValue ? +parseFloat(maxValue).toFixed(1) : Infinity;
+  function incrementValue(e, step) {
+    e.preventDefault()
+    var fieldName = $(e.target).data("field")
+    var parent = $(e.target).closest("div")
+    var currentVal = +parseFloat(
+      parent.find("input[name=" + fieldName + "]").val()
+    ).toFixed(1)
+    var maxValue = parent.find("input[name=" + fieldName + "]").attr("max")
+    maxValue = maxValue ? +parseFloat(maxValue).toFixed(1) : Infinity
 
-          if (!isNaN(currentVal) && currentVal + step <= maxValue) {
-            parent.find("input[name=" + fieldName + "]").val(MathUtils.roundToPrecision(currentVal + step, 1));
-          } else {
-            parent.find("input[name=" + fieldName + "]").val(maxValue);
-          }
-          parent.find("input[name=" + fieldName + "]").trigger("change");
-        }
+    if (!isNaN(currentVal) && currentVal + step <= maxValue) {
+      parent
+        .find("input[name=" + fieldName + "]")
+        .val(MathUtils.roundToPrecision(currentVal + step, 1))
+    } else {
+      parent.find("input[name=" + fieldName + "]").val(maxValue)
+    }
+    parent.find("input[name=" + fieldName + "]").trigger("change")
+  }
 
-        $(document).on("click", ".quantity-plus", function (e) {
-          let step = +parseFloat($(this).siblings('[type="number"]').attr("step")).toFixed(1);
-          incrementValue(e, step);
-        });
+  $(document).on("click", ".quantity-plus", function (e) {
+    let step = +parseFloat(
+      $(this).siblings('[type="number"]').attr("step")
+    ).toFixed(1)
+    incrementValue(e, step)
+  })
 
-        $(document).on("click", ".quantity-minus", function (e) {
-          let step = +parseFloat($(this).siblings('[type="number"]').attr("step")).toFixed(1);
-          decrementValue(e, step);
-        });
+  $(document).on("click", ".quantity-minus", function (e) {
+    let step = +parseFloat(
+      $(this).siblings('[type="number"]').attr("step")
+    ).toFixed(1)
+    decrementValue(e, step)
+  })
   ;(function ($) {
     $(function () {
       $(".js-tabsheader").on("click", "li:not(.active)", function () {
@@ -516,7 +487,7 @@ function detailsliderInit() {
 function categorySlider() {
   if ($("[data-slider='indexcat']").length > 0) {
     const blockslider = new Swiper('[data-slider="indexcat"] .swiper', {
-       slidesPerView: 'auto',
+      slidesPerView: "auto",
       spaceBetween: 8,
       navigation: {
         nextEl: "[data-slider='indexcat'] .sliderarrows__right",
@@ -538,67 +509,29 @@ function categorySlider() {
 }
 
 function productSliderInit() {
-   if ($("[data-slider='productslider']").length > 0) {
+  if ($("[data-slider='productslider']").length > 0) {
     const blockslider = new Swiper('[data-slider="productslider"] .swiper', {
-       slidesPerView: 2,
+      slidesPerView: 2,
       spaceBetween: 13,
       navigation: {
         nextEl: "[data-slider='productslider'] .sliderarrows__right",
         prevEl: "[data-slider='productslider'] .sliderarrows__left",
       },
-       pagination: {
+      pagination: {
         el: "[data-slider='productslider'] .blockslider-pagination",
         clickable: true,
       },
       breakpoints: {
-       
         1023: {
           slidesPerView: 3,
-        
         },
         // when window width is >= 1400
         1400: {
           slidesPerView: 4,
-       
         },
       },
     })
   }
-  /* if ($(".productslider__modalslider").length > 0) {
-    $(".productslider__modalslider").each(function () {
-      $(this).slick({
-        dots: false,
-        arrows: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-
-        autoplay: true,
-        autoplaySpeed: 3000,
-        swipe: false,
-        nextArrow: $(this)
-          .closest(".productslider")
-          .find(".sliderarrows__right"),
-        prevArrow: $(this)
-          .closest(".productslider")
-          .find(".sliderarrows__left"),
-        responsive: [
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
-      })
-    })
-  } */
 }
 
 function recipeSliderInit() {
@@ -648,7 +581,7 @@ function recipeSliderInit() {
 function moreNewsSliderInit() {
   if ($('[data-slider="morenews"]').length > 0) {
     const blockslider = new Swiper('[data-slider="morenews"] .swiper', {
-       slidesPerView: 1,
+      slidesPerView: 1,
       spaceBetween: 8,
       navigation: {
         nextEl: '[data-slider="morenews"] .sliderarrows__right',
@@ -666,7 +599,6 @@ function moreNewsSliderInit() {
         },
       },
     })
-
   }
 }
 
@@ -749,21 +681,6 @@ function fixElement(topDesktop, topMobile, elementId, className) {
   }
 }
 
-/* function blockSliderInit() {
-  if ($(".blockslider__container").length > 0) {
-    const blockslider = new Swiper(".blockslider__container", {
-      pagination: {
-        el: ".blockslider-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".blockslider-button-next",
-        prevEl: ".blockslider-button-prev",
-      },
-    })
-  }
-} */
-
 function mobileAccordeon() {
   if ($(".infobadge__main").length > 0) {
     if ($(window).width() < 1024) {
@@ -819,19 +736,6 @@ function closeByOutsideSelect() {
     }
   })
 }
-
-/* function productListImgLisder() {
-  if ($(window).width() < 1024) {
-    $(".productcard__images_mobile .productcard__img").each(function (e) {
-      $(this).slick({
-        dots: true,
-        arrows: false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      })
-    })
-  }
-} */
 
 window.addEventListener("load", () => {
   initFE()
