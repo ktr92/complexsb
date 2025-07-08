@@ -1,0 +1,552 @@
+<% var data={ title: "MAIN" , author: "" }; %>
+  <%= _.template(require('../includes/head.html').default)(data) %>
+    <%= _.template(require('../includes/header.html').default)(data) %>
+     
+      <main>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <div class="breadcrumbs__items">
+                <ul>
+
+                  <li>
+                    <a href="">
+                      <span>Главная </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Каталог товаров</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <span>Видеонаблюдение</span>
+                    </a>
+                  </li>
+                  <li>
+                    <span>Видеокамеры</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.breadcrumbs__items -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.breadcrumbs -->
+          <div class="container">
+            <div class="pageheader pageheader_row">
+              <h1>Избранное</h1>
+              <a href="" class="linkgray linkicon">
+                <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="12" height="12">
+                <span>Очистить все</span>
+              </a>
+              <!-- /.linkgray -->
+            </div>
+            <!-- /.pageheader -->
+                <div class="cartblock__items">
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product.webp" alt="" title="" width="177" height="176">
+                          </a>
+                         
+                          <div class="minicard__main">
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <a href='#' class="minicard__title ">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            
+                            <div class="minicard__buttons onlyDesktop">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height=20">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right ">
+                          <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart " data-entity="add2basket" data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title="" width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                        </div>
+
+                        <div class="minicard__buttons onlyMobile">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height="20&quot;">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product.webp" alt="" title="" width="177" height="176">
+                          </a>
+                         
+                          <div class="minicard__main">
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <a href='#' class="minicard__title ">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            
+                            <div class="minicard__buttons onlyDesktop">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height=20">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right ">
+                          <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart active" data-entity="add2basket" data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title="" width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                        </div>
+
+                        <div class="minicard__buttons onlyMobile">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height="20&quot;">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product.webp" alt="" title="" width="177" height="176">
+                          </a>
+                         
+                          <div class="minicard__main">
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <a href='#' class="minicard__title ">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            
+                            <div class="minicard__buttons onlyDesktop">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height=20">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right ">
+                          <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart " data-entity="add2basket" data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title="" width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                        </div>
+
+                        <div class="minicard__buttons onlyMobile">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height="20&quot;">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                  <div class="cartblock__item">
+                    <div class="minicard minicard_page">
+                      <div class="minicard__wrapper">
+                        <div class="productcard__stickers">
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_purple">
+                                  <span class="productsticker__text">NEW</span>
+                                </div>
+                              </div>
+                              <div class="productcard__sticker">
+                                <div class="productsticker productsticker_yellow">
+                                  <span class="productsticker__text">HIT</span>
+                                </div>
+                              </div>
+                            </div>
+
+                        <div class="minicard__left">
+                          <a href='#' class="minicard__image">
+                            <img src="img/product.webp" alt="" title="" width="177" height="176">
+                          </a>
+                         
+                          <div class="minicard__main">
+                            <div class="productcard__status productcard__status_instock">
+                              В наличии
+                            </div>
+
+                            <a href='#' class="minicard__title ">UAC-B112-AF28, уличная мультиформатная видеокамера</a>
+                            
+                            <div class="minicard__buttons onlyDesktop">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height=20">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                            <!-- /.minicard__buttons -->
+                          </div>
+                          <!-- /.minicard__main -->
+                        </div>
+                        <div class="minicard__right ">
+                          <div class="productcard__buy">
+                              <div class="productcard__buymain">
+                                <div class="productcard__prices">
+                                  <div class="productcard__topprice">
+                                    <div class="productcard__oldprice">9 800 <span class="rouble">₽</span></div>
+                                    <div class="productcard__badge">12%</div>
+                                  </div>
+                                  <!-- /.productcard__oldprice -->
+                                  <div class="productcard__mainprice">
+                                    <div class="productcard__price">
+                                      <div class="productcard__pricevalue">9 800 <span class="rouble">₽</span></div>
+                                    </div>
+                                    <!-- /.productcard__price -->
+                                  </div>
+                                  <!-- /.productcard__mainprice -->
+                                </div>
+                                <!-- /.productcard__prices -->
+                                <div class="productcard__form">
+                                  <form action="">
+                                    <div class="productcard__fromwrapper">
+                                      <div class="productcard__addcart">
+                                        <button aria-label="button" class="btn btn_cart " data-entity="add2basket" data-item="" data-toggleclass="active">
+                                          <div class="tocart__content tocart__before">
+                                            <span>В корзину</span>
+                                          </div>
+                                          <div class="tocart__content tocart__after">
+                                            <span>В корзине</span>
+                                          </div>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <div class="productcard__buyfooter">
+                                <div class="productcard__buyfooterwrapper">
+                                  <div class="productcard__buyfooterprice">
+                                    6 970 <span class="rouble">₽</span>
+                                  </div><!-- /.productcard__buyfooterprice -->
+                                  <div class="productcard__buyfooterinfo">
+                                    <div class="productcard__buyfooterinfotext">
+                                      Опт
+                                    </div><!-- /.productcard__buyfooterinfotext -->
+                                    <div class="productcard__buyfooterinfoicon">
+                                      <a href="#">
+                                        <img loading="lazy" src="img/productcard__buyfooterinfoicon.svg" alt="" title="" width="16" height="16">
+
+                                      </a>
+                                    </div><!-- /.productcard__buyfooterinfoicon -->
+                                  </div><!-- /.productcard__buyfooterinfo -->
+                                </div><!-- /.productcard__buyfooterwrapper -->
+                              </div><!-- /.productcard__buyfooter -->
+                            </div>
+                        </div>
+
+                        <div class="minicard__buttons onlyMobile">
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/Delete.svg" alt="Удалить" title="Удалить" width="20" height="20">
+                                  <span>Удалить из избранного</span>
+                                </a>
+                              </div>
+                              <div class="minicard__button">
+                                <a href="" class="linkgray linkicon">
+                                  <img src="img/StatFill.svg" alt="Сравнить" title="Сравнить" width="20" height="20&quot;">
+                                  <span>Сравнить</span>
+                                </a>
+                              </div>
+                             
+                            </div>
+                      </div>
+                      <!-- /.minicard__wrapper -->
+                    </div>
+                    <!-- /.minicard -->
+                  </div>
+                  <!-- /.cartblock__item -->
+                 
+
+                </div>
+             
+              
+     
+          </div>
+      </main>
+      <%= _.template(require('../includes/footer.html').default)(data) %>
